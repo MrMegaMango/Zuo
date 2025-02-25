@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/home/mango/code/zuo/quickstart",
+	"sourceRoot": "/home/mango/code/zuo/site",
 	"sources": [
 		"ananke/css/main.css"
 	],
