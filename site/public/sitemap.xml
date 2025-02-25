@@ -2,17 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/posts/my-first-post/</loc>
+    <loc>/tags/ai-infra/</loc>
     <lastmod>2025-02-25T22:05:54+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/</loc>
+    <loc>/categories/blog/</loc>
     <lastmod>2025-02-25T22:05:54+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>/categories/</loc>
     <lastmod>2025-02-25T22:05:54+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>/posts/my-first-post/</loc>
+    <lastmod>2025-02-25T22:05:54+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/posts/</loc>
+    <lastmod>2025-02-25T22:05:54+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-02-25T22:05:54+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-02-25T22:05:54+00:00</lastmod>
   </url>
 </urlset>
