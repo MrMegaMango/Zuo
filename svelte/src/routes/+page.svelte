@@ -37,13 +37,20 @@
 	
 	<div class="grid">
 		{#each tiles as tile, i}
-			<div
+			<button
+				type="button"
 				class="tile"
 				style="background-color: {tile.color}; transform: scale({tile.scale})"
 				on:click={() => handleTileClick(i)}
 				on:mouseenter={() => handleTileHover(i)}
 				on:mouseleave={() => handleTileLeave(i)}
-			/>
+				on:keydown={(e) => {
+					if (e.key === 'Enter' || e.key === ' ') {
+						handleTileClick(i);
+					}
+				}}
+				aria-label={`Interactive tile ${i + 1}`}
+			></button>
 		{/each}
 	</div>
 
@@ -82,8 +89,13 @@
 	.tile {
 		aspect-ratio: 1;
 		border-radius: 8px;
+		border: none;
+		padding: 0;
 		cursor: pointer;
 		transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
 	}
 
 	.tile:hover {
