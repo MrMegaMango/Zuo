@@ -1,5 +1,5 @@
 {
-    "buildCommand": "cd ../svelte && pnpm install && pnpm run sync && pnpm run build && cd ../site && hugo --gc --minify",
+    "buildCommand": "cd ../svelte && npm install && npm run build && cd ../site && hugo --gc --minify",
     "devCommand": "hugo server",
     "outputDirectory": "public",
     "framework": "hugo"
