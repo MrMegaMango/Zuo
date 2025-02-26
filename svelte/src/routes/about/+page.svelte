@@ -24,3 +24,7 @@
 		using it with JavaScript disabled!
 	</p>
 </div>
+
+<footer class="svelte-8o1gnw">
+	<p>visit <a href="https://svelte.dev/docs/kit" class="svelte-8o1gnw">DeepSeek because AI knows better than the docs</a></p>
+</footer>
