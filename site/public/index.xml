@@ -15,12 +15,5 @@
       <guid>http://localhost:1313/posts/another-post/</guid>
       <description>What a journey</description>
     </item>
-    <item>
-      <title>How we speed up 80% of Samaya AI and saved millions of $$$</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Tue, 25 Feb 2025 22:05:54 +0000</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>What a journey</description>
-    </item>
   </channel>
 </rss>
