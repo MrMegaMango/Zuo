@@ -29,7 +29,11 @@ UseHugoToc = true
 
 [params.homeInfoParams]
 Title = "Welcome 👋"
-Content = "Zuo made a blog site"
+Content = """
+Zuo made a blog site
+
+[Check out the Svelte App](/app)
+"""
 
 [[params.socialIcons]]
 name = "github"
@@ -39,3 +43,8 @@ url = "https://github.com/MrMegaMango"
 hidden = false
 hiddenInList = false
 hiddenInSingle = false
+
+[module]
+[[module.mounts]]
+source = "../svelte/build"
+target = "static/app"
