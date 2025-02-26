@@ -1,4 +1,4 @@
 {
-    "buildCommand": "curl -L https://github.com/gohugoio/hugo/releases/download/v0.144.2/hugo_extended_0.144.2_Linux-64bit.tar.gz | tar -xz && mv hugo /usr/local/bin/ && cd svelte && pnpm install && pnpm build && cd ../site && hugo --gc --minify",
-    "outputDirectory": "site/public"
+    "buildCommand": "curl -L https://github.com/gohugoio/hugo/releases/download/v0.144.2/hugo_extended_0.144.2_Linux-64bit.tar.gz | tar -xz && mv hugo /usr/local/bin/ && npm install -g pnpm && cd svelte && PNPM_HOME=/vercel/.pnpm pnpm config set store-dir /vercel/.pnpm && PNPM_HOME=/vercel/.pnpm pnpm install --frozen-lockfile && pnpm build && cd ../site && hugo --gc --minify",
+    "outputDirectory": "site/public",
 }
