@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://zuo.vercel.app/'
 languageCode = 'en-us'
 title = "Zuo's personal blog"
 theme = 'PaperMod'
