@@ -1,0 +1,6 @@
+{
+    "buildCommand": "echo -e 'hey mango' && npm install && cd site && hugo --gc --minify",
+    "devCommand": "hugo server",
+    "outputDirectory": "site/public",
+    "framework": "hugo"
+}
