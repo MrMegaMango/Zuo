@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Zuo&#39;s personal blog</title>
-    <link>/categories/blog/</link>
+    <link>//localhost:1313/categories/blog/</link>
     <description>Recent content in Blog on Zuo&#39;s personal blog</description>
-    <generator>Hugo -- 0.144.1</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Feb 2025 22:05:54 +0000</lastBuildDate>
-    <atom:link href="/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How we speed up 80% of Samaya AI and saved millions of $$$</title>
-      <link>/posts/my-first-post/</link>
+      <link>//localhost:1313/posts/my-first-post/</link>
       <pubDate>Tue, 25 Feb 2025 22:05:54 +0000</pubDate>
-      <guid>/posts/my-first-post/</guid>
-      <description>What a journey</description>
+      <guid>//localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;p&gt;How we speed up &lt;strong&gt;80%&lt;/strong&gt; of Samaya AI and saved &lt;em&gt;millions&lt;/em&gt; of $$$&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
