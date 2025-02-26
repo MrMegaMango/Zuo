@@ -10,3 +10,5 @@ TocOpen = true
 +++
 
 How we speed up **80%** of Samaya AI and saved *millions* of $$$
+
+![Observability](/images/screenshot1.png)

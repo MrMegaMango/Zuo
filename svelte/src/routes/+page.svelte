@@ -1,31 +1,56 @@
 <script lang="ts">
+	import { Spring } from 'svelte/motion';
 	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcomeFallback from '$lib/images/svelte-welcome.png';
+
+	const colors = ['#FF3E00', '#40B3FF', '#676778', '#FF6B6B', '#4ECB71'];
+	let tiles = Array(25).fill(null).map((_, i) => ({
+		id: i,
+		color: colors[Math.floor(Math.random() * colors.length)],
+		scale: 1
+	}));
+
+	const spring = new Spring({ stiffness: 0.1, damping: 0.6 });
+
+	function handleTileClick(index: number) {
+		tiles[index].scale = 0.8;
+		setTimeout(() => {
+			tiles[index].scale = 1;
+		}, 150);
+	}
+
+	function handleTileHover(index: number) {
+		tiles[index].scale = 1.1;
+	}
+
+	function handleTileLeave(index: number) {
+		tiles[index].scale = 1;
+	}
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Interactive Grid</title>
+	<meta name="description" content="Interactive grid demo with Svelte" />
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcomeFallback} alt="Welcome" />
-			</picture>
-		</span>
+	<h1>Welcome to the Interactive Grid</h1>
+	
+	<div class="grid">
+		{#each tiles as tile, i}
+			<div
+				class="tile"
+				style="background-color: {tile.color}; transform: scale({tile.scale})"
+				on:click={() => handleTileClick(i)}
+				on:mouseenter={() => handleTileHover(i)}
+				on:mouseleave={() => handleTileLeave(i)}
+			/>
+		{/each}
+	</div>
 
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
+	<div class="counter-section">
+		<h2>Try the counter below</h2>
+		<Counter />
+	</div>
 </section>
 
 <style>
@@ -34,26 +59,57 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex: 0.6;
+		padding: 2rem;
+		gap: 2rem;
 	}
 
 	h1 {
-		width: 100%;
+		color: #FF3E00;
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		text-align: center;
 	}
 
-	.welcome {
-		display: block;
-		position: relative;
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 0.5rem;
+		max-width: 500px;
 		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+		margin: 0 auto;
 	}
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+	.tile {
+		aspect-ratio: 1;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+
+	.tile:hover {
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	.counter-section {
+		margin-top: 2rem;
+		text-align: center;
+	}
+
+	h2 {
+		color: #676778;
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	@media (max-width: 600px) {
+		.grid {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	@media (max-width: 400px) {
+		.grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
 	}
 </style>
