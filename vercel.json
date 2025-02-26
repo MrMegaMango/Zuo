@@ -1,5 +1,5 @@
 {
-    "buildCommand": "echo -e 'hey mango' && npm install && cd site && hugo --gc --minify",
+    "buildCommand": "curl -L https://github.com/gohugoio/hugo/releases/download/v0.144.2/hugo_extended_0.144.2_Linux-64bit.tar.gz | tar -xz && mv hugo /usr/local/bin/ && npm install && cd site && hugo --gc --minify",
     "devCommand": "hugo server",
     "outputDirectory": "site/public"
 }
