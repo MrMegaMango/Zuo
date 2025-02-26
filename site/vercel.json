@@ -1,5 +1,5 @@
 {
-    "buildCommand": "cd .. && npm install && cd site && hugo --gc --minify",
+    "buildCommand": "echo mango && cd .. && npm install && cd site && hugo --gc --minify",
     "devCommand": "hugo server",
     "outputDirectory": "public",
     "framework": "hugo"
