@@ -39,6 +39,10 @@ Zuo made a blog site
 name = "github"
 url = "https://github.com/MrMegaMango"
 
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/mrmightymango/"
+
 [params.cover]
 hidden = false
 hiddenInList = false
