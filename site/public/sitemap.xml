@@ -11,6 +11,9 @@
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-02-25T22:05:54+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/another-post/</loc>
+    <lastmod>2025-02-25T22:05:54+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/my-first-post/</loc>
     <lastmod>2025-02-25T22:05:54+00:00</lastmod>
   </url><url>
