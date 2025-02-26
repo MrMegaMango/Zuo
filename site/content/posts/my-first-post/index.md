@@ -35,7 +35,7 @@ Our analysis revealed several critical bottlenecks:
 ![First Optimization Phase](optimization-1.png)
 
 Key metrics we tracked:
-- Memory Usage: ![Memory Profile](memory-profile.png)
+- Problematic concurrent network calls: ![Trace Errors](trace-errors.png)
 - CPU Utilization: ![CPU Usage](cpu-utilization.png)
 - Network Latency: ![Network Performance](network-latency.png)
 
