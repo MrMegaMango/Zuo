@@ -7,20 +7,15 @@ const config = {
 
     kit: {
         adapter: adapter({
-            fallback: 'index.html'
+            fallback: 'index.html',
+            strict: false
         }),
         paths: {
             base: '/app'
         },
         prerender: {
-            handleHttpError: ({ path, referrer, message }) => {
-                // Ignore specific errors related to base path
-                if (message.includes('does not begin with `base`')) {
-                    return;
-                }
-                // Throw other errors
-                throw new Error(message);
-            }
+            entries: ['*'],
+            handleHttpError: 'warn'
         }
     }
 };

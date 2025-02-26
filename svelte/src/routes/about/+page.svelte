@@ -3,6 +3,10 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <div class="text-column">
 	<h1>About this app</h1>
 
@@ -20,11 +24,11 @@
 	</p>
 
 	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
+		The <a href="{base}/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
 		using it with JavaScript disabled!
 	</p>
 </div>
 
 <footer class="svelte-8o1gnw">
-	<p>visit <a href="https://svelte.dev/docs/kit" class="svelte-8o1gnw">DeepSeek because AI knows better than the docs</a></p>
+	<p>built with DeepSeek because AI knows better than reading docs</p>
 </footer>

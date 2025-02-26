@@ -3,6 +3,7 @@
 	import { confetti } from '@neoconfetti/svelte';
 	import type { ActionData, PageData } from './$types';
 	import { MediaQuery } from 'svelte/reactivity';
+	import { base } from '$app/paths';
 
 	interface Props {
 		data: PageData;
@@ -101,7 +102,7 @@
 
 <form
 	method="post"
-	action="?/enter"
+	action="{base}/sverdle?/enter"
 	use:enhance={() => {
 		// prevent default callback from resetting the form
 		return ({ update }) => {
@@ -109,7 +110,7 @@
 		};
 	}}
 >
-	<a class="how-to-play" href="/sverdle/how-to-play">How to play</a>
+	<a class="how-to-play" href="{base}/sverdle/how-to-play">How to play</a>
 
 	<div class="grid" class:playing={!won} class:bad-guess={form?.badGuess}>
 		{#each Array.from(Array(6).keys()) as row (row)}

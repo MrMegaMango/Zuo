@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Spring } from 'svelte/motion';
 	import Counter from './Counter.svelte';
+	import { base } from '$app/paths';
 
 	const colors = ['#FF3E00', '#40B3FF', '#676778', '#FF6B6B', '#4ECB71'];
 	let tiles = Array(25).fill(null).map((_, i) => ({
@@ -33,7 +34,7 @@
 </svelte:head>
 
 <section>
-	<h1>Welcome to the Interactive Grid</h1>
+	<h1>Mango's Interactive Grid</h1>
 	
 	<div class="grid">
 		{#each tiles as tile, i}
