@@ -2,9 +2,13 @@
     "buildCommand": "curl -L https://github.com/gohugoio/hugo/releases/download/v0.144.2/hugo_extended_0.144.2_Linux-64bit.tar.gz | tar -xz && mv hugo /usr/local/bin/ && pnpm install && cd site && hugo --gc --minify",
     "outputDirectory": "site/public",
     "rewrites": [
-    {
-      "source": "/app/((?!_app|assets|favicon\\.ico).*)",
-      "destination": "/app/index.html"
-    }
-  ]
+        {
+          "source": "/app",
+          "destination": "/app/index.html"
+        },
+        {
+          "source": "/app/:any((?!_app|assets|favicon\\.ico).*)",
+          "destination": "/app/index.html"
+        }
+      ]
 }
