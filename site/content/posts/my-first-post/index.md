@@ -37,9 +37,6 @@ I found that the redis cache calls were taking 500ms.
 Suspect the latency come from poor network call concurrency from Python.
 ![long redis delay](redis.png)
 
-database calls:
-![Cache Hit Rates](cache-hits.png)
-
 This heatmap shows two hot zones for the simple getting encryption key operation, one near 16.8ms, the other near 537ms:
 ![Fetch Encryption Key](encryption-heatmap.png)
 Similarly, key validation function could take way longer than it should.
@@ -49,6 +46,12 @@ Similarly, key validation function could take way longer than it should.
 ### Parallelization 
 I found many places where we are doing sequential operation where it could be running in parallel, like bm25 elastic search sparse retrieval vs pinecone vector dense retrieval, or text generation vs table generation. These parallelization cut some of the major latency factors in half. 
 ![retrieve tables](retrieve-tables.png)
+
+### DB
+latency is high to pinecone and mongodb when we send large batch of queries.
+database calls:
+![database calls](db-calls.png)
+We found by experiments that a connection pool of 20 works better compared to 1000, 100, and 10.
 
 ### Monitoring and Observability
 
