@@ -79,6 +79,7 @@ I needed sampling and retention to reduce the Terrabytes of data used in traces.
 
 
 ### Cost Savings
+saving 100k in infra a month
 ![Cost Analysis](cost.png)
 
 ## P90 e2e decrease
