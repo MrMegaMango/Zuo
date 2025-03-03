@@ -22,12 +22,12 @@ Though Amplitude is good for product/user analytics, it's not powerful enough fo
 
 ## Identifying Bottlenecks
 
-Our analysis revealed several critical bottlenecks:
-
+Our analysis revealed several major latency contributors:
+Query understanding, document retrieval, and summarization.
 
 ## Performance Optimization Journey
 
-### Phase 1: TensorRT
+## TensorRT
 I used Nvidia's TensorRT to convert our model in vLLM to be more performant.
 ![First Optimization Phase](optimization-1.png)
 
@@ -35,7 +35,7 @@ I used Nvidia's TensorRT to convert our model in vLLM to be more performant.
 - Unreliable endpoints: ![CPU Usage](cpu-utilization.png)
 - Side by side comparison: ![Network Performance](network-latency.png)
 
-### Phase 2: Caching 
+## Caching 
 I found that the redis cache calls were taking 500ms.
 Suspect the latency come from poor network call concurrency from Python.
 ![Second Optimization Phase](optimization-2.png)
@@ -48,9 +48,12 @@ This heatmap shows two hot zones for the simple getting encryption key operation
 Similarly, key validation function could take way longer than it should.
 ![Bottleneck Analysis](key-validation.png)
 
+## Parallelization 
+I found many places where we are doing sequential operation where it could be running in parallel, like bm25 elastic search sparse retrieval vs pinecone vector dense retrieval, or text generation vs table generation. These parallelization cut some of the major latency factors in half. 
+
 ### Monitoring and Observability
 
-I implemented opentelemetry traces and metrics. I use Tempo, Prometheus, and Grafana to visualize.
+Metrics gave a view of a broad sense of how system is doing, but I needed something finer to see the devil in the details. I implemented opentelemetry traces. I use Prometheus, Tempo, and Grafana to visualize. I like open source tools and am able to ask questions to the community and contribute.
 
 We use Tilt to spin up k8s locally. Application log vs execution trace side by side:
 ![Monitoring Dashboard](side-by-side.png)
