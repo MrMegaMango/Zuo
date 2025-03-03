@@ -32,7 +32,7 @@ Title = "Welcome 👋"
 Content = """
 Zuo made a website
 
-[Check out the Svelte App](/app)
+[also building a Svelte App](/app)
 """
 
 [[params.socialIcons]]
