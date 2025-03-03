@@ -10,7 +10,7 @@ TocOpen = true
 [cover]
 image = "slowest-query.png"
 alt = "Slowest query of the day"
-caption = "Our production query, sort by slowness"
+caption = "Our production query, sorted by slowness"
 relative = true
 +++
 
@@ -70,11 +70,10 @@ Distributed tracing helped identify bottlenecks:
 Error rates dropped significantly:
 ![Error Rates](trace-storage.png)
 I needed sampling and retention to reduce the Terrabytes of data used in traces.
+![trace ingestion breakdown by service](trace-ingestion.png)
 
 ## Results and Impact
 
-### Performance Improvements
-![Before vs After](before-after.png)
 
 ### Cost Savings
 ![Cost Analysis](cost.png)
@@ -85,8 +84,3 @@ System throughput increased dramatically:
 ## P90 e2e decrease
 ![P90 e2e decrease](comparison.png)
 
-## Future Roadmap
-
-## Monitoring Setup
-Our current monitoring configuration:
-![Alerts Setup](alerts-setup.png)
