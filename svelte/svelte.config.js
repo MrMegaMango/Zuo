@@ -10,7 +10,8 @@ const config = {
       runtime: 'nodejs18.x'
     }),
     paths: {
-      base: '/app'
+      base: '/app',
+      relative: false
     }
   }
 };
