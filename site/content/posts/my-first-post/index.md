@@ -2,7 +2,7 @@
 date = '2025-02-25T22:05:54Z'
 draft = false
 title = 'How we speed up 80% of Samaya AI and saved millions of $$$'
-description = "What a journey it has been! In this post, I’ll walk you through how we transformed Samaya AI by boosting its performance by 80% and saving millions of dollars along the way."
+description = "What a journey it has been! "
 tags = ["AI infra"]
 categories = ["blog"]
 ShowToc = true
@@ -13,6 +13,8 @@ alt = "Slowest query of the day"
 caption = "Our production query, sort by slowness"
 relative = true
 +++
+
+In this post, I’ll walk you through how we transformed Samaya AI by boosting its performance by 80% and saving millions of dollars along the way.
 
 Samaya AI builds a question answering platform using document retrieval to avoid hallucination. At the start of this work, our basic question answering chatbot takes about 2 minutes to finish processing.
 
@@ -27,15 +29,10 @@ Query understanding, document retrieval, and summarization.
 
 ## Performance Optimization Journey
 
-## TensorRT
+### TensorRT
 I used Nvidia's TensorRT to convert our model in vLLM to be more performant.
-![First Optimization Phase](optimization-1.png)
 
-- Problematic concurrent network calls: ![Trace Errors](trace-errors.png)
-- Unreliable endpoints: ![CPU Usage](cpu-utilization.png)
-- Side by side comparison: ![Network Performance](network-latency.png)
-
-## Caching 
+### Caching 
 I found that the redis cache calls were taking 500ms.
 Suspect the latency come from poor network call concurrency from Python.
 ![Second Optimization Phase](optimization-2.png)
@@ -47,8 +44,9 @@ This heatmap shows two hot zones for the simple getting encryption key operation
 ![Fetch Encryption Key](encryption-heatmap.png)
 Similarly, key validation function could take way longer than it should.
 ![Bottleneck Analysis](key-validation.png)
+![trace hub](trace-hub.png)
 
-## Parallelization 
+### Parallelization 
 I found many places where we are doing sequential operation where it could be running in parallel, like bm25 elastic search sparse retrieval vs pinecone vector dense retrieval, or text generation vs table generation. These parallelization cut some of the major latency factors in half. 
 
 ### Monitoring and Observability
@@ -57,6 +55,13 @@ Metrics gave a view of a broad sense of how system is doing, but I needed someth
 
 We use Tilt to spin up k8s locally. Application log vs execution trace side by side:
 ![Monitoring Dashboard](side-by-side.png)
+
+- Errors and timeouts: ![Trace Errors](trace-errors.png)
+- Unreliable endpoints: ![CPU Usage](cpu-utilization.png)
+- Side by side comparison on a fast run vs a slow run: ![Network Performance](network-latency.png)
+
+breakdown and Locust load test
+![break down](break-down.png)
 
 Distributed tracing helped identify bottlenecks:
 ![Distributed Tracing](distributed-tracing.png)
@@ -76,11 +81,10 @@ I needed sampling and retention to reduce the Terrabytes of data used in traces.
 System throughput increased dramatically:
 ![Throughput Metrics](throughput.png)
 
-## Comparison with Industry Standards
-![Industry Comparison](comparison.png)
+## P90 e2e decrease
+![P90 e2e decrease](comparison.png)
 
 ## Future Roadmap
-![Future Plans](future-roadmap.png)
 
 ## Monitoring Setup
 Our current monitoring configuration:
