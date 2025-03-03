@@ -8,9 +8,9 @@ categories = ["blog"]
 ShowToc = true
 TocOpen = true
 [cover]
-image = "final-architecture.png"
-alt = "Final Architecture Overview"
-caption = "Our Optimized Architecture"
+image = "slowest-query.png"
+alt = "Slowest query of the day"
+caption = "Our production query, sort by slowness"
 relative = true
 +++
 

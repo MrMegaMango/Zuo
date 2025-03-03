@@ -65,9 +65,9 @@
     <meta property="article:published_time" content="2025-02-25T22:05:54+00:00">
     <meta property="article:modified_time" content="2025-02-25T22:05:54+00:00">
     <meta property="article:tag" content="AI Infra">
-    <meta property="og:image" content="http://localhost:1313/posts/my-first-post/final-architecture.png">
+    <meta property="og:image" content="http://localhost:1313/posts/my-first-post/slowest-query.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/posts/my-first-post/final-architecture.png">
+<meta name="twitter:image" content="http://localhost:1313/posts/my-first-post/slowest-query.png">
 <meta name="twitter:title" content="How we speed up 80% of Samaya AI and saved millions of $$$">
 <meta name="twitter:description" content="What a journey it has been! In this post, I’ll walk you through how we transformed Samaya AI by boosting its performance by 80% and saving millions of dollars along the way.">
 
@@ -105,7 +105,7 @@
   "articleBody": "We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. Our simple question answering bot takes about 2 minutes to finish. Though Amplitude is good for product/user analytics, it’s not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.\nIdentifying Bottlenecks Our analysis revealed several critical bottlenecks: Performance Optimization Journey Phase 1: TensorRT I used Nvidia’s TensorRT to convert our model in vLLM to be more performant. Problematic concurrent network calls: Unreliable endpoints: Side by side comparison: Phase 2: Caching I found that the redis cache calls were taking 500ms. Suspect the latency come from poor network call concurrency from Python. database calls: This heatmap shows two hot zones for the simple getting encryption key operation, one near 16.8ms, the other near 537ms: Monitoring and Observability I implemented opentelemetry traces and metrics. I use Tempo, Prometheus, and Grafana to visualize.\nWe use Tilt to spin up k8s locally. Application log vs execution trace side by side: Distributed tracing helped identify bottlenecks: Error rates dropped significantly: I needed sampling and retention to reduce the Terrabytes of data used in traces.\nResults and Impact Performance Improvements Cost Savings System throughput increased dramatically: Comparison with Industry Standards Future Roadmap Monitoring Setup Our current monitoring configuration: ",
   "wordCount" : "270",
   "inLanguage": "en",
-  "image":"http://localhost:1313/posts/my-first-post/final-architecture.png","datePublished": "2025-02-25T22:05:54Z",
+  "image":"http://localhost:1313/posts/my-first-post/slowest-query.png","datePublished": "2025-02-25T22:05:54Z",
   "dateModified": "2025-02-25T22:05:54Z",
   "author":{
     "@type": "Person",
@@ -186,10 +186,10 @@
 </div>
   </header> 
 <figure class="entry-cover">
-        <img loading="eager" srcset="http://localhost:1313/posts/my-first-post/final-architecture_hu_6ddaed769e8e6c83.png 360w ,http://localhost:1313/posts/my-first-post/final-architecture_hu_4635d33b9de0d2da.png 480w ,http://localhost:1313/posts/my-first-post/final-architecture_hu_d44fe9d981909190.png 720w ,http://localhost:1313/posts/my-first-post/final-architecture.png 984w" 
-            sizes="(min-width: 768px) 720px, 100vw" src="http://localhost:1313/posts/my-first-post/final-architecture.png" alt="Final Architecture Overview" 
+        <img loading="eager" srcset="http://localhost:1313/posts/my-first-post/slowest-query_hu_6ddaed769e8e6c83.png 360w ,http://localhost:1313/posts/my-first-post/slowest-query_hu_4635d33b9de0d2da.png 480w ,http://localhost:1313/posts/my-first-post/slowest-query_hu_d44fe9d981909190.png 720w ,http://localhost:1313/posts/my-first-post/slowest-query.png 984w" 
+            sizes="(min-width: 768px) 720px, 100vw" src="http://localhost:1313/posts/my-first-post/slowest-query.png" alt="Slowest query of the day" 
             width="984" height="859">
-        <p>Our Optimized Architecture</p>
+        <p>Our production query, sort by slowness</p>
 </figure><div class="toc">
     <details  open>
         <summary accesskey="c" title="(Alt + C)">
