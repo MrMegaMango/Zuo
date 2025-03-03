@@ -14,13 +14,10 @@ caption = "Our Optimized Architecture"
 relative = true
 +++
 
-We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. Our simple QA takes about 2 minutes to finish.
-Though Amplitude is good for product/user analytics, it's now powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I need to do more in time series graphs like calculations, so I bring in Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.
+We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. Our simple question answering bot takes about 2 minutes to finish.
+Though Amplitude is good for product/user analytics, it's not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.
 
-![Initial Setup](initial-setup.png)
-
-Our baseline metrics showed significant room for improvement:
-![Baseline Metrics](baseline-metrics.png)
+![Amplitude dashboard](initial-setup.png)
 
 ## Identifying Bottlenecks
 
@@ -33,22 +30,26 @@ Our analysis revealed several critical bottlenecks:
 I used Nvidia's TensorRT to convert our model in vLLM to be more performant.
 ![First Optimization Phase](optimization-1.png)
 
-Key metrics we tracked:
 - Problematic concurrent network calls: ![Trace Errors](trace-errors.png)
-- CPU Utilization: ![CPU Usage](cpu-utilization.png)
-- Network Latency: ![Network Performance](network-latency.png)
+- Unreliable endpoints: ![CPU Usage](cpu-utilization.png)
+- Side by side comparison: ![Network Performance](network-latency.png)
 
-### Phase 2: Caching and Distribution
+### Phase 2: Caching 
 I found that the redis cache calls were taking 500ms.
 Suspect the latency come from poor network call concurrency from Python.
 ![Second Optimization Phase](optimization-2.png)
 
-Improvements in cache performance:
+database calls:
 ![Cache Hit Rates](cache-hits.png)
+
+This heatmap shows two hot zones for the simple getting encryption key operation, one near 16.8ms, the other near 537ms:
+![Fetch Encryption Key](encryption-heatmap.png)
 
 ### Monitoring and Observability
 
-I implemented opentelemetry traces and metrics. I use Tempo, Prometheus, and Grafana to visualize:
+I implemented opentelemetry traces and metrics. I use Tempo, Prometheus, and Grafana to visualize.
+
+We use Tilt to spin up k8s locally. Application log vs execution trace side by side:
 ![Monitoring Dashboard](side-by-side.png)
 
 Distributed tracing helped identify bottlenecks:
@@ -56,6 +57,7 @@ Distributed tracing helped identify bottlenecks:
 
 Error rates dropped significantly:
 ![Error Rates](trace-storage.png)
+I needed sampling and retention to reduce the Terrabytes of data used in traces.
 
 ## Results and Impact
 

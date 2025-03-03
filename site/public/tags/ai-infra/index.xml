@@ -9,11 +9,11 @@
     <lastBuildDate>Tue, 25 Feb 2025 22:05:54 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ai-infra/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How we speed up 80% of Samaya AI and saved millions of $$$</title>
+      <title>How we sped up 80% of Samaya AI and saved millions</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Tue, 25 Feb 2025 22:05:54 +0000</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>What a journey</description>
+      <description>In this post, I’ll walk you through the journey of transforming Samaya AI—boosting performance by 80% and saving millions—by identifying bottlenecks and optimizing our system.</description>
     </item>
   </channel>
 </rss>

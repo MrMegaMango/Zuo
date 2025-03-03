@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>How we speed up 80% of Samaya AI and saved millions of $$$ | Zuo&#39;s personal blog</title>
 <meta name="keywords" content="AI infra">
-<meta name="description" content="What a journey">
+<meta name="description" content="What a journey it has been! In this post, I’ll walk you through how we transformed Samaya AI by boosting its performance by 80% and saving millions of dollars along the way.">
 <meta name="author" content="Zuo">
 <link rel="canonical" href="http://localhost:1313/posts/my-first-post/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
@@ -58,7 +58,7 @@
 </noscript><meta property="og:url" content="http://localhost:1313/posts/my-first-post/">
   <meta property="og:site_name" content="Zuo&#39;s personal blog">
   <meta property="og:title" content="How we speed up 80% of Samaya AI and saved millions of $$$">
-  <meta property="og:description" content="What a journey">
+  <meta property="og:description" content="What a journey it has been! In this post, I’ll walk you through how we transformed Samaya AI by boosting its performance by 80% and saving millions of dollars along the way.">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -69,7 +69,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://localhost:1313/posts/my-first-post/final-architecture.png">
 <meta name="twitter:title" content="How we speed up 80% of Samaya AI and saved millions of $$$">
-<meta name="twitter:description" content="What a journey">
+<meta name="twitter:description" content="What a journey it has been! In this post, I’ll walk you through how we transformed Samaya AI by boosting its performance by 80% and saving millions of dollars along the way.">
 
 
 <script type="application/ld+json">
@@ -98,12 +98,12 @@
   "@type": "BlogPosting",
   "headline": "How we speed up 80% of Samaya AI and saved millions of $$$",
   "name": "How we speed up 80% of Samaya AI and saved millions of $$$",
-  "description": "What a journey",
+  "description": "What a journey it has been! In this post, I’ll walk you through how we transformed Samaya AI by boosting its performance by 80% and saving millions of dollars along the way.",
   "keywords": [
     "AI infra"
   ],
-  "articleBody": "How we speed up 80% of Samaya AI and saved millions of $$$?\nInitial State and Challenges Here’s where we started: Our baseline metrics showed significant room for improvement: Identifying Bottlenecks Our analysis revealed several critical bottlenecks: Performance Optimization Journey Phase 1: Infrastructure Optimization Key metrics we tracked:\nProblematic concurrent network calls: CPU Utilization: Network Latency: Phase 2: Caching and Distribution Improvements in cache performance: Monitoring and Observability We implemented comprehensive monitoring: Distributed tracing helped identify bottlenecks: Error rates dropped significantly: Results and Impact Performance Improvements Cost Savings System throughput increased dramatically: Comparison with Industry Standards Future Roadmap Monitoring Setup Our current monitoring configuration: ",
-  "wordCount" : "104",
+  "articleBody": "We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. Our simple question answering bot takes about 2 minutes to finish. Though Amplitude is good for product/user analytics, it’s not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.\nIdentifying Bottlenecks Our analysis revealed several critical bottlenecks: Performance Optimization Journey Phase 1: TensorRT I used Nvidia’s TensorRT to convert our model in vLLM to be more performant. Problematic concurrent network calls: Unreliable endpoints: Side by side comparison: Phase 2: Caching I found that the redis cache calls were taking 500ms. Suspect the latency come from poor network call concurrency from Python. database calls: This heatmap shows two hot zones for the simple getting encryption key operation, one near 16.8ms, the other near 537ms: Monitoring and Observability I implemented opentelemetry traces and metrics. I use Tempo, Prometheus, and Grafana to visualize.\nWe use Tilt to spin up k8s locally. Application log vs execution trace side by side: Distributed tracing helped identify bottlenecks: Error rates dropped significantly: I needed sampling and retention to reduce the Terrabytes of data used in traces.\nResults and Impact Performance Improvements Cost Savings System throughput increased dramatically: Comparison with Industry Standards Future Roadmap Monitoring Setup Our current monitoring configuration: ",
+  "wordCount" : "270",
   "inLanguage": "en",
   "image":"http://localhost:1313/posts/my-first-post/final-architecture.png","datePublished": "2025-02-25T22:05:54Z",
   "dateModified": "2025-02-25T22:05:54Z",
@@ -179,9 +179,9 @@
       How we speed up 80% of Samaya AI and saved millions of $$$
     </h1>
     <div class="post-description">
-      What a journey
+      What a journey it has been! In this post, I’ll walk you through how we transformed Samaya AI by boosting its performance by 80% and saving millions of dollars along the way.
     </div>
-    <div class="post-meta"><span title='2025-02-25 22:05:54 +0000 UTC'>February 25, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;104 words&nbsp;·&nbsp;Zuo
+    <div class="post-meta"><span title='2025-02-25 22:05:54 +0000 UTC'>February 25, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;270 words&nbsp;·&nbsp;Zuo
 
 </div>
   </header> 
@@ -198,12 +198,11 @@
 
         <div class="inner"><nav id="TableOfContents">
   <ul>
-    <li><a href="#initial-state-and-challenges">Initial State and Challenges</a></li>
     <li><a href="#identifying-bottlenecks">Identifying Bottlenecks</a></li>
     <li><a href="#performance-optimization-journey">Performance Optimization Journey</a>
       <ul>
-        <li><a href="#phase-1-infrastructure-optimization">Phase 1: Infrastructure Optimization</a></li>
-        <li><a href="#phase-2-caching-and-distribution">Phase 2: Caching and Distribution</a></li>
+        <li><a href="#phase-1-tensorrt">Phase 1: TensorRT</a></li>
+        <li><a href="#phase-2-caching">Phase 2: Caching</a></li>
         <li><a href="#monitoring-and-observability">Monitoring and Observability</a></li>
       </ul>
     </li>
@@ -222,35 +221,38 @@
     </details>
 </div>
 
-  <div class="post-content"><p>How we speed up <strong>80%</strong> of Samaya AI and saved <em>millions</em> of $$$?</p>
-<h2 id="initial-state-and-challenges">Initial State and Challenges<a hidden class="anchor" aria-hidden="true" href="#initial-state-and-challenges">#</a></h2>
-<p>Here&rsquo;s where we started:
-<img alt="Initial Setup" loading="lazy" src="/posts/my-first-post/initial-setup.png"></p>
-<p>Our baseline metrics showed significant room for improvement:
-<img alt="Baseline Metrics" loading="lazy" src="/posts/my-first-post/baseline-metrics.png"></p>
+  <div class="post-content"><p>We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. Our simple question answering bot takes about 2 minutes to finish.
+Though Amplitude is good for product/user analytics, it&rsquo;s not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.</p>
+<p><img alt="Amplitude dashboard" loading="lazy" src="/posts/my-first-post/initial-setup.png"></p>
 <h2 id="identifying-bottlenecks">Identifying Bottlenecks<a hidden class="anchor" aria-hidden="true" href="#identifying-bottlenecks">#</a></h2>
 <p>Our analysis revealed several critical bottlenecks:
 <img alt="Bottleneck Analysis" loading="lazy" src="/posts/my-first-post/bottleneck-analysis.png"></p>
 <h2 id="performance-optimization-journey">Performance Optimization Journey<a hidden class="anchor" aria-hidden="true" href="#performance-optimization-journey">#</a></h2>
-<h3 id="phase-1-infrastructure-optimization">Phase 1: Infrastructure Optimization<a hidden class="anchor" aria-hidden="true" href="#phase-1-infrastructure-optimization">#</a></h3>
-<p><img alt="First Optimization Phase" loading="lazy" src="/posts/my-first-post/optimization-1.png"></p>
-<p>Key metrics we tracked:</p>
+<h3 id="phase-1-tensorrt">Phase 1: TensorRT<a hidden class="anchor" aria-hidden="true" href="#phase-1-tensorrt">#</a></h3>
+<p>I used Nvidia&rsquo;s TensorRT to convert our model in vLLM to be more performant.
+<img alt="First Optimization Phase" loading="lazy" src="/posts/my-first-post/optimization-1.png"></p>
 <ul>
 <li>Problematic concurrent network calls: <img alt="Trace Errors" loading="lazy" src="/posts/my-first-post/trace-errors.png"></li>
-<li>CPU Utilization: <img alt="CPU Usage" loading="lazy" src="/posts/my-first-post/cpu-utilization.png"></li>
-<li>Network Latency: <img alt="Network Performance" loading="lazy" src="/posts/my-first-post/network-latency.png"></li>
+<li>Unreliable endpoints: <img alt="CPU Usage" loading="lazy" src="/posts/my-first-post/cpu-utilization.png"></li>
+<li>Side by side comparison: <img alt="Network Performance" loading="lazy" src="/posts/my-first-post/network-latency.png"></li>
 </ul>
-<h3 id="phase-2-caching-and-distribution">Phase 2: Caching and Distribution<a hidden class="anchor" aria-hidden="true" href="#phase-2-caching-and-distribution">#</a></h3>
-<p><img alt="Second Optimization Phase" loading="lazy" src="/posts/my-first-post/optimization-2.png"></p>
-<p>Improvements in cache performance:
+<h3 id="phase-2-caching">Phase 2: Caching<a hidden class="anchor" aria-hidden="true" href="#phase-2-caching">#</a></h3>
+<p>I found that the redis cache calls were taking 500ms.
+Suspect the latency come from poor network call concurrency from Python.
+<img alt="Second Optimization Phase" loading="lazy" src="/posts/my-first-post/optimization-2.png"></p>
+<p>database calls:
 <img alt="Cache Hit Rates" loading="lazy" src="/posts/my-first-post/cache-hits.png"></p>
+<p>This heatmap shows two hot zones for the simple getting encryption key operation, one near 16.8ms, the other near 537ms:
+<img alt="Fetch Encryption Key" loading="lazy" src="/posts/my-first-post/encryption-heatmap.png"></p>
 <h3 id="monitoring-and-observability">Monitoring and Observability<a hidden class="anchor" aria-hidden="true" href="#monitoring-and-observability">#</a></h3>
-<p>We implemented comprehensive monitoring:
+<p>I implemented opentelemetry traces and metrics. I use Tempo, Prometheus, and Grafana to visualize.</p>
+<p>We use Tilt to spin up k8s locally. Application log vs execution trace side by side:
 <img alt="Monitoring Dashboard" loading="lazy" src="/posts/my-first-post/side-by-side.png"></p>
 <p>Distributed tracing helped identify bottlenecks:
 <img alt="Distributed Tracing" loading="lazy" src="/posts/my-first-post/distributed-tracing.png"></p>
 <p>Error rates dropped significantly:
-<img alt="Error Rates" loading="lazy" src="/posts/my-first-post/trace-storage.png"></p>
+<img alt="Error Rates" loading="lazy" src="/posts/my-first-post/trace-storage.png">
+I needed sampling and retention to reduce the Terrabytes of data used in traces.</p>
 <h2 id="results-and-impact">Results and Impact<a hidden class="anchor" aria-hidden="true" href="#results-and-impact">#</a></h2>
 <h3 id="performance-improvements">Performance Improvements<a hidden class="anchor" aria-hidden="true" href="#performance-improvements">#</a></h3>
 <p><img alt="Before vs After" loading="lazy" src="/posts/my-first-post/before-after.png"></p>
