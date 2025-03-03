@@ -35,7 +35,7 @@ I used Nvidia's TensorRT to convert our model in vLLM to be more performant.
 ### Caching 
 I found that the redis cache calls were taking 500ms.
 Suspect the latency come from poor network call concurrency from Python.
-![Second Optimization Phase](optimization-2.png)
+![long redis delay](redis.png)
 
 database calls:
 ![Cache Hit Rates](cache-hits.png)
@@ -48,6 +48,7 @@ Similarly, key validation function could take way longer than it should.
 
 ### Parallelization 
 I found many places where we are doing sequential operation where it could be running in parallel, like bm25 elastic search sparse retrieval vs pinecone vector dense retrieval, or text generation vs table generation. These parallelization cut some of the major latency factors in half. 
+![retrieve tables](retrieve-tables.png)
 
 ### Monitoring and Observability
 
@@ -76,7 +77,7 @@ I needed sampling and retention to reduce the Terrabytes of data used in traces.
 ![Before vs After](before-after.png)
 
 ### Cost Savings
-![Cost Analysis](cost-savings.png)
+![Cost Analysis](cost.png)
 
 System throughput increased dramatically:
 ![Throughput Metrics](throughput.png)
