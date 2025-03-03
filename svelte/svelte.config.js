@@ -6,13 +6,11 @@ const config = {
   preprocess: vitePreprocess(),
 
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      runtime: 'nodejs18.x'
+    }),
     paths: {
-      base: ''
-    },
-    prerender: {
-      entries: ['*'],
-      handleHttpError: 'warn'
+      base: '/app'
     }
   }
 };
