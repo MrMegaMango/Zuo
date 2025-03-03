@@ -81,9 +81,6 @@ I needed sampling and retention to reduce the Terrabytes of data used in traces.
 ### Cost Savings
 ![Cost Analysis](cost.png)
 
-System throughput increased dramatically:
-![Throughput Metrics](throughput.png)
-
 ## P90 e2e decrease
 ![P90 e2e decrease](comparison.png)
 
