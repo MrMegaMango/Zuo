@@ -102,8 +102,8 @@
   "keywords": [
     "AI infra"
   ],
-  "articleBody": "We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. Our simple question answering bot takes about 2 minutes to finish. Though Amplitude is good for product/user analytics, it’s not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.\nIdentifying Bottlenecks Our analysis revealed several critical bottlenecks: Performance Optimization Journey Phase 1: TensorRT I used Nvidia’s TensorRT to convert our model in vLLM to be more performant. Problematic concurrent network calls: Unreliable endpoints: Side by side comparison: Phase 2: Caching I found that the redis cache calls were taking 500ms. Suspect the latency come from poor network call concurrency from Python. database calls: This heatmap shows two hot zones for the simple getting encryption key operation, one near 16.8ms, the other near 537ms: Monitoring and Observability I implemented opentelemetry traces and metrics. I use Tempo, Prometheus, and Grafana to visualize.\nWe use Tilt to spin up k8s locally. Application log vs execution trace side by side: Distributed tracing helped identify bottlenecks: Error rates dropped significantly: I needed sampling and retention to reduce the Terrabytes of data used in traces.\nResults and Impact Performance Improvements Cost Savings System throughput increased dramatically: Comparison with Industry Standards Future Roadmap Monitoring Setup Our current monitoring configuration: ",
-  "wordCount" : "270",
+  "articleBody": "Samaya AI builds a question answering platform using document retrieval to avoid hallucination. At the start of this work, our basic question answering chatbot takes about 2 minutes to finish processing.\nWe began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. Though Amplitude is good for product/user analytics, it’s not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters. Identifying Bottlenecks Our analysis revealed several critical bottlenecks:\nPerformance Optimization Journey Phase 1: TensorRT I used Nvidia’s TensorRT to convert our model in vLLM to be more performant. Problematic concurrent network calls: Unreliable endpoints: Side by side comparison: Phase 2: Caching I found that the redis cache calls were taking 500ms. Suspect the latency come from poor network call concurrency from Python. database calls: This heatmap shows two hot zones for the simple getting encryption key operation, one near 16.8ms, the other near 537ms: Similarly, key validation function could take way longer than it should. Monitoring and Observability I implemented opentelemetry traces and metrics. I use Tempo, Prometheus, and Grafana to visualize.\nWe use Tilt to spin up k8s locally. Application log vs execution trace side by side: Distributed tracing helped identify bottlenecks: Error rates dropped significantly: I needed sampling and retention to reduce the Terrabytes of data used in traces.\nResults and Impact Performance Improvements Cost Savings System throughput increased dramatically: Comparison with Industry Standards Future Roadmap Monitoring Setup Our current monitoring configuration: ",
+  "wordCount" : "301",
   "inLanguage": "en",
   "image":"http://localhost:1313/posts/my-first-post/slowest-query.png","datePublished": "2025-02-25T22:05:54Z",
   "dateModified": "2025-02-25T22:05:54Z",
@@ -181,7 +181,7 @@
     <div class="post-description">
       What a journey it has been! In this post, I’ll walk you through how we transformed Samaya AI by boosting its performance by 80% and saving millions of dollars along the way.
     </div>
-    <div class="post-meta"><span title='2025-02-25 22:05:54 +0000 UTC'>February 25, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;270 words&nbsp;·&nbsp;Zuo
+    <div class="post-meta"><span title='2025-02-25 22:05:54 +0000 UTC'>February 25, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;301 words&nbsp;·&nbsp;Zuo
 
 </div>
   </header> 
@@ -221,12 +221,12 @@
     </details>
 </div>
 
-  <div class="post-content"><p>We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. Our simple question answering bot takes about 2 minutes to finish.
-Though Amplitude is good for product/user analytics, it&rsquo;s not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.</p>
-<p><img alt="Amplitude dashboard" loading="lazy" src="/posts/my-first-post/initial-setup.png"></p>
+  <div class="post-content"><p>Samaya AI builds a question answering platform using document retrieval to avoid hallucination. At the start of this work, our basic question answering chatbot takes about 2 minutes to finish processing.</p>
+<p>We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics.
+Though Amplitude is good for product/user analytics, it&rsquo;s not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.
+<img alt="Amplitude dashboard" loading="lazy" src="/posts/my-first-post/initial-setup.png"></p>
 <h2 id="identifying-bottlenecks">Identifying Bottlenecks<a hidden class="anchor" aria-hidden="true" href="#identifying-bottlenecks">#</a></h2>
-<p>Our analysis revealed several critical bottlenecks:
-<img alt="Bottleneck Analysis" loading="lazy" src="/posts/my-first-post/bottleneck-analysis.png"></p>
+<p>Our analysis revealed several critical bottlenecks:</p>
 <h2 id="performance-optimization-journey">Performance Optimization Journey<a hidden class="anchor" aria-hidden="true" href="#performance-optimization-journey">#</a></h2>
 <h3 id="phase-1-tensorrt">Phase 1: TensorRT<a hidden class="anchor" aria-hidden="true" href="#phase-1-tensorrt">#</a></h3>
 <p>I used Nvidia&rsquo;s TensorRT to convert our model in vLLM to be more performant.
@@ -243,7 +243,9 @@ Suspect the latency come from poor network call concurrency from Python.
 <p>database calls:
 <img alt="Cache Hit Rates" loading="lazy" src="/posts/my-first-post/cache-hits.png"></p>
 <p>This heatmap shows two hot zones for the simple getting encryption key operation, one near 16.8ms, the other near 537ms:
-<img alt="Fetch Encryption Key" loading="lazy" src="/posts/my-first-post/encryption-heatmap.png"></p>
+<img alt="Fetch Encryption Key" loading="lazy" src="/posts/my-first-post/encryption-heatmap.png">
+Similarly, key validation function could take way longer than it should.
+<img alt="Bottleneck Analysis" loading="lazy" src="/posts/my-first-post/key-validation.png"></p>
 <h3 id="monitoring-and-observability">Monitoring and Observability<a hidden class="anchor" aria-hidden="true" href="#monitoring-and-observability">#</a></h3>
 <p>I implemented opentelemetry traces and metrics. I use Tempo, Prometheus, and Grafana to visualize.</p>
 <p>We use Tilt to spin up k8s locally. Application log vs execution trace side by side:

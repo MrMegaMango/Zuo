@@ -14,15 +14,16 @@ caption = "Our production query, sort by slowness"
 relative = true
 +++
 
-We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. Our simple question answering bot takes about 2 minutes to finish.
-Though Amplitude is good for product/user analytics, it's not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.
+Samaya AI builds a question answering platform using document retrieval to avoid hallucination. At the start of this work, our basic question answering chatbot takes about 2 minutes to finish processing.
 
+We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. 
+Though Amplitude is good for product/user analytics, it's not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.
 ![Amplitude dashboard](initial-setup.png)
 
 ## Identifying Bottlenecks
 
 Our analysis revealed several critical bottlenecks:
-![Bottleneck Analysis](bottleneck-analysis.png)
+
 
 ## Performance Optimization Journey
 
@@ -44,6 +45,8 @@ database calls:
 
 This heatmap shows two hot zones for the simple getting encryption key operation, one near 16.8ms, the other near 537ms:
 ![Fetch Encryption Key](encryption-heatmap.png)
+Similarly, key validation function could take way longer than it should.
+![Bottleneck Analysis](key-validation.png)
 
 ### Monitoring and Observability
 
