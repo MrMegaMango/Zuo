@@ -19,8 +19,30 @@ In this post, I’ll walk you through how we transformed Samaya AI by boosting i
 Samaya AI builds a question answering platform using document retrieval to avoid hallucination. At the start of this work, our basic question answering chatbot takes about 2 minutes to finish processing.
 
 We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. 
-Though Amplitude is good for product/user analytics, it's not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.
+Though Amplitude is good for product/user analytics, it's not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals, or adding attribute to data points for filtering. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.
 ![Amplitude dashboard](initial-setup.png)
+
+### Monitoring and Observability
+
+Metrics gave a view of a broad sense of how system is doing, but I needed something finer to see the devil in the details. I implemented opentelemetry traces. I use Prometheus, Tempo, and Grafana to visualize. I like open source tools and am able to ask questions to the community and contribute.
+
+We use Tilt to spin up k8s locally. Application log vs execution trace side by side:
+![Monitoring Dashboard](side-by-side.png)
+
+- Errors and timeouts: ![Trace Errors](trace-errors.png)
+- Unreliable endpoints: ![CPU Usage](cpu-utilization.png)
+- Side by side comparison on a fast run vs a slow run: ![Network Performance](network-latency.png)
+
+breakdown and Locust load test
+![break down](break-down.png)
+
+Distributed tracing helped identify bottlenecks:
+![Distributed Tracing](distributed-tracing.png)
+
+Error rates dropped significantly:
+![Error Rates](trace-storage.png)
+I needed sampling and retention to reduce the Terrabytes of data used in traces.
+![trace ingestion breakdown by service](trace-ingestion.png)
 
 ## Identifying Bottlenecks
 
@@ -53,30 +75,7 @@ database calls:
 ![database calls](db-calls.png)
 We found by experiments that a connection pool of 20 works better compared to 1000, 100, and 10.
 
-### Monitoring and Observability
-
-Metrics gave a view of a broad sense of how system is doing, but I needed something finer to see the devil in the details. I implemented opentelemetry traces. I use Prometheus, Tempo, and Grafana to visualize. I like open source tools and am able to ask questions to the community and contribute.
-
-We use Tilt to spin up k8s locally. Application log vs execution trace side by side:
-![Monitoring Dashboard](side-by-side.png)
-
-- Errors and timeouts: ![Trace Errors](trace-errors.png)
-- Unreliable endpoints: ![CPU Usage](cpu-utilization.png)
-- Side by side comparison on a fast run vs a slow run: ![Network Performance](network-latency.png)
-
-breakdown and Locust load test
-![break down](break-down.png)
-
-Distributed tracing helped identify bottlenecks:
-![Distributed Tracing](distributed-tracing.png)
-
-Error rates dropped significantly:
-![Error Rates](trace-storage.png)
-I needed sampling and retention to reduce the Terrabytes of data used in traces.
-![trace ingestion breakdown by service](trace-ingestion.png)
-
 ## Results and Impact
-
 
 ### Cost Savings
 saving 100k in infra a month
