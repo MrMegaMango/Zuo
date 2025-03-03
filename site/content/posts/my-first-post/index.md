@@ -15,10 +15,8 @@ relative = true
 +++
 
 We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. Our simple QA takes about 2 minutes to finish.
+Though Amplitude is good for product/user analytics, it's now powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I need to do more in time series graphs like calculations, so I bring in Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.
 
-## Initial State and Challenges
-
-Here's where we started:
 ![Initial Setup](initial-setup.png)
 
 Our baseline metrics showed significant room for improvement:
