@@ -77,7 +77,7 @@ database calls:
 We found by experiments that a connection pool of 20 works better compared to 1000, 100, and 10.
 
 ### Python to Golang
-while python is a great prototyping language that is native to ML ecosystem, switching to Go can bring benefits post-protoyping stage.
+while python is a great prototyping language that is native to ML ecosystem, but it was really not performant enough for the post-protoyping stage.
 We carefully seperated Python ML logic from the rest of the software like api, business logic, db calls, and migrate them one by one to Go.
 
 
