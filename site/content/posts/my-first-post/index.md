@@ -17,6 +17,7 @@ relative = true
 In this post, I’ll walk you through how we transformed Samaya AI by boosting its performance by 80% and saving millions of dollars along the way.
 
 Samaya AI builds a question answering platform using document retrieval to avoid hallucination. At the start of this work, our basic question answering chatbot takes about 2 minutes to finish processing.
+Besides latency, scale is also a concern. Samaya is at a crucial junction of product market fit and user growth. We try to find low effort big gains, and then complex re-architectures to setup the system for the next couple of years.
 
 We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. 
 Though Amplitude is good for product/user analytics, it's not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals, or adding attribute to data points for filtering. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters.
@@ -52,7 +53,7 @@ Query understanding, document retrieval, and summarization.
 ## Performance Optimization Journey
 
 ### TensorRT
-I used Nvidia's TensorRT to convert our model in vLLM to be more performant.
+I use Nvidia's TensorRT to convert our model in vLLM to be more performant.
 
 ### Caching 
 I found that the redis cache calls were taking 500ms.
@@ -66,7 +67,7 @@ Similarly, key validation function could take way longer than it should.
 ![trace hub](trace-hub.png)
 
 ### Parallelization 
-I found many places where we are doing sequential operation where it could be running in parallel, like bm25 elastic search sparse retrieval vs pinecone vector dense retrieval, or text generation vs table generation. These parallelization cut some of the major latency factors in half. 
+We found many places where we are doing sequential operation where it could be running in parallel, like bm25 elastic search sparse retrieval vs pinecone vector dense retrieval, or text generation vs table generation. These parallelization cut some of the major latency factors in half. 
 ![retrieve tables](retrieve-tables.png)
 
 ### DB
@@ -74,6 +75,11 @@ latency is high to pinecone and mongodb when we send large batch of queries.
 database calls:
 ![database calls](db-calls.png)
 We found by experiments that a connection pool of 20 works better compared to 1000, 100, and 10.
+
+### Python to Golang
+while python is a great prototyping language that is native to ML ecosystem, switching to Go can bring benefits post-protoyping stage.
+We carefully seperated Python ML logic from the rest of the software like api, business logic, db calls, and migrate them one by one to Go.
+
 
 ## Results and Impact
 
