@@ -172,10 +172,10 @@
   </header>
   <div class="entry-content">
     <p>In this post, I’ll walk you through how we transformed Samaya AI by boosting its performance by 80% and saving millions of dollars along the way.
-Samaya AI builds a question answering platform using document retrieval to avoid hallucination. At the start of this work, our basic question answering chatbot takes about 2 minutes to finish processing.
-We began by taking a hard look at our existing system. My predecessor set up some Amplitude metrics. Though Amplitude is good for product/user analytics, it’s not powerful enough for profiling. After building some latency breakdown and p99 graphs, I start to worry that the push model of Amplitude python client would introduce more latency, and I wanted more functionalities in these time series graphs like doing arithmetic calculations between two signals, or adding attribute to data points for filtering. So I bring in self hosted Prometheus and Grafana to our infra, under a monitoring namespace in k8s for both prod and staging clusters. ...</p>
+Samaya AI builds a question answering platform using document retrieval to avoid hallucination. At the start of this work, our basic question answering chatbot takes about 2 minutes to finish processing. Besides latency, scale is also a concern. Samaya is at a crucial junction of product market fit and user growth. We try to find low effort big gains, and then complex re-architectures to setup the system for the next couple of years.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-25 22:05:54 +0000 UTC'>February 25, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;459 words&nbsp;·&nbsp;Zuo</footer>
+  <footer class="entry-footer"><span title='2025-02-25 22:05:54 +0000 UTC'>February 25, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;554 words&nbsp;·&nbsp;Zuo</footer>
   <a class="entry-link" aria-label="post link to How we speed up 80% of Samaya AI and saved millions of $$$" href="http://localhost:1313/posts/my-first-post/"></a>
 </article>
     </main>

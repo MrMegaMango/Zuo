@@ -143,21 +143,21 @@
 
 <article class="post-entry"> 
 <figure class="entry-cover">
-        <img loading="lazy" srcset="http://localhost:1313/posts/my-first-post/final-architecture_hu_6ddaed769e8e6c83.png 360w ,http://localhost:1313/posts/my-first-post/final-architecture_hu_4635d33b9de0d2da.png 480w ,http://localhost:1313/posts/my-first-post/final-architecture_hu_d44fe9d981909190.png 720w ,http://localhost:1313/posts/my-first-post/final-architecture.png 984w" 
-            sizes="(min-width: 768px) 720px, 100vw" src="http://localhost:1313/posts/my-first-post/final-architecture.png" alt="Final Architecture Overview" 
+        <img loading="lazy" srcset="http://localhost:1313/posts/my-first-post/slowest-query_hu_6ddaed769e8e6c83.png 360w ,http://localhost:1313/posts/my-first-post/slowest-query_hu_4635d33b9de0d2da.png 480w ,http://localhost:1313/posts/my-first-post/slowest-query_hu_d44fe9d981909190.png 720w ,http://localhost:1313/posts/my-first-post/slowest-query.png 984w" 
+            sizes="(min-width: 768px) 720px, 100vw" src="http://localhost:1313/posts/my-first-post/slowest-query.png" alt="Slowest query of the day" 
             width="984" height="859">
 </figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">How we sped up 80% of Samaya AI and saved millions
+    <h2 class="entry-hint-parent">How we speed up 80% of Samaya AI and saved millions of $$$
     </h2>
   </header>
   <div class="entry-content">
-    <p>We began by taking a hard look at our existing system. My predecessor had set up Amplitude metrics to monitor our simple question-answering bot—which, at the time, took nearly 2 minutes to complete a query. While Amplitude served well for product analytics, we soon discovered its potential (and limitations) in profiling our system performance.
-To get a clear picture, I built latency breakdowns and p99 graphs. I also grew concerned that the push model of the Amplitude Python client might introduce additional latency. To address these challenges, I integrated Prometheus and Grafana into our infrastructure—deploying them under a dedicated monitoring namespace in Kubernetes for both our production and staging clusters.
+    <p>In this post, I’ll walk you through how we transformed Samaya AI by boosting its performance by 80% and saving millions of dollars along the way.
+Samaya AI builds a question answering platform using document retrieval to avoid hallucination. At the start of this work, our basic question answering chatbot takes about 2 minutes to finish processing. Besides latency, scale is also a concern. Samaya is at a crucial junction of product market fit and user growth. We try to find low effort big gains, and then complex re-architectures to setup the system for the next couple of years.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-25 22:05:54 +0000 UTC'>February 25, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;350 words&nbsp;·&nbsp;Zuo</footer>
-  <a class="entry-link" aria-label="post link to How we sped up 80% of Samaya AI and saved millions" href="http://localhost:1313/posts/my-first-post/"></a>
+  <footer class="entry-footer"><span title='2025-02-25 22:05:54 +0000 UTC'>February 25, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;554 words&nbsp;·&nbsp;Zuo</footer>
+  <a class="entry-link" aria-label="post link to How we speed up 80% of Samaya AI and saved millions of $$$" href="http://localhost:1313/posts/my-first-post/"></a>
 </article>
     </main>
     
