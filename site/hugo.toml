@@ -30,9 +30,6 @@ UseHugoToc = true
 [params.homeInfoParams]
 Title = "Welcome 👋"
 Content = """
-Zuo made a website
-
-[also building a Svelte App](/app)
 """
 
 [[params.socialIcons]]
