@@ -167,6 +167,16 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/resume" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -259,7 +269,7 @@ Query understanding, document retrieval, and summarization.</p>
 Suspect the latency come from poor network call concurrency from Python.
 <img alt="long redis delay" loading="lazy" src="/posts/my-first-post/redis.png"></p>
 <p>This heatmap shows two hot zones for the simple getting encryption key operation, one near 16.8ms, the other near 537ms:
-<img alt="Fetch Encryption Key" loading="lazy" src="encryption-heatmap.png">
+<img alt="Fetch Encryption Key" loading="lazy" src="/posts/my-first-post/encryption-heatmap.png">
 Similarly, key validation function could take way longer than it should.
 <img alt="Bottleneck Analysis" loading="lazy" src="/posts/my-first-post/key-validation.png">
 <img alt="trace hub" loading="lazy" src="/posts/my-first-post/trace-hub.png"></p>

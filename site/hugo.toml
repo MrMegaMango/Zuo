@@ -8,6 +8,20 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 
+# Adding main menu
+[[menu.main]]
+identifier = "resume"
+name = "Resume"
+url = "/resume"
+weight = 10
+
+# Adding archive menu entry
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts"
+weight = 20
+
 [params]
 env = "production"
 title = "Zuo's personal blog"
