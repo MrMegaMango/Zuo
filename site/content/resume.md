@@ -6,6 +6,8 @@ ShowToc: false
 ShowBreadCrumbs: false
 ---
 
+[Download PDF Resume](/2025AugResumeZuo.pdf) 
+
 # Zuo Wang
 
 **Contact:** amangoworks@gmail.com | +1-757-633-7384
@@ -124,5 +126,3 @@ Minor: Mathematics and Economy
 - Language Exchange Site: https://echinglish.weebly.com/
 - Project Presentation: https://prezi.com/view/bhBhNzij1gost2k0CTnM/
 - Research Post: https://www.unknot.id/post/yes-you-can-spoof-behavioral-biometrics-with-adversarial-learning
-
-[Download PDF Resume](/2025AugResumeZuo.pdf) 
