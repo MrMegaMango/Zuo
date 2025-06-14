@@ -12,15 +12,16 @@ ShowBreadCrumbs: false
 
 **Contact:** amangoworks@gmail.com | +1-757-633-7384
 
-Cross-disciplinary technical breadth in Computer Science, Electrical Engineering, ML, Security, Compliance, and Infra.
-Experienced people leader, solid communication, love growing smart engineers. Friendly, honest, and genuine.
-Conducted dozens of algorithm and system design interview to identify and nurture top talents.
-Proven record in strategize and deliver reliable systems at scale through multi team collaborations.
+Staff level AI backend infra engineer. 6 years of professional experience. $10M business impact.
+Cross-disciplinary technical breadth in Software and Hardware Engineering, ML, Security, Product, and Infra
+Experienced people leader, fun to work with, appreciate smart engineers with low ego. Friendly, honest, and genuine
+Conducted dozens of algorithm and system design interviews
+Proven record in strategize and deliver reliable systems at scale through cross-team collaborations
 
 ## Tech Stack
 
-- **Languages:** 6 years of Golang; 5 years of Python; 1 year of C++
-- **Technologies:** GCP, AWS, k8s, ElasticSearch, MongoDB, Postgres, Redis, REST, gRPC, vLLM, Grafana, Opentelemetry, Cursor
+- **Languages:** Golang, Python, C++
+- **Technologies:** GCP, AWS, k8s, gRPC, graphQL, vLLM, Grafana, Opentelemetry, ElasticSearch, MongoDB, Postgres, Cursor
 - Strong desire to learn new tech at work
 
 ## Work Experience
@@ -28,24 +29,23 @@ Proven record in strategize and deliver reliable systems at scale through multi 
 ### Samaya AI, London
 **Member of Technical Staff** | *Jan 2024 - Current*
 
-- Work in areas of Information Retrieval, Knowledge Ingestion, Embedding, Chunking, LLMs, Agent Orchestration, Recall Precision, RAG, and AI Infrastructure
-- Integrated financial data source like Morgan Stanley Research, Crunchbase, Finnhub
-- Save half a million dollars in infrastructure cost by optimizing use of GCP, MongoDB, and Pinecone
-- 0-1 build product features like StockPicker, Templates, SubscribedReports, QueryDecomposition in weeks
-- Performance boost, decrease latency from 100 seconds to 10 seconds, scale infra from 10 user to 10k users
+- Architect Knowledge Ingestion Pipeline, Embedding Chunking strategy, Eval, RAG, and AI Infrastructure
+- 0-1 build product features like DeepResearch, WorkflowAgents, QueryDecomposition, StockPicker
+- Decrease time-to-first-token from 100 to 10 seconds (-90%), scale infra from 10 to 10k daily active user
+- Onboard customers from BlackRock, Citi, and Point72. Strategize pricing. Demo for our $43.5M series A
 - https://samaya.ai/about/
 
-### Tesla, Shanghai+Texas GigaFactory
-**Senior Software Engineer, High Voltage Manufacture Org** | *July 2022 – Jan 2024*
+### Tesla, Shanghai GigaFactory + Texas GigaFactory
+**Senior Software Engineer (manage a team of 7 people), High Voltage Manufacture Org** | *July 2022 – Jan 2024*
 
 - Responsible for high voltage system for Tesla Model 3, Y, S, X, Powerwall, Megapack, and SuperCharger
 - Oversee development on charger, tester, network conversion, eFuse, PLC controller, and C++ firmware
 - Iterate chip design for CyberTruck and Megapack under tight deadline (2.5 months) and heavy pressure
 - Create battery cell simulation for easier debugging and testing. Decouple software and hardware dev loop
-- Create and maintain system architecture, pipeline, dashboards, from lab to production, Berlin to Palo Alto
+- Design new factory software framework, pipeline, dashboards, from lab to production, Berlin to Palo Alto
 - Close collaboration with worldwide vendors including CATL, BYD, TI, COSMX, HYC, Pegatron, and Jabil. Often travel to their countries for design review, quality assurance, troubleshooting, and inspections
 - Answer questions and teach Manufacture, Process, and Quality teams in factory to enable them to do their own debugging and fault analysis. This helped making China battery production line 3x faster than USA line
-- Manage a team of 2 technicians, 1 software, 1 mechanical, and 1 electrical engineer
+- Manage a team of 2 technicians, 2 software, 1 mechanical, and 1 electrical engineer
 - Finish CyberTruck battery charger 4 weeks ahead of schedule
 - Bring up 50 new manufacture stations, maintain over 200 stations, handle $500k budget per year
 
@@ -56,7 +56,7 @@ Proven record in strategize and deliver reliable systems at scale through multi 
 - Rewrite tools like ldap cache, rate limiter, and deduper from Java, Typescript, and Python to Golang
 - On call and answer questions for a 99.99% availability internal PaaS hosting over 1400 of Atlassian services
 - Create instant generator for services with bells and whistles like k8s, SOX compliant, and CI/CD
-- Daily working with Splunk, SignalFX, Jira, Confluence, AWS S3, Dynamodb, Lambda, Postgres, Spinnaker
+- Tools: Splunk, SignalFX, Jira, Confluence, AWS S3, Dynamodb, Lambda, Postgres, Spinnaker
 
 ## Education
 
@@ -119,7 +119,7 @@ Minor: Mathematics and Economy
 ## Links
 
 - Personal Website: https://zuo.vercel.app/
-- LinkedIn: https://www.linkedin.com/in/zuo-wang-460a2190/
+- LinkedIn: https://www.linkedin.com/in/mrmightymango/
 - LeetCode: https://leetcode.com/mangoman/
 - GitHub: https://github.com/MrMegaMango
 - Research: http://behavior.isi.jhu.edu/people.html
