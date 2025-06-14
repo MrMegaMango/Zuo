@@ -6,7 +6,7 @@ ShowToc: false
 ShowBreadCrumbs: false
 ---
 
-[Download PDF Resume](/2025AugResumeZuo.pdf) 
+[Download PDF Resume](/2025NovResumeZuo.pdf) 
 
 # Zuo Wang
 
