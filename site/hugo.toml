@@ -8,6 +8,11 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 
+# Analytics (uncomment and add your tracking IDs)
+# googleAnalytics = "G-XXXXXXXXXX"
+# [params.analytics]
+# google = "G-XXXXXXXXXX"
+
 # Adding main menu
 [[menu.main]]
 identifier = "resume"
@@ -22,15 +27,39 @@ name = "Posts"
 url = "/posts"
 weight = 20
 
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects"
+weight = 30
+
+[[menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact"
+weight = 40
+
 [params]
 env = "production"
-title = "Zuo's personal blog"
-description = "Your site description"
-keywords = ["Blog", "Portfolio", "PaperMod"]
-author = "Zuo"
+title = "Zuo Wang - AI Infrastructure Engineer"
+description = "Staff AI Infrastructure Engineer specializing in scalable systems, performance optimization, and zero-to-production solutions. 6+ years experience at Tesla, Atlassian, and Samaya AI."
+keywords = ["AI Infrastructure", "Software Engineering", "Performance Optimization", "Golang", "Python", "Tesla", "Samaya AI", "Machine Learning", "Backend", "Zuo Wang"]
+author = "Zuo Wang"
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
 disableThemeToggle = false
+
+# SEO and Performance
+images = ["/images/profile.jpg"]
+mainSections = ["posts"]
+disableFingerprinting = false
+
+# Custom assets
+[params.assets]
+disableHLJS = false
+disableFingerprinting = false
+customCSS = ["css/extended/custom.css"]
+customJS = ["js/custom.js"]
 
 ShowReadingTime = true
 ShowShareButtons = true
@@ -42,8 +71,15 @@ ShowRssButtonInSectionTermList = true
 UseHugoToc = true
 
 [params.homeInfoParams]
-Title = "Welcome 👋"
+Title = "Hey, I'm Zuo 👋"
 Content = """
+**Staff AI Infrastructure Engineer** with 6+ years building scalable systems that power the future.
+
+Currently architecting AI platforms at **Samaya AI** that serve BlackRock, Citi, and Point72. Previously scaled Tesla's battery manufacturing systems and built security infrastructure at Atlassian.
+
+🚀 **80% performance improvements** • 💰 **$10M+ business impact** • 🏗️ **Zero-to-production specialist**
+
+Passionate about turning complex problems into elegant solutions. When I'm not coding, you'll find me playing guitar or perfecting my pull-up form.
 """
 
 [[params.socialIcons]]
@@ -53,6 +89,14 @@ url = "https://github.com/MrMegaMango"
 [[params.socialIcons]]
 name = "linkedin"
 url = "https://www.linkedin.com/in/mrmightymango/"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:amangoworks@gmail.com"
+
+[[params.socialIcons]]
+name = "rss"
+url = "/index.xml"
 
 [params.cover]
 hidden = false

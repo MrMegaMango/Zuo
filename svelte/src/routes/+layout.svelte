@@ -3,8 +3,14 @@
 	import '../app.css';
 	import { base } from '$app/paths';
 	import { goto } from '$app/navigation';
+	import { inject } from '@vercel/analytics';
+	import { onMount } from 'svelte';
 
 	let { children } = $props();
+
+	onMount(() => {
+		inject();
+	});
 
 	function goToHome() {
 		goto('/', { replaceState: true });
