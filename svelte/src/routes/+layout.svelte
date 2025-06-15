@@ -58,9 +58,7 @@
 		padding: 12px;
 	}
 
-	footer a {
-		font-weight: bold;
-	}
+
 
 	.back-button {
 		position: fixed;
