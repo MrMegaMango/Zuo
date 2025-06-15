@@ -109,7 +109,7 @@ Staff-level AI backend infrastructure engineer with **6+ years** of professional
 - Scaled infrastructure from 10 to **10,000 daily active users**
 
 **💼 Business Impact**:
-- Onboarded enterprise clients: **BlackRock, Citi, Point72**
+- Onboarded enterprise clients: **BlackRock, Citi, Point72, Morgan Stanley**
 - Contributed to pricing strategy and technical demos
 - Supported **$43.5M Series A** fundraising with technical excellence
 
