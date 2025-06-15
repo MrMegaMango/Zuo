@@ -2,8 +2,8 @@
 title: "Resume"
 url: "/resume"
 summary: "Zuo Wang's professional resume - Staff AI Infrastructure Engineer"
-ShowToc = true
-ShowBreadCrumbs = false
+ShowToc: true
+ShowBreadCrumbs: false
 ---
 
 <div class="resume-header">
