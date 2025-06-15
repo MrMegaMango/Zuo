@@ -90,14 +90,6 @@ url = "https://github.com/MrMegaMango"
 name = "linkedin"
 url = "https://www.linkedin.com/in/mrmightymango/"
 
-[[params.socialIcons]]
-name = "email"
-url = "mailto:amangoworks@gmail.com"
-
-[[params.socialIcons]]
-name = "rss"
-url = "/index.xml"
-
 [params.cover]
 hidden = false
 hiddenInList = false
