@@ -12,9 +12,6 @@ const config = {
     paths: {
       base: '/app',
       relative: false
-    },
-    files: {
-      assets: '../site/public'
     }
   }
 };
