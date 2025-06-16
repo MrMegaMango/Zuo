@@ -3,13 +3,16 @@
 	import '../app.css';
 	import { base } from '$app/paths';
 	import { goto } from '$app/navigation';
-	import { inject } from '@vercel/analytics';
 	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
 
 	let { children } = $props();
 
-	onMount(() => {
-		inject();
+	onMount(async () => {
+		if (browser) {
+			const { inject } = await import('@vercel/analytics');
+			inject();
+		}
 	});
 
 	function goToHome() {
@@ -57,8 +60,6 @@
 		align-items: center;
 		padding: 12px;
 	}
-
-
 
 	.back-button {
 		position: fixed;
