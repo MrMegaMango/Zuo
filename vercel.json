@@ -1,4 +1,3 @@
 {
-    "buildCommand": "cd svelte && npm install && npm run build",
-    "outputDirectory": "svelte/.svelte-kit/vercel/output"
+    "buildCommand": "cd svelte && npm install && npm run build"
 }
