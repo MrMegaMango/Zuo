@@ -10,7 +10,7 @@ const config = {
       runtime: 'nodejs20.x'
     }),
     paths: {
-      base: '/app',
+      base: '',
       relative: false
     }
   }
