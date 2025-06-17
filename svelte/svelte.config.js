@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -7,10 +7,11 @@ const config = {
 
   kit: {
     adapter: adapter({
-      runtime: 'edge',
-      split: false,
-      isr: false,
-      regions: ['iad1']
+      pages: 'build',
+      assets: 'build',
+      fallback: 'app.html',
+      precompress: false,
+      strict: true
     }),
     paths: {
       base: '/app',
@@ -18,7 +19,8 @@ const config = {
     },
     prerender: {
       handleHttpError: 'warn',
-      handleMissingId: 'warn'
+      handleMissingId: 'warn',
+      entries: ['*']
     }
   }
 };
