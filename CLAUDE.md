@@ -11,6 +11,8 @@ This is a hybrid personal website that combines:
 
 The site serves Zuo Wang's professional portfolio, blog posts, and interactive applications. The Hugo site handles the main content (blog, resume, static pages) while SvelteKit powers dynamic features like games and interactive demos.
 
+**Note**: The SvelteKit adapter uses `split: false` to generate a single serverless function instead of multiple functions, which is required for the Vercel Hobby plan (12 function limit).
+
 ## Build System
 
 ### Main Build Command

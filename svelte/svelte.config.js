@@ -7,7 +7,8 @@ const config = {
 
   kit: {
     adapter: adapter({
-      runtime: 'nodejs20.x'
+      runtime: 'nodejs20.x',
+      split: false
     }),
     paths: {
       base: '/app',
