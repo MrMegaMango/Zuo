@@ -4,6 +4,9 @@ mv hugo /usr/local/bin/
 cd svelte
 npm install
 npm run build
+# Move the Vercel output to the root
+cp -r .vercel/output/* ../.vercel/output/
 cd ../site
 hugo --gc --minify
-cp -r ../svelte/.svelte-kit/output/server/. ../api/ 
+# Copy Hugo output to static directory in Vercel output
+cp -r public/* ../.vercel/output/static/
