@@ -1,31 +1,51 @@
 <script lang="ts">
-	import { enhance } from '$app/forms';
 	import { confetti } from '@neoconfetti/svelte';
-	import type { ActionData, PageData } from './$types';
 	import { MediaQuery } from 'svelte/reactivity';
 	import { base } from '$app/paths';
+	import { browser } from '$app/environment';
+	import { Game } from './game';
+	import type { PageData } from './$types';
 
 	interface Props {
 		data: PageData;
-		form: ActionData;
 	}
-	let { data, form = $bindable() }: Props = $props();
+	let { data }: Props = $props();
 
 	/** Whether the user prefers reduced motion */
 	const reducedMotion = new MediaQuery('(prefers-reduced-motion: reduce)');
 
+	// Client-side game state
+	let game = $state<Game>();
+	let badGuess = $state(false);
+
+	// Initialize game state
+	$effect(() => {
+		if (browser) {
+			const savedGame = localStorage.getItem('sverdle');
+			game = new Game(savedGame || undefined);
+		}
+	});
+
+	// Save game state to localStorage whenever it changes
+	$effect(() => {
+		if (browser && game) {
+			localStorage.setItem('sverdle', game.toString());
+		}
+	});
+
 	/** Whether or not the user has won */
-	let won = $derived(data.answers.at(-1) === 'xxxxx');
+	let won = $derived(game?.answers.at(-1) === 'xxxxx');
 
 	/** The index of the current guess */
-	let i = $derived(won ? -1 : data.answers.length);
+	let i = $derived(won ? -1 : (game?.answers.length || 0));
 
 	/** The current guess */
-	// svelte-ignore state_referenced_locally
-	let currentGuess = $state(data.guesses[i] || '');
+	let currentGuess = $state('');
 
 	$effect(() => {
-		currentGuess = data.guesses[i] || '';
+		if (game) {
+			currentGuess = game.guesses[i] || '';
+		}
 	});
 
 	/** Whether the current guess can be submitted */
@@ -42,52 +62,93 @@
 		 * used for adding text for assistive technology (e.g. screen readers)
 		 */
 		let description: Record<string, string> = {};
-		data.answers.forEach((answer, i) => {
-			const guess = data.guesses[i];
-			for (let i = 0; i < 5; i += 1) {
-				const letter = guess[i];
-				if (answer[i] === 'x') {
-					classnames[letter] = 'exact';
-					description[letter] = 'correct';
-				} else if (!classnames[letter]) {
-					classnames[letter] = answer[i] === 'c' ? 'close' : 'missing';
-					description[letter] = answer[i] === 'c' ? 'present' : 'absent';
+		if (game) {
+			game.answers.forEach((answer: string, answerIndex: number) => {
+				const guess = game!.guesses[answerIndex];
+				for (let letterIndex = 0; letterIndex < 5; letterIndex += 1) {
+					const letter = guess[letterIndex];
+					if (answer[letterIndex] === 'x') {
+						classnames[letter] = 'exact';
+						description[letter] = 'correct';
+					} else if (!classnames[letter]) {
+						classnames[letter] = answer[letterIndex] === 'c' ? 'close' : 'missing';
+						description[letter] = answer[letterIndex] === 'c' ? 'present' : 'absent';
+					}
 				}
-			}
-		});
+			});
+		}
 		return { classnames, description };
 	});
 
 	/**
-	 * Modify the game state without making a trip to the server,
-	 * if client-side JavaScript is enabled
+	 * Update the current guess based on key input
 	 */
-	function update(event: MouseEvent) {
-		event.preventDefault();
-		const key = (event.target as HTMLButtonElement).getAttribute(
-			'data-key'
-		);
+	function updateGuess(key: string) {
+		if (!game) return;
 
 		if (key === 'backspace') {
 			currentGuess = currentGuess.slice(0, -1);
-			if (form?.badGuess) form.badGuess = false;
+			badGuess = false;
 		} else if (currentGuess.length < 5) {
 			currentGuess += key;
+		}
+
+		// Update the game state
+		const currentIndex = game.answers.length;
+		game.guesses[currentIndex] = currentGuess;
+	}
+
+
+
+	/**
+	 * Submit the current guess
+	 */
+	function submitGuess() {
+		if (!game || !submittable) return;
+
+		const guess = currentGuess.split('');
+		if (game.enter(guess)) {
+			currentGuess = '';
+			badGuess = false;
+		} else {
+			badGuess = true;
 		}
 	}
 
 	/**
-	 * Trigger form logic in response to a keydown event, so that
-	 * desktop users can use the keyboard to play the game
+	 * Restart the game
+	 */
+	function restartGame() {
+		if (browser) {
+			localStorage.removeItem('sverdle');
+			game = new Game();
+			currentGuess = '';
+			badGuess = false;
+		}
+	}
+
+	/**
+	 * Handle keyboard input for desktop users
 	 */
 	function keydown(event: KeyboardEvent) {
 		if (event.metaKey) return;
 
-		if (event.key === 'Enter' && !submittable) return;
+		if (event.key === 'Enter') {
+			if (submittable) {
+				submitGuess();
+			}
+			return;
+		}
 
-		document
-			.querySelector(`[data-key="${event.key}" i]`)
-			?.dispatchEvent(new MouseEvent('click', { cancelable: true, bubbles: true }));
+		if (event.key === 'Backspace') {
+			updateGuess('backspace');
+			return;
+		}
+
+		// Handle letter keys
+		if (/^[a-zA-Z]$/.test(event.key)) {
+			updateGuess(event.key.toLowerCase());
+		}
 	}
 </script>
 
@@ -100,26 +161,17 @@
 
 <h1 class="visually-hidden">Sverdle</h1>
 
-<form
-	method="post"
-	action="{base}/sverdle?/enter"
-	use:enhance={() => {
-		// prevent default callback from resetting the form
-		return ({ update }) => {
-			update({ reset: false });
-		};
-	}}
->
+<div class="game-container">
 	<a class="how-to-play" href="{base}/sverdle/how-to-play">How to play</a>
 
-	<div class="grid" class:playing={!won} class:bad-guess={form?.badGuess}>
+	<div class="grid" class:playing={!won} class:bad-guess={badGuess}>
 		{#each Array.from(Array(6).keys()) as row (row)}
 			{@const current = row === i}
 			<h2 class="visually-hidden">Row {row + 1}</h2>
 			<div class="row" class:current>
 				{#each Array.from(Array(5).keys()) as column (column)}
-					{@const guess = current ? currentGuess : data.guesses[row]}
-					{@const answer = data.answers[row]?.[column]}
+					{@const guess = current ? currentGuess : (game?.guesses[row] || '')}
+					{@const answer = game?.answers[row]?.[column]}
 					{@const value = guess?.[column] ?? ''}
 					{@const selected = current && column === guess.length}
 					{@const exact = answer === 'x'}
@@ -138,7 +190,6 @@
 								empty
 							{/if}
 						</span>
-						<input name="guess" disabled={!current} type="hidden" {value} />
 					</div>
 				{/each}
 			</div>
@@ -146,23 +197,20 @@
 	</div>
 
 	<div class="controls">
-		{#if won || data.answers.length >= 6}
-			{#if !won && data.answer}
-				<p>the answer was "{data.answer}"</p>
+		{#if won || (game?.answers.length || 0) >= 6}
+			{#if !won && game?.answer}
+				<p>the answer was "{game.answer}"</p>
 			{/if}
-			<button data-key="enter" class="restart selected" formaction="?/restart">
+			<button data-key="enter" class="restart selected" onclick={restartGame}>
 				{won ? 'you won :)' : `game over :(`} play again?
 			</button>
 		{:else}
 			<div class="keyboard">
-				<button data-key="enter" class:selected={submittable} disabled={!submittable}>enter</button>
+				<button data-key="enter" class:selected={submittable} disabled={!submittable} onclick={submitGuess}>enter</button>
 
 				<button
-					onclick={update}
+					onclick={() => updateGuess('backspace')}
 					data-key="backspace"
-					formaction="?/update"
-					name="key"
-					value="backspace"
 				>
 					back
 				</button>
@@ -171,13 +219,10 @@
 					<div class="row">
 						{#each row as letter}
 							<button
-								onclick={update}
+								onclick={() => updateGuess(letter)}
 								data-key={letter}
 								class={classnames[letter]}
 								disabled={submittable}
-								formaction="?/update"
-								name="key"
-								value={letter}
 								aria-label="{letter} {description[letter] || ''}"
 							>
 								{letter}
@@ -188,7 +233,7 @@
 			</div>
 		{/if}
 	</div>
-</form>
+</div>
 
 {#if won}
 	<div
@@ -204,7 +249,7 @@
 {/if}
 
 <style>
-	form {
+	.game-container {
 		width: 100%;
 		height: 100%;
 		display: flex;

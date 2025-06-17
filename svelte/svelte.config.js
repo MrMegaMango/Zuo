@@ -8,11 +8,17 @@ const config = {
   kit: {
     adapter: adapter({
       runtime: 'edge',
-      split: false
+      split: false,
+      isr: false,
+      regions: ['iad1']
     }),
     paths: {
       base: '/app',
       relative: false
+    },
+    prerender: {
+      handleHttpError: 'warn',
+      handleMissingId: 'warn'
     }
   }
 };
