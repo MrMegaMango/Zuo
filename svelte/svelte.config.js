@@ -8,7 +8,7 @@ const config = {
   kit: {
     adapter: adapter({
       runtime: 'edge',
-      split: true
+      split: false
     }),
     paths: {
       base: '/app',
