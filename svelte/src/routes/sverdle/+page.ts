@@ -2,13 +2,21 @@ import { browser } from '$app/environment';
 import { Game } from './game';
 import type { PageLoad } from './$types';
 
+// Force server-side rendering
+export const prerender = false;
+export const ssr = true;
+
 export const load = (({ url }) => {
+	// Always require server-side rendering for this route
+	const timestamp = new Date().toISOString();
+	
 	if (!browser) {
-		// Return empty state for SSR
+		// Return server-side state
 		return {
 			guesses: [],
 			answers: [],
-			answer: null
+			answer: null,
+			serverTimestamp: timestamp
 		};
 	}
 
@@ -31,6 +39,7 @@ export const load = (({ url }) => {
 		/**
 		 * The correct answer, revealed if the game is over
 		 */
-		answer: game.answers.length >= 6 ? game.answer : null
+		answer: game.answers.length >= 6 ? game.answer : null,
+		serverTimestamp: timestamp
 	};
 }) satisfies PageLoad;
