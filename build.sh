@@ -18,6 +18,22 @@ mkdir -p .vercel/output/static
 # Copy Hugo output to Vercel static directory (root site)
 cp -r site/public/* .vercel/output/static/
 
+# Create a proper Vercel Build Output API configuration
+cat > .vercel/output/config.json << 'EOF'
+{
+  "version": 3,
+  "routes": [
+    {
+      "src": "/app/(.*)",
+      "dest": "/app/$1"
+    },
+    {
+      "handle": "filesystem"
+    }
+  ]
+}
+EOF
+
 # Verify the build output structure
 echo "Build completed successfully!"
 echo "Vercel output structure:"
