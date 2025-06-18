@@ -18,7 +18,9 @@ mkdir -p .vercel/output/static
 # Copy Hugo output to Vercel static directory (root site)
 cp -r site/public/* .vercel/output/static/
 
-# Vercel adapter already created .vercel/output/ with:
-# - config.json (routing configuration)  
-# - functions/ (single serverless function)
-# - static/app/ (SvelteKit static assets)
+# Verify the build output structure
+echo "Build completed successfully!"
+echo "Vercel output structure:"
+ls -la .vercel/output/
+echo "Static files:"
+ls -la .vercel/output/static/ | head -10
