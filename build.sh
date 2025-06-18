@@ -12,6 +12,9 @@ cd site
 hugo --gc --minify
 cd ..
 
+# Ensure Vercel output directory exists
+mkdir -p .vercel/output/static
+
 # Copy Hugo output to Vercel static directory (root site)
 cp -r site/public/* .vercel/output/static/
 
