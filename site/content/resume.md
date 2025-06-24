@@ -12,15 +12,15 @@ ShowBreadCrumbs: false
 ## Staff AI Infrastructure Engineer
 
 <div class="contact-info">
-📧 **amangoworks@gmail.com** | 📱 **+1-757-633-7384** | 🌍 **London, UK**
+Email: amangoworks@gmail.com | Phone: +1-757-633-7384 | Location: San Diego, US (link to world map)
 </div>
 
 <div class="resume-summary">
-Staff-level AI backend infrastructure engineer with **6+ years** of professional experience and **$10M+ business impact**. Cross-disciplinary expertise in Software & Hardware Engineering, ML, Security, Product, and Infrastructure. Proven track record in strategizing and delivering reliable systems at scale through cross-team collaboration.
+Staff-level AI Infrastructure Engineer with **6+ years** of experience delivering scalable systems and **$10M+ business impact**. Expertise spans Software & Hardware Engineering, Machine Learning, Security, Product Development, and Cloud Infrastructure. Proven track record of leading cross-functional teams and architecting enterprise-grade solutions from concept to production.
 
-**Leadership**: Experienced people leader who appreciates smart engineers with low ego  
-**Interviewing**: Conducted dozens of algorithm and system design interviews  
-**Personality**: Friendly, honest, genuine, and fun to work with
+**Technical Leadership:** Led teams of 7+ engineers across multiple disciplines  
+**Interview Experience:** Conducted 50+ technical interviews for algorithm and system design roles  
+**Core Values:** Collaborative leadership style focused on technical excellence and team growth
 </div>
 
 <a href="/2025NovResumeZuo.pdf" class="custom-button download-btn" download>📄 Download PDF Resume</a>
@@ -29,63 +29,68 @@ Staff-level AI backend infrastructure engineer with **6+ years** of professional
 
 ---
 
-## 🛠️ **Tech Stack**
+## **Technical Expertise**
 
 <div class="tech-section">
 
 <div class="tech-category">
-<h3>Languages</h3>
+<h3>Programming Languages</h3>
 <div class="tech-stack">
-  <span class="tech-tag">Golang</span>
+  <span class="tech-tag">Go</span>
   <span class="tech-tag">Python</span>
   <span class="tech-tag">C++</span>
+  <span class="tech-tag">TypeScript</span>
+  <span class="tech-tag">Java</span>
 </div>
 </div>
 
 <div class="tech-category">
-<h3>Cloud & Infrastructure</h3>
+<h3>Cloud Platforms & Infrastructure</h3>
 <div class="tech-stack">
-  <span class="tech-tag">GCP</span>
   <span class="tech-tag">AWS</span>
+  <span class="tech-tag">GCP</span>
   <span class="tech-tag">Kubernetes</span>
-  <span class="tech-tag">gRPC</span>
-  <span class="tech-tag">GraphQL</span>
+  <span class="tech-tag">Docker</span>
+  <span class="tech-tag">Terraform</span>
 </div>
 </div>
 
 <div class="tech-category">
-<h3>AI & ML</h3>
+<h3>AI/ML & Data Systems</h3>
 <div class="tech-stack">
   <span class="tech-tag">vLLM</span>
   <span class="tech-tag">TensorRT</span>
-  <span class="tech-tag">RAG</span>
+  <span class="tech-tag">RAG Systems</span>
   <span class="tech-tag">Vector Databases</span>
+  <span class="tech-tag">PyTorch</span>
 </div>
 </div>
 
 <div class="tech-category">
-<h3>Monitoring & Observability</h3>
+<h3>Databases & Storage</h3>
+<div class="tech-stack">
+  <span class="tech-tag">PostgreSQL</span>
+  <span class="tech-tag">MongoDB</span>
+  <span class="tech-tag">ElasticSearch</span>
+  <span class="tech-tag">Redis</span>
+  <span class="tech-tag">DynamoDB</span>
+</div>
+</div>
+
+<div class="tech-category">
+<h3>Observability & Monitoring</h3>
 <div class="tech-stack">
   <span class="tech-tag">Grafana</span>
   <span class="tech-tag">Prometheus</span>
   <span class="tech-tag">OpenTelemetry</span>
-  <span class="tech-tag">Tempo</span>
-</div>
-</div>
-
-<div class="tech-category">
-<h3>Databases</h3>
-<div class="tech-stack">
-  <span class="tech-tag">MongoDB</span>
-  <span class="tech-tag">PostgreSQL</span>
-  <span class="tech-tag">ElasticSearch</span>
-  <span class="tech-tag">Redis</span>
+  <span class="tech-tag">Datadog</span>
+  <span class="tech-tag">Splunk</span>
 </div>
 </div>
 
 </div>
 
-**🎯 Always eager to learn new technologies at work**
+**Continuous Learning:** Passionate about adopting emerging technologies to solve complex business challenges
 
 ---
 
@@ -99,16 +104,16 @@ Staff-level AI backend infrastructure engineer with **6+ years** of professional
 
 <div class="experience-card">
 
-**🎯 Mission**: Scale AI question-answering platform from prototype to enterprise-ready system
+**Mission:** Scale AI question-answering platform from prototype to enterprise-ready system serving major financial institutions
 
-**🔧 Technical Achievements**:
+**Technical Achievements:**
 - Architected Knowledge Ingestion Pipeline with advanced embedding & chunking strategies
 - Built comprehensive RAG (Retrieval-Augmented Generation) infrastructure for enterprise clients
 - 0-1 development of product features: DeepResearch, WorkflowAgents, QueryDecomposition, StockPicker
 - **90% performance improvement**: Reduced time-to-first-token from 100s to 10s
 - Scaled infrastructure from 10 to **10,000 daily active users**
 
-**💼 Business Impact**:
+**Business Impact:**
 - Onboarded enterprise clients: **BlackRock, Citi, Point72, Morgan Stanley**
 - Contributed to pricing strategy and technical demos
 - Supported **$43.5M Series A** fundraising with technical excellence
@@ -125,22 +130,22 @@ Staff-level AI backend infrastructure engineer with **6+ years** of professional
 
 <div class="experience-card">
 
-**🎯 Mission**: Lead high-voltage systems development for Tesla's entire product line
+**Mission:** Lead high-voltage battery systems development across Tesla's complete vehicle and energy product portfolio
 
-**🔧 Technical Achievements**:
+**Technical Achievements:**
 - Responsible for HV systems: Model 3/Y/S/X, Powerwall, Megapack, SuperCharger
 - Designed and implemented C++ firmware for CyberTruck and Megapack systems
 - Created battery cell simulation framework, decoupling software/hardware development cycles
 - Built comprehensive factory software pipeline connecting lab-to-production globally
 - Architected manufacturing framework deployed from Berlin to Palo Alto
 
-**👥 Leadership Impact**:
+**Leadership & Management:**
 - **Managed team of 7 engineers**: 2 technicians, 2 software, 1 mechanical, 1 electrical
 - **Delivered CyberTruck battery charger 4 weeks ahead of schedule**
 - Made China battery production line **3x faster** than USA equivalent through knowledge transfer
 - Managed **$500k annual budget** and 200+ production stations
 
-**🌍 Global Collaboration**:
+**Global Operations:**
 - Worked with vendors: CATL, BYD, TI, COSMX, HYC, Pegatron, Jabil
 - International travel for design reviews, quality assurance, and troubleshooting
 
@@ -154,26 +159,26 @@ Staff-level AI backend infrastructure engineer with **6+ years** of professional
 
 <div class="experience-card">
 
-**🎯 Mission**: Build secure, scalable infrastructure for 1,400+ Atlassian microservices
+**Mission:** Architect and maintain secure, scalable infrastructure supporting 1,400+ microservices across Atlassian's cloud platform
 
-**🔧 Technical Achievements**:
+**Technical Achievements:**
 - Developed critical auth modules for all inter-service communication
 - Led language migration: Java/TypeScript/Python → Golang for performance-critical services
 - Built instant service generator with Kubernetes, SOX compliance, and CI/CD integration
 - Created enterprise-grade rate limiting and deduplication systems
 
-**📊 Operational Excellence**:
+**Operational Excellence:**
 - Maintained **99.99% availability** SLA for internal PaaS
 - On-call support for critical infrastructure serving millions of users
 - Improved service generation time from hours to minutes
 
-**🛠️ Tools & Technologies**: Splunk, SignalFX, Jira, Confluence, AWS S3, DynamoDB, Lambda, PostgreSQL, Spinnaker
+**Key Technologies:** Splunk, SignalFX, Jira, Confluence, AWS (S3, DynamoDB, Lambda), PostgreSQL, Spinnaker, Kubernetes
 
 </div>
 
 ---
 
-## 🎓 **Education**
+## **Education**
 
 <div class="education-grid">
 
@@ -201,58 +206,64 @@ Staff-level AI backend infrastructure engineer with **6+ years** of professional
 
 ---
 
-## 🚀 **Key Projects & Research**
+## **Notable Projects & Research**
 
-### **🔬 Research Projects**
+### **Research Experience**
 
 <div class="project-showcase">
 
 <div class="project-item">
 <h4>**Behavioral Biometrics Security Research** - Unknot.id</h4>
-<div class="project-meta">*Aug-Dec 2019 | Security Researcher Intern*</div>
-- Implemented black-box adversarial attacks against biometric authentication on Android
-- Developed shadow model attacks requiring <1000 queries
-- Hardened LSTM models using CleverHans framework
+<div class="project-meta">*Security Research Intern | Aug-Dec 2019*</div>
+- Researched and implemented adversarial attacks against Android biometric authentication systems
+- Developed efficient shadow model attacks requiring fewer than 1,000 queries to compromise security
+- Applied defensive hardening techniques to LSTM models using the CleverHans adversarial learning framework
+- Published research findings on behavioral biometric vulnerabilities
 🔗 [Research Publication](https://www.unknot.id/post/yes-you-can-spoof-behavioral-biometrics-with-adversarial-learning)
 </div>
 
 <div class="project-item">
 <h4>**Cognitive Security Modeling** - Johns Hopkins University</h4>
-<div class="project-meta">*Jan-Aug 2019 | Computer Science Department*</div>
-- Built computational models simulating human security decision-making in Python
-- Implemented Instance-Based Learning Theory and ACT-R memory chunk activation
-- Analyzed 40GB+ of behavioral data for security research
+<div class="project-meta">*Graduate Research Assistant | Jan-Aug 2019*</div>
+- Developed computational models in Python to simulate human security decision-making processes
+- Implemented advanced cognitive architectures including Instance-Based Learning Theory and ACT-R memory systems
+- Processed and analyzed 40GB+ of behavioral datasets to understand security-related cognitive patterns
+- Contributed to interdisciplinary research bridging computer science and behavioral psychology
 🔗 [Research Profile](http://behavior.isi.jhu.edu/people.html)
 </div>
 
 </div>
 
-### **💻 Technical Projects**
+### **Technical Projects**
 
 <div class="project-showcase">
 
 <div class="project-item">
 <h4>**Agemo Execution Dashboard**</h4>
-- Full-stack web application for execution history visualization
-- Built with Node.js and Shadcn for modern UI components
+- Developed full-stack web application for real-time execution history visualization and analytics
+- Architected modern frontend using Node.js backend with Shadcn UI component library
+- Implemented responsive data visualization for improved operational insights
 </div>
 
 <div class="project-item">
 <h4>**Rippling Global Expansion Framework**</h4>
-- Developed payroll product expansion using Python Django + MongoDB + React
-- Enabled international payroll processing capabilities
+- Architected international payroll expansion system using Python Django, MongoDB, and React
+- Designed scalable backend infrastructure to support multi-country payroll processing
+- Enabled Rippling's expansion into new geographic markets through localized payroll solutions
 </div>
 
 <div class="project-item">
-<h4>**Military Drone System** - U.S. Army</h4>
-- Created drone drop system for National Training Center and Joint Readiness Training Center
-- 3D CAD design, 3D printing, and Arduino microprocessor programming
+<h4>**Military Drone System** - U.S. Army Contract</h4>
+- Designed and manufactured drone-based supply drop system for military training operations
+- Utilized 3D CAD design, additive manufacturing, and Arduino-based control systems
+- Deployed at National Training Center and Joint Readiness Training Center for operational use
 </div>
 
 <div class="project-item">
-<h4>**Gaming Platform - Battle Map**</h4>
-- Multiplayer gaming platform with real-time interactions
-- Full-stack development with modern web technologies
+<h4>**Battle Map Gaming Platform**</h4>
+- Built real-time multiplayer gaming platform with WebSocket-based interactions
+- Implemented full-stack architecture using modern web technologies for scalable gameplay
+- Deployed cloud-hosted solution with real-time synchronization capabilities
 🔗 [Live Demo](https://battle-map-344101.wl.r.appspot.com/)
 </div>
 
@@ -260,12 +271,12 @@ Staff-level AI backend infrastructure engineer with **6+ years** of professional
 
 ---
 
-## 🏆 **Competitive Programming & Achievements**
+## **Professional Achievements**
 
 <div class="achievements-grid">
 
 <div class="achievement-card">
-<h3>🏅 LeetCode Master</h3>
+<h3>Competitive Programming</h3>
 <div class="stats">
 - **1000+ problems solved**
 - Contest rating: **1460 → 2109** (7 months)
@@ -275,7 +286,7 @@ Staff-level AI backend infrastructure engineer with **6+ years** of professional
 </div>
 
 <div class="achievement-card">
-<h3>💼 Professional Impact</h3>
+<h3>Business Impact Metrics</h3>
 <div class="stats">
 - **$10M+ business impact**
 - **80% performance improvements**
@@ -287,7 +298,7 @@ Staff-level AI backend infrastructure engineer with **6+ years** of professional
 
 ---
 
-## 🎯 **Security & Vulnerability Research**
+## **Security Research & Cybersecurity**
 
 <div class="security-projects">
 
@@ -301,24 +312,24 @@ Staff-level AI backend infrastructure engineer with **6+ years** of professional
 
 ---
 
-## 🎸 **Personal Interests**
+## **Additional Interests**
 
 <div class="interests-grid">
 
-**🎮 Gaming & Development**
+**Gaming & Software Development**
 - Gaming platform development
 - Top 0.3% League of Legends player
 
-**🎵 Music**
+**Music & Performance**
 - Guitar player with live concert experience
 - University carillon society member
 
-**🏃‍♂️ Sports & Fitness**
+**Athletics & Fitness**
 - Standup paddleboard enthusiast
 - Amateur boxing
 - 10+ pull-ups personal record
 
-**🔧 DIY Electronics**
+**Electronics & Hardware**
 - Headphone amplifier design
 - Custom PC builds
 - Automotive electronics
@@ -327,7 +338,7 @@ Staff-level AI backend infrastructure engineer with **6+ years** of professional
 
 ---
 
-## 🔗 **Links & References**
+## **Professional Links**
 
 <div class="links-section">
 
