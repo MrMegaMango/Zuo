@@ -2,6 +2,11 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Decision Making
+- Proceed directly with normal development tasks without asking for validation
+- Only ask for human confirmation on truly destructive operations (deleting entire codebases, modifying production secrets, mass deletions)
+- User has git safety nets (git stash, git checkout) to revert changes if needed
+
 ## Project Architecture
 
 This is a hybrid portfolio website combining Hugo (static site generator) and SvelteKit. The site consists of:

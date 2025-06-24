@@ -1,1 +1,22 @@
-.vercel
+# Build outputs - generated files
+.svelte-kit/
+build/
+node_modules/
+package-lock.json
+
+# Hugo generated
+site/public/
+site/resources/_gen/
+site/static/app/
+
+# Vercel deployment artifacts  
+.vercel/
+
+# OS/Editor files
+.DS_Store
+*.log
+.env.local
+.env
+
+# Claude Code
+.claude/

@@ -1,4 +1,8 @@
 #!/bin/bash
+set -e
+
+# Default to development mode
+MODE=${1:-dev}
 
 # Clean previous builds
 rm -rf svelte/build
@@ -9,12 +13,25 @@ cd svelte
 npm install
 npm run build
 
-# Create the app directory in Hugo's static folder if it doesn't exist
+# Copy SvelteKit output to Hugo static directory
 mkdir -p ../site/static/app
 
-# Copy the built Svelte app to Hugo's static directory
-cp -r build/* ../site/static/app/
+# Copy client assets
+cp -r .svelte-kit/output/client/* ../site/static/app/
 
-# Build Hugo site
+# Copy prerendered HTML files
+find .svelte-kit/output/prerendered/pages -name '*.html' | while read file; do
+    relpath=$(realpath --relative-to=.svelte-kit/output/prerendered/pages "$file")
+    mkdir -p "../site/static/app/$(dirname "$relpath")"
+    cp "$file" "../site/static/app/$relpath"
+done
+
+# Build Hugo site based on mode
 cd ../site
-hugo server 
+if [ "$MODE" = "prod" ]; then
+    echo "Building for production..."
+    hugo --gc --minify
+else
+    echo "Starting development server..."
+    hugo server
+fi 
