@@ -1,4 +1,8 @@
 #!/bin/bash
+set -e
+
+# Default to development mode
+MODE=${1:-dev}
 
 # Clean previous builds
 rm -rf svelte/build
@@ -9,32 +13,25 @@ cd svelte
 npm install
 npm run build
 
-# Create the app directory in Hugo's static folder if it doesn't exist
+# Copy SvelteKit output to Hugo static directory
 mkdir -p ../site/static/app
 
-# Copy the client assets (JS, CSS, etc.)
-if [ -d ".svelte-kit/output/client" ]; then
-    cp -r .svelte-kit/output/client/* ../site/static/app/
-fi
+# Copy client assets
+cp -r .svelte-kit/output/client/* ../site/static/app/
 
-# Copy prerendered HTML files to the app directory
-if [ -d ".svelte-kit/output/prerendered/pages" ]; then
-    # Copy index.html to the app root
-    if [ -f ".svelte-kit/output/prerendered/pages/index.html" ]; then
-        cp .svelte-kit/output/prerendered/pages/index.html ../site/static/app/
-    fi
-    
-    # Copy other pages (about.html, world-map.html, etc.)
-    find .svelte-kit/output/prerendered/pages -name "*.html" -not -name "index.html" | while read file; do
-        # Get relative path from pages directory
-        relpath=$(realpath --relative-to=.svelte-kit/output/prerendered/pages "$file")
-        # Create directory structure if needed
-        mkdir -p "../site/static/app/$(dirname "$relpath")"
-        # Copy the file
-        cp "$file" "../site/static/app/$relpath"
-    done
-fi
+# Copy prerendered HTML files
+find .svelte-kit/output/prerendered/pages -name '*.html' | while read file; do
+    relpath=$(realpath --relative-to=.svelte-kit/output/prerendered/pages "$file")
+    mkdir -p "../site/static/app/$(dirname "$relpath")"
+    cp "$file" "../site/static/app/$relpath"
+done
 
-# Build Hugo site
+# Build Hugo site based on mode
 cd ../site
-hugo server 
+if [ "$MODE" = "prod" ]; then
+    echo "Building for production..."
+    hugo --gc --minify
+else
+    echo "Starting development server..."
+    hugo server
+fi 
