@@ -1,25 +1,4 @@
 {
     "buildCommand": "curl -L https://github.com/gohugoio/hugo/releases/download/v0.144.2/hugo_extended_0.144.2_Linux-64bit.tar.gz | tar -xz && mv hugo /usr/local/bin/ && chmod +x build.sh && ./build.sh prod",
-    "outputDirectory": "site/public",
-    "rewrites": [
-        {
-            "source": "/app/:path*",
-            "destination": "/app/:path*"
-        },
-        {
-            "source": "/(.*)",
-            "destination": "/$1"
-        }
-    ],
-    "headers": [
-        {
-            "source": "/app/(.*)",
-            "headers": [
-                {
-                    "key": "Cache-Control",
-                    "value": "public, max-age=0, must-revalidate"
-                }
-            ]
-        }
-    ]
+    "outputDirectory": "site/public"
 }

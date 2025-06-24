@@ -29,28 +29,11 @@ name = "Posts"
 url = "/posts"
 weight = 20
 
-[[menu.main]]
-identifier = "world-map"
-name = "World Map"
-url = "/world-map"
-weight = 25
-
-[[menu.main]]
-identifier = "projects"
-name = "Projects"
-url = "/projects"
-weight = 30
-
-[[menu.main]]
-identifier = "contact"
-name = "Contact"
-url = "/contact"
-weight = 40
 
 [params]
 env = "production"
-title = "Zuo Wang - AI Infrastructure Engineer"
-description = "Staff AI Infrastructure Engineer specializing in scalable systems, performance optimization, and zero-to-production solutions. 6+ years experience at Tesla, Atlassian, and Samaya AI."
+title = "Zuo Wang"
+description = "Staff AI Backend Engineer specializing in scalable systems, performance optimization, and zero-to-production solutions. 6+ years experience at Tesla, Atlassian, and Samaya AI."
 keywords = ["AI Infrastructure", "Software Engineering", "Performance Optimization", "Golang", "Python", "Tesla", "Samaya AI", "Machine Learning", "Backend", "Zuo Wang"]
 author = "Zuo Wang"
 DateFormat = "January 2, 2006"
