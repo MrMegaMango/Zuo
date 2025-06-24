@@ -129,7 +129,11 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 ### **Tesla, Shanghai GigaFactory + Texas GigaFactory**
 <div class="job-header">
-<span class="job-title">**Senior Software Engineer & Team Lead**, High Voltage Manufacturing</span>
+<span class="job-title">
+
+**Senior Software Engineer & Team Lead**, High Voltage Manufacturing
+
+</span>
 <span class="job-date">*Jul 2022 – Jan 2024*</span>
 </div>
 
@@ -158,7 +162,11 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 ### **Atlassian, Mountain View, CA**
 <div class="job-header">
-<span class="job-title">**Software Engineer**, Cloud Security + Platform Infrastructure</span>
+<span class="job-title">
+
+**Software Engineer**, Cloud Security + Platform Infrastructure
+
+</span>
 <span class="job-date">*2020 – Jul 2022* | *Fully Remote*</span>
 </div>
 
@@ -189,21 +197,45 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 <div class="education-card">
 <h3>Johns Hopkins University</h3>
-<div class="degree">**Master of Science, Information Security**</div>
-<div class="details">**GPA: 3.9/4.0** | *2019*</div>
+<div class="degree">
+
+**Master of Science, Information Security**
+
+</div>
+<div class="details">
+
+**GPA: 3.9/4.0** | *2019*
+
+</div>
 <div class="coursework">
+
 **Coursework**: Cloud Security, Software Vulnerability Analysis, Security Analytics, Computer Forensics, Network Security, Privacy Laws, Risk Management, Ethical Hacking, Modern Cryptography
+
 </div>
 </div>
 
 <div class="education-card">
 <h3>University of Rochester</h3>
-<div class="degree">**Bachelor of Science, Electrical & Computer Engineering**</div>
-<div class="details">**GPA: 3.6/4.0** | *2014*</div>
-<div class="honors">*Joseph C Wilson "Change" Scholarship • Dean's List*</div>
+<div class="degree">
+
+**Bachelor of Science, Electrical & Computer Engineering**
+
+</div>
+<div class="details">
+
+**GPA: 3.6/4.0** | *2014*
+
+</div>
+<div class="honors">
+
+*Joseph C Wilson "Change" Scholarship • Dean's List*
+
+</div>
 <div class="coursework">
+
 **Focus**: Signal Processing, Robot Control, Semiconductor, C++, Java, Assembly, VHDL, MATLAB  
 **Minor**: Mathematics and Economics
+
 </div>
 </div>
 
