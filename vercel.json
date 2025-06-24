@@ -1,5 +1,5 @@
 {
-    "buildCommand": "curl -L https://github.com/gohugoio/hugo/releases/download/v0.144.2/hugo_extended_0.144.2_Linux-64bit.tar.gz | tar -xz && mv hugo /usr/local/bin/ && cd svelte && npm install && npm run build && cd ../site && hugo --gc --minify",
+    "buildCommand": "curl -L https://github.com/gohugoio/hugo/releases/download/v0.144.2/hugo_extended_0.144.2_Linux-64bit.tar.gz | tar -xz && mv hugo /usr/local/bin/ && cd svelte && npm install && npm run build && mkdir -p ../site/static/app && cp -r .svelte-kit/output/client/* ../site/static/app/ && find .svelte-kit/output/prerendered/pages -name '*.html' | while read file; do relpath=$(realpath --relative-to=.svelte-kit/output/prerendered/pages \"$file\"); mkdir -p \"../site/static/app/$(dirname \"$relpath\")\"; cp \"$file\" \"../site/static/app/$relpath\"; done && cd ../site && hugo --gc --minify",
     "outputDirectory": "site/public",
     "rewrites": [
         {
