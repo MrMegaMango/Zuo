@@ -33,7 +33,7 @@ weight = 20
 [[menu.main]]
 identifier = "app"
 name = "my App ↗"
-url = "https://zuo-svelte-one.vercel.app/"
+url = "https://zuo-svelte.vercel.app/"
 weight = 30
 
 
