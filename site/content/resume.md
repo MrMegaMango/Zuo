@@ -99,7 +99,11 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 ### **Samaya AI, London**
 <div class="job-header">
-<span class="job-title">**Member of Technical Staff**</span>
+<span class="job-title">
+
+**Member of Technical Staff**
+
+</span>
 <span class="job-date">*Jan 2024 - Current*</span>
 </div>
 
