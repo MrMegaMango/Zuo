@@ -17,6 +17,7 @@ Location: San Diego, US (<a href="https://zuo-svelte.vercel.app/world-map" targe
 </div>
 
 <div class="resume-summary">
+
 Staff-level AI Infrastructure Engineer with **6+ years** of experience delivering scalable systems and **$10M+ business impact**. Expertise spans Software & Hardware Engineering, Machine Learning, Security, Product Development, and Cloud Infrastructure. Proven track record of leading cross-functional teams and architecting enterprise-grade solutions from concept to production.
 
 **Technical Leadership:** Led teams of 7+ engineers across multiple disciplines  
