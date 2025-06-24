@@ -282,8 +282,9 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 - Contest rating: **1460 → 2109** (7 months)
 - Consistent top performer
 </div>
+<a href=https://leetcode.com/u/mangoman/" target="_blank">🔗 [Profile]</a>
 </div>
-🔗 [Profile](https://leetcode.com/u/mangoman/)
+
 
 <div class="achievement-card">
 <h3>Business Impact Metrics</h3>
