@@ -282,7 +282,7 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 - Contest rating: **1460 → 2109** (7 months)
 - Consistent top performer
 </div>
-🔗 [Profile](https://leetcode.com/mangoman/)
+🔗 [Profile](https://leetcode.com/u/mangoman/)
 </div>
 
 <div class="achievement-card">
@@ -345,7 +345,7 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 - **Personal Website**: [zuo.vercel.app](https://zuo.vercel.app/)
 - **LinkedIn**: [linkedin.com/in/mrmightymango](https://www.linkedin.com/in/mrmightymango/)
 - **GitHub**: [github.com/MrMegaMango](https://github.com/MrMegaMango)
-- **LeetCode**: [leetcode.com/mangoman](https://leetcode.com/mangoman/)
+- **LeetCode**: [leetcode.com/u/mangoman](https://leetcode.com/u/mangoman/)
 - **Language Exchange**: [echinglish.weebly.com](https://echinglish.weebly.com/)
 - **Research Profile**: [behavior.isi.jhu.edu](http://behavior.isi.jhu.edu/people.html)
 
