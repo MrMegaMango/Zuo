@@ -1,44 +1,14 @@
-node_modules
+# SvelteKit-specific patterns not covered by root .gitignore
 
-# Output
-.output
-.vercel
+# Additional deployment platforms
 .netlify
 .wrangler
-/.svelte-kit
-/build
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Env
-.env
-.env.*
-!.env.example
-!.env.test
-
-# Vite
+# Vite timestamps
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-# Build outputs - generated files
-.svelte-kit/
-build/
-node_modules/
-package-lock.json
-
-# Hugo generated
-site/public/
-site/resources/_gen/
-site/static/app/
-
-# Vercel deployment artifacts  
-.vercel/
-
-# OS/Editor files
-.DS_Store
-*.log
-.env.local
-.env
+# Environment files (keep examples)
+!.env.example
+!.env.test
 
