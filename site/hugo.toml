@@ -29,6 +29,13 @@ name = "Posts"
 url = "/posts"
 weight = 20
 
+# Adding interactive app menu entry
+[[menu.main]]
+identifier = "app"
+name = "Interactive App ↗"
+url = "https://zuo-svelte-one.vercel.app/"
+weight = 30
+
 
 [params]
 env = "production"
@@ -95,7 +102,4 @@ hiddenInSingle = false
 [markup.goldmark.renderer]
 unsafe = true
 
-[module]
-[[module.mounts]]
-source = "../svelte/build"
-target = "static/app"
+
