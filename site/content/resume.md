@@ -12,7 +12,8 @@ ShowBreadCrumbs: false
 ## Staff AI Infrastructure Engineer
 
 <div class="contact-info">
-Email: amangoworks@gmail.com | Phone: +1-757-633-7384 | Location: San Diego, US (link to world map)
+Email: amangoworks@gmail.com | Phone: +1-757-633-7384 
+Location: San Diego, US ([places I've been](https://zuo-svelte.vercel.app/world-map))
 </div>
 
 <div class="resume-summary">
