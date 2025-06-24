@@ -8,6 +8,8 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 
+ignoreLogs = ['warning-partial-superfluous-prefix']
+
 # Analytics (uncomment and add your tracking IDs)
 # googleAnalytics = "G-XXXXXXXXXX"
 # [params.analytics]
@@ -104,6 +106,11 @@ url = "https://www.linkedin.com/in/mrmightymango/"
 hidden = false
 hiddenInList = false
 hiddenInSingle = false
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 [module]
 [[module.mounts]]

@@ -268,7 +268,17 @@
 		<h4>Legend</h4>
 		<div class="legend-items">
 			{#each locations as location}
-				<div class="legend-item" on:click={() => selectedLocation = location} role="button" tabindex="0">
+				<div 
+					class="legend-item" 
+					on:click={() => selectedLocation = location} 
+					on:keydown={(e) => {
+						if (e.key === 'Enter' || e.key === ' ') {
+							selectedLocation = location;
+						}
+					}}
+					role="button" 
+					tabindex="0"
+				>
 					<div class="legend-dot" style="background-color: {location.color}"></div>
 					<span>{location.name}</span>
 				</div>
