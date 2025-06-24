@@ -40,7 +40,6 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
   <span class="tech-tag">Python</span>
   <span class="tech-tag">C++</span>
   <span class="tech-tag">TypeScript</span>
-  <span class="tech-tag">Java</span>
 </div>
 </div>
 
@@ -60,7 +59,7 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 <div class="tech-stack">
   <span class="tech-tag">vLLM</span>
   <span class="tech-tag">TensorRT</span>
-  <span class="tech-tag">RAG Systems</span>
+  <span class="tech-tag">RAG</span>
   <span class="tech-tag">Vector Databases</span>
   <span class="tech-tag">PyTorch</span>
 </div>
