@@ -28,6 +28,12 @@ url = "/posts"
 weight = 20
 
 [[menu.main]]
+identifier = "world-map"
+name = "World Map"
+url = "/world-map"
+weight = 25
+
+[[menu.main]]
 identifier = "projects"
 name = "Projects"
 url = "/projects"
