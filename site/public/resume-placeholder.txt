@@ -1,7 +1,0 @@
-To add your actual resume:
-
-1. Create or export your resume as a PDF file named "resume.pdf"
-2. Place the PDF file in the "site/static/" directory
-3. The resume will be available at yourwebsite.com/resume.pdf and the link on your resume page will work automatically
-
-Delete this placeholder file once you've added your actual resume. 
