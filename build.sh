@@ -13,7 +13,7 @@ npm run build
 mkdir -p ../site/static/app
 
 # Copy the built Svelte app to Hugo's static directory
-cp -r build/client/* ../site/static/app/
+cp -r build/* ../site/static/app/
 
 # Build Hugo site
 cd ../site
