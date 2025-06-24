@@ -1,2 +1,2 @@
-// Only prerender specific pages that don't need server functionality
-export const prerender = false;
+// Allow each page to decide its own prerendering strategy
+export const prerender = 'auto';
