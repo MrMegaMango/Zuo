@@ -13,7 +13,7 @@ ShowBreadCrumbs: false
 
 <div class="contact-info">
 Email: amangoworks@gmail.com | Phone: +1-757-633-7384 
-Location: San Diego, US ([places I've been](https://zuo-svelte.vercel.app/world-map))
+Location: San Diego, US (<a href="https://zuo-svelte.vercel.app/world-map" target="_blank">places I've been</a>)
 </div>
 
 <div class="resume-summary">
