@@ -40,7 +40,7 @@ I replaced our limited monitoring with a comprehensive observability stack:
 This self-hosted solution on Kubernetes gave us the flexibility to perform complex queries, create custom dashboards, and gain insights that weren't possible with off-the-shelf solutions.
 
 ![Initial monitoring setup](initial-setup.png)
-*struggling to get meaningful insights using tools like Amplitude*
+<small>*    struggling to get meaningful insights using tools like Amplitude*</small>
 
 ### The Power of Distributed Tracing
 
