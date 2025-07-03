@@ -598,6 +598,19 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 [data-theme="dark"] .security-projects {
   background: linear-gradient(145deg, #1f2937, #111827);
   border-color: rgba(255,255,255,0.1);
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .job-date {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .details {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .project-meta {
+  color: #9ca3af;
 }
 
 @media (max-width: 768px) {
