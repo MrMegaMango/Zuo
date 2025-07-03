@@ -36,6 +36,13 @@ name = "my App"
 url = "https://zuo-svelte.vercel.app/"
 weight = 30
 
+# Adding Talk to Me chat menu entry
+[[menu.main]]
+identifier = "talk-to-me"
+name = "Talk to Me"
+url = "/talk-to-me"
+weight = 40
+
 
 [params]
 env = "production"
