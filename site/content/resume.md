@@ -25,7 +25,7 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 **Core Values:** Collaborative leadership style focused on technical excellence and team growth
 </div>
 
-<a href="/2025NovResumeZuo.pdf" class="custom-button download-btn" download>📄 Download PDF Resume</a>
+<a href="/2026JanResumeZuo.pdf" class="custom-button download-btn" download>📄 Download PDF Resume</a>
 
 </div>
 
