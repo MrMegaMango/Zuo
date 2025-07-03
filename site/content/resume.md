@@ -391,7 +391,7 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 <style>
 .resume-header {
-  background: var(--gradient);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 3rem 2rem;
   border-radius: 20px;
@@ -544,7 +544,7 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 }
 
 .achievement-card {
-  background: var(--gradient);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 2rem;
   border-radius: 16px;
@@ -579,7 +579,7 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 }
 
 .links-section {
-  background: var(--gradient);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 2rem;
   border-radius: 16px;
