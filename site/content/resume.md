@@ -592,25 +592,40 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
   text-decoration: underline;
 }
 
+/* Dark mode styles - using multiple selectors for PaperMod theme compatibility */
 [data-theme="dark"] .experience-card,
 [data-theme="dark"] .education-card,
 [data-theme="dark"] .project-item,
-[data-theme="dark"] .security-projects {
-  background: linear-gradient(145deg, #1f2937, #111827);
-  border-color: rgba(255,255,255,0.1);
-  color: #e5e7eb;
+[data-theme="dark"] .security-projects,
+.dark .experience-card,
+.dark .education-card,
+.dark .project-item,
+.dark .security-projects,
+body.dark .experience-card,
+body.dark .education-card,
+body.dark .project-item,
+body.dark .security-projects {
+  background: linear-gradient(145deg, #1f2937, #111827) !important;
+  border-color: rgba(255,255,255,0.1) !important;
+  color: #e5e7eb !important;
 }
 
-[data-theme="dark"] .job-date {
-  color: #9ca3af;
+[data-theme="dark"] .job-date,
+.dark .job-date,
+body.dark .job-date {
+  color: #9ca3af !important;
 }
 
-[data-theme="dark"] .details {
-  color: #9ca3af;
+[data-theme="dark"] .details,
+.dark .details,
+body.dark .details {
+  color: #9ca3af !important;
 }
 
-[data-theme="dark"] .project-meta {
-  color: #9ca3af;
+[data-theme="dark"] .project-meta,
+.dark .project-meta,
+body.dark .project-meta {
+  color: #9ca3af !important;
 }
 
 @media (max-width: 768px) {
