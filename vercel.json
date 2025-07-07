@@ -1,4 +1,7 @@
 {
     "buildCommand": "curl -L https://github.com/gohugoio/hugo/releases/download/v0.144.2/hugo_extended_0.144.2_Linux-64bit.tar.gz | tar -xz && mv hugo /usr/local/bin/ && chmod +x build.sh && ./build.sh prod",
-    "outputDirectory": "site/public"
+    "outputDirectory": "site/public",
+    "analytics": {
+        "enable": true
+    }
 }
