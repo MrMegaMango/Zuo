@@ -67,6 +67,7 @@ ShowCodeCopyButtons = true
 ShowWordCount = true
 ShowRssButtonInSectionTermList = true
 UseHugoToc = true
+TocOpen = false
 
 [params.homeInfoParams]
 Title = "Hey, I'm Zuo 👋"
