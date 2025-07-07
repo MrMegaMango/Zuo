@@ -6,7 +6,7 @@ description = "A deep dive into our performance optimization journey: from 2-min
 tags = ["AI infra", "performance", "optimization", "golang", "python"]
 categories = ["blog"]
 ShowToc = true
-TocOpen = true
+TocOpen = false
 [cover]
 image = "slowest-query.png"
 alt = "Slowest query of the day"
