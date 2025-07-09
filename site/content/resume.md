@@ -6,6 +6,10 @@ ShowToc: true
 ShowBreadCrumbs: false
 ---
 
+<div class="download-button-top">
+<a href="/2026JanResumeZuo.pdf" class="custom-button download-btn-top" download>📄 Download PDF Resume</a>
+</div>
+
 <div class="resume-header">
 
 # **Zuo Wang**
@@ -24,8 +28,6 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 **Interview Experience:** Conducted 50+ technical interviews for algorithm and system design roles  
 **Core Values:** Collaborative leadership style focused on technical excellence and team growth
 </div>
-
-<a href="/2026JanResumeZuo.pdf" class="custom-button download-btn" download>📄 Download PDF Resume</a>
 
 </div>
 
@@ -390,6 +392,37 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 </div>
 
 <style>
+.download-button-top {
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+  padding: 1rem;
+}
+
+.download-btn-top {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white !important;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.download-btn-top:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+  color: white !important;
+}
+
+.download-btn-top:active {
+  transform: translateY(0);
+}
+
 .resume-header {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -593,6 +626,21 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 }
 
 /* Dark mode styles - using multiple selectors for PaperMod theme compatibility */
+[data-theme="dark"] .download-btn-top,
+.dark .download-btn-top,
+body.dark .download-btn-top {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+[data-theme="dark"] .download-btn-top:hover,
+.dark .download-btn-top:hover,
+body.dark .download-btn-top:hover {
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5) !important;
+  color: white !important;
+}
+
 [data-theme="dark"] .experience-card,
 [data-theme="dark"] .education-card,
 [data-theme="dark"] .project-item,
