@@ -106,7 +106,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 <strong>Member of Technical Staff</strong>
 
 </span>
-<span class="job-date">*Jan 2024 - Current*</span>
+<span class="job-date"><em>Jan 2024 - Current</em></span>
 </div>
 
 <div class="experience-card">
@@ -136,7 +136,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 <strong>Senior Software Engineer & Team Lead</strong>, High Voltage Manufacturing
 
 </span>
-<span class="job-date">*Jul 2022 – Jan 2024*</span>
+<span class="job-date"><em>Jul 2022 – Jan 2024</em></span>
 </div>
 
 <div class="experience-card">
@@ -169,7 +169,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 <strong>Software Engineer</strong>, Cloud Security + Platform Infrastructure
 
 </span>
-<span class="job-date">*2020 – Jul 2022* | *Fully Remote*</span>
+<span class="job-date"><em>2020 – Jul 2022</em> | <em>Fully Remote</em></span>
 </div>
 
 <div class="experience-card">
@@ -206,7 +206,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 </div>
 <div class="details">
 
-<strong>GPA: 3.9/4.0</strong> | *2019*
+<strong>GPA: 3.9/4.0</strong> | <em>2019</em>
 
 </div>
 <div class="coursework">
@@ -225,12 +225,12 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 </div>
 <div class="details">
 
-<strong>GPA: 3.6/4.0</strong> | *2014*
+<strong>GPA: 3.6/4.0</strong> | <em>2014</em>
 
 </div>
 <div class="honors">
 
-*Joseph C Wilson "Change" Scholarship • Dean's List*
+<em>Joseph C Wilson "Change" Scholarship • Dean's List</em>
 
 </div>
 <div class="coursework">
@@ -253,7 +253,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 
 <div class="project-item">
 <h4><strong>Behavioral Biometrics Security Research</strong> - Unknot.id</h4>
-<div class="project-meta">*Security Research Intern | Aug-Dec 2019*</div>
+<div class="project-meta"><em>Security Research Intern | Aug-Dec 2019</em></div>
 - Researched and implemented adversarial attacks against Android biometric authentication systems
 - Developed efficient shadow model attacks requiring fewer than 1,000 queries to compromise security
 - Applied defensive hardening techniques to LSTM models using the CleverHans adversarial learning framework
@@ -263,7 +263,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 
 <div class="project-item">
 <h4><strong>Cognitive Security Modeling</strong> - Johns Hopkins University</h4>
-<div class="project-meta">*Graduate Research Assistant | Jan-Aug 2019*</div>
+<div class="project-meta"><em>Graduate Research Assistant | Jan-Aug 2019</em></div>
 - Developed computational models in Python to simulate human security decision-making processes
 - Implemented advanced cognitive architectures including Instance-Based Learning Theory and ACT-R memory systems
 - Processed and analyzed 40GB+ of behavioral datasets to understand security-related cognitive patterns
