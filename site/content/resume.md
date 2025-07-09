@@ -577,10 +577,17 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 
 .interests-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
   margin: 2rem 0;
   line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .interests-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 .links-section {
