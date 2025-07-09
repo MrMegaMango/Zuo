@@ -310,34 +310,6 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 ---
 
-## **Professional Achievements**
-
-<div class="achievements-grid">
-
-<div class="achievement-card">
-<h3>Competitive Programming</h3>
-<div class="stats">
-- **1000+ problems solved**
-- Contest rating: **1460 → 2109** (7 months)
-- Consistent top performer
-</div>
-<a href=https://leetcode.com/u/mangoman/" target="_blank">🔗 [Profile]</a>
-</div>
-
-
-<div class="achievement-card">
-<h3>Business Impact Metrics</h3>
-<div class="stats">
-- **$10M+ business impact**
-- **80% performance improvements**
-- **10k+ users served**
-</div>
-</div>
-
-</div>
-
----
-
 ## **Security Research & Cybersecurity**
 
 <div class="security-projects">
