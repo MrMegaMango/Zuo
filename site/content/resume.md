@@ -12,7 +12,7 @@ ShowBreadCrumbs: false
 
 <div class="resume-header">
 
-# **Zuo Wang**
+# <strong>Zuo Wang</strong>
 ## Staff AI Infrastructure Engineer
 
 <div class="contact-info">
@@ -22,18 +22,18 @@ Location: San Diego, US (<a href="https://zuo-svelte.vercel.app/world-map" targe
 
 <div class="resume-summary">
 
-Staff-level AI Infrastructure Engineer with **6+ years** of experience delivering scalable systems and **$10M+ business impact**. Expertise spans Software & Hardware Engineering, Machine Learning, Security, Product Development, and Cloud Infrastructure. Proven track record of leading cross-functional teams and architecting enterprise-grade solutions from concept to production.
+Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experience delivering scalable systems and <strong>$10M+ business impact</strong>. Expertise spans Software & Hardware Engineering, Machine Learning, Security, Product Development, and Cloud Infrastructure. Proven track record of leading cross-functional teams and architecting enterprise-grade solutions from concept to production.
 
-**Technical Leadership:** Led teams of 7+ engineers across multiple disciplines  
-**Interview Experience:** Conducted 50+ technical interviews for algorithm and system design roles  
-**Core Values:** Collaborative leadership style focused on technical excellence and team growth
+<strong>Technical Leadership:</strong> Led teams of 7+ engineers across multiple disciplines  
+<strong>Interview Experience:</strong> Conducted 50+ technical interviews for algorithm and system design roles  
+<strong>Core Values:</strong> Collaborative leadership style focused on technical excellence and team growth
 </div>
 
 </div>
 
 ---
 
-## **Technical Expertise**
+## <strong>Technical Expertise</strong>
 
 <div class="tech-section">
 
@@ -93,17 +93,17 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 </div>
 
-**Continuous Learning:** Passionate about adopting emerging technologies to solve complex business challenges
+<strong>Continuous Learning:</strong> Passionate about adopting emerging technologies to solve complex business challenges
 
 ---
 
-## 💼 **Work Experience**
+## 💼 <strong>Work Experience</strong>
 
-### **Samaya AI, London**
+### <strong>Samaya AI, London</strong>
 <div class="job-header">
 <span class="job-title">
 
-**Member of Technical Staff**
+<strong>Member of Technical Staff</strong>
 
 </span>
 <span class="job-date">*Jan 2024 - Current*</span>
@@ -111,29 +111,29 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 <div class="experience-card">
 
-**Mission:** Scale AI question-answering platform from prototype to enterprise-ready system serving major financial institutions
+<strong>Mission:</strong> Scale AI question-answering platform from prototype to enterprise-ready system serving major financial institutions
 
-**Technical Achievements:**
+<strong>Technical Achievements:</strong>
 - Architected Knowledge Ingestion Pipeline with advanced embedding & chunking strategies
 - Built comprehensive RAG (Retrieval-Augmented Generation) infrastructure for enterprise clients
 - 0-1 development of product features: DeepResearch, WorkflowAgents, QueryDecomposition, StockPicker
-- **90% performance improvement**: Reduced time-to-first-token from 100s to 10s
-- Scaled infrastructure from 10 to **10,000 daily active users**
+- <strong>90% performance improvement</strong>: Reduced time-to-first-token from 100s to 10s
+- Scaled infrastructure from 10 to <strong>10,000 daily active users</strong>
 
-**Business Impact:**
-- Onboarded enterprise clients: **BlackRock, Citi, Point72, Morgan Stanley**
+<strong>Business Impact:</strong>
+- Onboarded enterprise clients: <strong>BlackRock, Citi, Point72, Morgan Stanley</strong>
 - Contributed to pricing strategy and technical demos
-- Supported **$43.5M Series A** fundraising with technical excellence
+- Supported <strong>$43.5M Series A</strong> fundraising with technical excellence
 
 🔗 [Company Website](https://samaya.ai/about/)
 
 </div>
 
-### **Tesla, Shanghai GigaFactory + Texas GigaFactory**
+### <strong>Tesla, Shanghai GigaFactory + Texas GigaFactory</strong>
 <div class="job-header">
 <span class="job-title">
 
-**Senior Software Engineer & Team Lead**, High Voltage Manufacturing
+<strong>Senior Software Engineer & Team Lead</strong>, High Voltage Manufacturing
 
 </span>
 <span class="job-date">*Jul 2022 – Jan 2024*</span>
@@ -141,32 +141,32 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 <div class="experience-card">
 
-**Mission:** Lead high-voltage battery systems development across Tesla's complete vehicle and energy product portfolio
+<strong>Mission:</strong> Lead high-voltage battery systems development across Tesla's complete vehicle and energy product portfolio
 
-**Technical Achievements:**
+<strong>Technical Achievements:</strong>
 - Responsible for HV systems: Model 3/Y/S/X, Powerwall, Megapack, SuperCharger
 - Designed and implemented C++ firmware for CyberTruck and Megapack systems
 - Created battery cell simulation framework, decoupling software/hardware development cycles
 - Built comprehensive factory software pipeline connecting lab-to-production globally
 - Architected manufacturing framework deployed from Berlin to Palo Alto
 
-**Leadership & Management:**
-- **Managed team of 7 engineers**: 2 technicians, 2 software, 1 mechanical, 1 electrical
-- **Delivered CyberTruck battery charger 4 weeks ahead of schedule**
-- Made China battery production line **3x faster** than USA equivalent through knowledge transfer
-- Managed **$500k annual budget** and 200+ production stations
+<strong>Leadership & Management:</strong>
+- <strong>Managed team of 7 engineers</strong>: 2 technicians, 2 software, 1 mechanical, 1 electrical
+- <strong>Delivered CyberTruck battery charger 4 weeks ahead of schedule</strong>
+- Made China battery production line <strong>3x faster</strong> than USA equivalent through knowledge transfer
+- Managed <strong>$500k annual budget</strong> and 200+ production stations
 
-**Global Operations:**
+<strong>Global Operations:</strong>
 - Worked with vendors: CATL, BYD, TI, COSMX, HYC, Pegatron, Jabil
 - International travel for design reviews, quality assurance, and troubleshooting
 
 </div>
 
-### **Atlassian, Mountain View, CA**
+### <strong>Atlassian, Mountain View, CA</strong>
 <div class="job-header">
 <span class="job-title">
 
-**Software Engineer**, Cloud Security + Platform Infrastructure
+<strong>Software Engineer</strong>, Cloud Security + Platform Infrastructure
 
 </span>
 <span class="job-date">*2020 – Jul 2022* | *Fully Remote*</span>
@@ -174,26 +174,26 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 <div class="experience-card">
 
-**Mission:** Architect and maintain secure, scalable infrastructure supporting 1,400+ microservices across Atlassian's cloud platform
+<strong>Mission:</strong> Architect and maintain secure, scalable infrastructure supporting 1,400+ microservices across Atlassian's cloud platform
 
-**Technical Achievements:**
+<strong>Technical Achievements:</strong>
 - Developed critical auth modules for all inter-service communication
 - Led language migration: Java/TypeScript/Python → Golang for performance-critical services
 - Built instant service generator with Kubernetes, SOX compliance, and CI/CD integration
 - Created enterprise-grade rate limiting and deduplication systems
 
-**Operational Excellence:**
-- Maintained **99.99% availability** SLA for internal PaaS
+<strong>Operational Excellence:</strong>
+- Maintained <strong>99.99% availability</strong> SLA for internal PaaS
 - On-call support for critical infrastructure serving millions of users
 - Improved service generation time from hours to minutes
 
-**Key Technologies:** Splunk, SignalFX, Jira, Confluence, AWS (S3, DynamoDB, Lambda), PostgreSQL, Spinnaker, Kubernetes
+<strong>Key Technologies:</strong> Splunk, SignalFX, Jira, Confluence, AWS (S3, DynamoDB, Lambda), PostgreSQL, Spinnaker, Kubernetes
 
 </div>
 
 ---
 
-## **Education**
+## <strong>Education</strong>
 
 <div class="education-grid">
 
@@ -201,17 +201,17 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 <h3>Johns Hopkins University</h3>
 <div class="degree">
 
-**Master of Science, Information Security**
+<strong>Master of Science, Information Security</strong>
 
 </div>
 <div class="details">
 
-**GPA: 3.9/4.0** | *2019*
+<strong>GPA: 3.9/4.0</strong> | *2019*
 
 </div>
 <div class="coursework">
 
-**Coursework**: Cloud Security, Software Vulnerability Analysis, Security Analytics, Computer Forensics, Network Security, Privacy Laws, Risk Management, Ethical Hacking, Modern Cryptography
+<strong>Coursework</strong>: Cloud Security, Software Vulnerability Analysis, Security Analytics, Computer Forensics, Network Security, Privacy Laws, Risk Management, Ethical Hacking, Modern Cryptography
 
 </div>
 </div>
@@ -220,12 +220,12 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 <h3>University of Rochester</h3>
 <div class="degree">
 
-**Bachelor of Science, Electrical & Computer Engineering**
+<strong>Bachelor of Science, Electrical & Computer Engineering</strong>
 
 </div>
 <div class="details">
 
-**GPA: 3.6/4.0** | *2014*
+<strong>GPA: 3.6/4.0</strong> | *2014*
 
 </div>
 <div class="honors">
@@ -235,8 +235,8 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 </div>
 <div class="coursework">
 
-**Focus**: Signal Processing, Robot Control, Semiconductor, C++, Java, Assembly, VHDL, MATLAB  
-**Minor**: Mathematics and Economics
+<strong>Focus</strong>: Signal Processing, Robot Control, Semiconductor, C++, Java, Assembly, VHDL, MATLAB  
+<strong>Minor</strong>: Mathematics and Economics
 
 </div>
 </div>
@@ -245,14 +245,14 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 ---
 
-## **Notable Projects & Research**
+## <strong>Notable Projects & Research</strong>
 
-### **Research Experience**
+### <strong>Research Experience</strong>
 
 <div class="project-showcase">
 
 <div class="project-item">
-<h4>**Behavioral Biometrics Security Research** - Unknot.id</h4>
+<h4><strong>Behavioral Biometrics Security Research</strong> - Unknot.id</h4>
 <div class="project-meta">*Security Research Intern | Aug-Dec 2019*</div>
 - Researched and implemented adversarial attacks against Android biometric authentication systems
 - Developed efficient shadow model attacks requiring fewer than 1,000 queries to compromise security
@@ -262,7 +262,7 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 </div>
 
 <div class="project-item">
-<h4>**Cognitive Security Modeling** - Johns Hopkins University</h4>
+<h4><strong>Cognitive Security Modeling</strong> - Johns Hopkins University</h4>
 <div class="project-meta">*Graduate Research Assistant | Jan-Aug 2019*</div>
 - Developed computational models in Python to simulate human security decision-making processes
 - Implemented advanced cognitive architectures including Instance-Based Learning Theory and ACT-R memory systems
@@ -273,33 +273,33 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 </div>
 
-### **Technical Projects**
+### <strong>Technical Projects</strong>
 
 <div class="project-showcase">
 
 <div class="project-item">
-<h4>**Agemo Execution Dashboard**</h4>
+<h4><strong>Agemo Execution Dashboard</strong></h4>
 - Developed full-stack web application for real-time execution history visualization and analytics
 - Architected modern frontend using Node.js backend with Shadcn UI component library
 - Implemented responsive data visualization for improved operational insights
 </div>
 
 <div class="project-item">
-<h4>**Rippling Global Expansion Framework**</h4>
+<h4><strong>Rippling Global Expansion Framework</strong></h4>
 - Architected international payroll expansion system using Python Django, MongoDB, and React
 - Designed scalable backend infrastructure to support multi-country payroll processing
 - Enabled Rippling's expansion into new geographic markets through localized payroll solutions
 </div>
 
 <div class="project-item">
-<h4>**Military Drone System** - U.S. Army Contract</h4>
+<h4><strong>Military Drone System</strong> - U.S. Army Contract</h4>
 - Designed and manufactured drone-based supply drop system for military training operations
 - Utilized 3D CAD design, additive manufacturing, and Arduino-based control systems
 - Deployed at National Training Center and Joint Readiness Training Center for operational use
 </div>
 
 <div class="project-item">
-<h4>**Battle Map Gaming Platform**</h4>
+<h4><strong>Battle Map Gaming Platform</strong></h4>
 - Built real-time multiplayer gaming platform with WebSocket-based interactions
 - Implemented full-stack architecture using modern web technologies for scalable gameplay
 - Deployed cloud-hosted solution with real-time synchronization capabilities
@@ -310,38 +310,38 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 ---
 
-## **Security Research & Cybersecurity**
+## <strong>Security Research & Cybersecurity</strong>
 
 <div class="security-projects">
 
-- **Docker Privilege Escalation**: Applied Dirty COW race condition for container-to-host escape
-- **IoT Exploitation**: Network analysis and attacks on DJI drones, Bebop drones, Amazon Echo
-- **Malicious URL Detection**: ML models with PhishTank and DMOZ datasets, ROC curve analysis
-- **Software Vulnerability Analysis**: Threat modeling and reverse engineering with objdump, ldd, nm, strace
-- **CryptoDoneRight**: Contributed to cryptodoneright.org server hardening tools
+- <strong>Docker Privilege Escalation</strong>: Applied Dirty COW race condition for container-to-host escape
+- <strong>IoT Exploitation</strong>: Network analysis and attacks on DJI drones, Bebop drones, Amazon Echo
+- <strong>Malicious URL Detection</strong>: ML models with PhishTank and DMOZ datasets, ROC curve analysis
+- <strong>Software Vulnerability Analysis</strong>: Threat modeling and reverse engineering with objdump, ldd, nm, strace
+- <strong>CryptoDoneRight</strong>: Contributed to cryptodoneright.org server hardening tools
 
 </div>
 
 ---
 
-## **Additional Interests**
+## <strong>Additional Interests</strong>
 
 <div class="interests-grid">
 
-**Gaming & Software Development**
+<strong>Gaming & Software Development</strong>
 - Gaming platform development
 - Top 0.3% League of Legends player
 
-**Music & Performance**
+<strong>Music & Performance</strong>
 - Guitar player with live concert experience
 - University carillon society member
 
-**Athletics & Fitness**
+<strong>Athletics & Fitness</strong>
 - Standup paddleboard enthusiast
 - Amateur boxing
 - 10+ pull-ups personal record
 
-**Electronics & Hardware**
+<strong>Electronics & Hardware</strong>
 - Headphone amplifier design
 - Custom PC builds
 - Automotive electronics
@@ -350,16 +350,16 @@ Staff-level AI Infrastructure Engineer with **6+ years** of experience deliverin
 
 ---
 
-## **Professional Links**
+## <strong>Professional Links</strong>
 
 <div class="links-section">
 
-- **Personal Website**: [zuo.vercel.app](https://zuo.vercel.app/)
-- **LinkedIn**: [linkedin.com/in/mrmightymango](https://www.linkedin.com/in/mrmightymango/)
-- **GitHub**: [github.com/MrMegaMango](https://github.com/MrMegaMango)
-- **LeetCode**: [leetcode.com/u/mangoman](https://leetcode.com/u/mangoman/)
-- **Language Exchange**: [echinglish.weebly.com](https://echinglish.weebly.com/)
-- **Research Profile**: [behavior.isi.jhu.edu](http://behavior.isi.jhu.edu/people.html)
+- <strong>Personal Website</strong>: [zuo.vercel.app](https://zuo.vercel.app/)
+- <strong>LinkedIn</strong>: [linkedin.com/in/mrmightymango](https://www.linkedin.com/in/mrmightymango/)
+- <strong>GitHub</strong>: [github.com/MrMegaMango](https://github.com/MrMegaMango)
+- <strong>LeetCode</strong>: [leetcode.com/u/mangoman](https://leetcode.com/u/mangoman/)
+- <strong>Language Exchange</strong>: [echinglish.weebly.com](https://echinglish.weebly.com/)
+- <strong>Research Profile</strong>: [behavior.isi.jhu.edu](http://behavior.isi.jhu.edu/people.html)
 
 </div>
 
