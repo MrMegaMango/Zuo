@@ -93,6 +93,10 @@ url = "https://github.com/MrMegaMango"
 name = "linkedin"
 url = "https://www.linkedin.com/in/mrmightymango/"
 
+[[params.socialIcons]]
+name = "instagram"
+url = "https://www.instagram.com/mr_mighty_mango/"
+
 [params.cover]
 hidden = false
 hiddenInList = false

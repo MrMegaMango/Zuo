@@ -357,6 +357,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 - <strong>Personal Website</strong>: [zuo.vercel.app](https://zuo.vercel.app/)
 - <strong>LinkedIn</strong>: [linkedin.com/in/mrmightymango](https://www.linkedin.com/in/mrmightymango/)
 - <strong>GitHub</strong>: [github.com/MrMegaMango](https://github.com/MrMegaMango)
+- <strong>Instagram</strong>: [instagram.com/mr_mighty_mango](https://www.instagram.com/mr_mighty_mango/)
 - <strong>LeetCode</strong>: [leetcode.com/u/mangoman](https://leetcode.com/u/mangoman/)
 - <strong>Language Exchange</strong>: [echinglish.weebly.com](https://echinglish.weebly.com/)
 - <strong>Research Profile</strong>: [behavior.isi.jhu.edu](http://behavior.isi.jhu.edu/people.html)
