@@ -45,9 +45,10 @@ Each location represents a chapter in my journey of building scalable systems, l
 <style>
 .world-map-embed {
     margin: 2rem 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--entry);
     padding: 20px;
     border-radius: 25px;
+    border: 1px solid var(--border);
 }
 
 .world-map-description {
@@ -61,11 +62,7 @@ Each location represents a chapter in my journey of building scalable systems, l
 }
 
 .world-map-description h2 {
-    color: #2c3e50;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--primary);
     margin-bottom: 1.5rem;
 }
 
@@ -82,9 +79,9 @@ Each location represents a chapter in my journey of building scalable systems, l
 .world-map-description li {
     margin: 1rem 0;
     padding: 1rem;
-    background: rgba(102, 126, 234, 0.05);
+    background: rgba(0, 0, 0, 0.03);
     border-radius: 12px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid var(--border);
 }
 
 .world-map-description strong {
@@ -106,8 +103,9 @@ Each location represents a chapter in my journey of building scalable systems, l
 }
 
 [data-theme="dark"] .world-map-description li {
-    background: rgba(102, 126, 234, 0.1);
+    background: rgba(255, 255, 255, 0.05);
     color: #e5e7eb;
+    border-left-color: rgba(255, 255, 255, 0.2);
 }
 
 [data-theme="dark"] .world-map-description strong {

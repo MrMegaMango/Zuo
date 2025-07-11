@@ -373,23 +373,23 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 
 .download-btn-top {
   display: inline-block;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white !important;
+  background: var(--primary);
+  color: var(--theme) !important;
   padding: 12px 24px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border: none;
+  border: 1px solid var(--border);
   cursor: pointer;
 }
 
 .download-btn-top:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-  color: white !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: var(--theme) !important;
 }
 
 .download-btn-top:active {
@@ -397,22 +397,23 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 }
 
 .resume-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--entry);
+  color: var(--primary);
   padding: 3rem 2rem;
   border-radius: 20px;
   text-align: center;
   margin: 2rem 0;
+  border: 1px solid var(--border);
 }
 
 .resume-header h1 {
-  color: white;
+  color: var(--primary);
   margin-bottom: 0.5rem;
   font-size: 2.5rem;
 }
 
 .resume-header h2 {
-  color: rgba(255,255,255,0.9);
+  color: var(--secondary);
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
@@ -423,12 +424,13 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 }
 
 .resume-summary {
-  background: rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.03);
   padding: 1.5rem;
   border-radius: 12px;
   margin: 1.5rem 0;
   text-align: left;
   line-height: 1.6;
+  border: 1px solid var(--border);
 }
 
 .download-btn {
@@ -550,15 +552,16 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 }
 
 .achievement-card {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--entry);
+  color: var(--primary);
   padding: 2rem;
   border-radius: 16px;
   text-align: center;
+  border: 1px solid var(--border);
 }
 
 .achievement-card h3 {
-  color: white;
+  color: var(--primary);
   margin-bottom: 1rem;
 }
 
@@ -592,16 +595,17 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 }
 
 .links-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--entry);
+  color: var(--primary);
   padding: 2rem;
   border-radius: 16px;
   margin: 2rem 0;
   line-height: 1.8;
+  border: 1px solid var(--border);
 }
 
 .links-section a {
-  color: white;
+  color: var(--primary);
   text-decoration: underline;
 }
 
@@ -609,16 +613,16 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 [data-theme="dark"] .download-btn-top,
 .dark .download-btn-top,
 body.dark .download-btn-top {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-  color: white !important;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+  background: var(--primary) !important;
+  color: var(--theme) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
 [data-theme="dark"] .download-btn-top:hover,
 .dark .download-btn-top:hover,
 body.dark .download-btn-top:hover {
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5) !important;
-  color: white !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+  color: var(--theme) !important;
 }
 
 [data-theme="dark"] .experience-card,
@@ -654,6 +658,13 @@ body.dark .details {
 .dark .project-meta,
 body.dark .project-meta {
   color: #9ca3af !important;
+}
+
+[data-theme="dark"] .resume-summary,
+.dark .resume-summary,
+body.dark .resume-summary {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 @media (max-width: 768px) {
