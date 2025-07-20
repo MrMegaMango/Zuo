@@ -7,7 +7,7 @@ ShowBreadCrumbs: false
 ---
 
 <div class="download-button-top">
-<a href="/2026JanResumeZuo.pdf" class="custom-button download-btn-top" download>📄 Download PDF Resume</a>
+<a href="/2026JanResumeZuo.pdf" class="custom-button download-btn-top" download>Download PDF Resume</a>
 </div>
 
 <div class="resume-header">
@@ -97,7 +97,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 
 ---
 
-## 💼 <strong>Work Experience</strong>
+## <strong>Work Experience</strong>
 
 ### <strong>Samaya AI, London</strong>
 <div class="job-header">
@@ -125,7 +125,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 - Contributed to pricing strategy and technical demos
 - Supported <strong>$43.5M Series A</strong> fundraising with technical excellence
 
-🔗 [Company Website](https://samaya.ai/about/)
+[Company Website](https://samaya.ai/about/)
 
 </div>
 
@@ -258,7 +258,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 - Developed efficient shadow model attacks requiring fewer than 1,000 queries to compromise security
 - Applied defensive hardening techniques to LSTM models using the CleverHans adversarial learning framework
 - Published research findings on behavioral biometric vulnerabilities
-🔗 [Research Publication](https://www.unknot.id/post/yes-you-can-spoof-behavioral-biometrics-with-adversarial-learning)
+[Research Publication](https://www.unknot.id/post/yes-you-can-spoof-behavioral-biometrics-with-adversarial-learning)
 </div>
 
 <div class="project-item">
@@ -268,7 +268,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 - Implemented advanced cognitive architectures including Instance-Based Learning Theory and ACT-R memory systems
 - Processed and analyzed 40GB+ of behavioral datasets to understand security-related cognitive patterns
 - Contributed to interdisciplinary research bridging computer science and behavioral psychology
-🔗 [Research Profile](http://behavior.isi.jhu.edu/people.html)
+[Research Profile](http://behavior.isi.jhu.edu/people.html)
 </div>
 
 </div>
@@ -303,7 +303,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 - Built real-time multiplayer gaming platform with WebSocket-based interactions
 - Implemented full-stack architecture using modern web technologies for scalable gameplay
 - Deployed cloud-hosted solution with real-time synchronization capabilities
-🔗 [Live Demo](https://battle-map-344101.wl.r.appspot.com/)
+[Live Demo](https://battle-map-344101.wl.r.appspot.com/)
 </div>
 
 </div>
