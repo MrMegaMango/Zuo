@@ -7,7 +7,7 @@ ShowBreadCrumbs: false
 ---
 
 <div class="download-button-top">
-<a href="/2026JanResumeZuo.pdf" class="custom-button download-btn-top" download>Download PDF Resume</a>
+<a href="/2026FebResumeZuo.pdf" class="custom-button download-btn-top" download>Download PDF Resume</a>
 </div>
 
 <div class="resume-header">
