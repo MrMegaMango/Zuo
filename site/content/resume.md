@@ -7,7 +7,7 @@ ShowBreadCrumbs: false
 ---
 
 <div class="download-button-top">
-<a href="/2026MarchResumeZuo.pdf" class="custom-button download-btn-top" download>Download PDF Resume</a>
+<a href="/2026MayResumeZuo.pdf" class="custom-button download-btn-top" download>Download PDF Resume</a>
 </div>
 
 <div class="resume-header">
@@ -131,7 +131,7 @@ Staff-level AI backend infra engineer with <strong>6 years</strong> of professio
 <strong>Software Engineer</strong>, Cloud Security + Platform Infrastructure
 
 </span>
-<span class="job-date"><em>2020 – Jul 2022</em> | <em>Fully Remote</em></span>
+<span class="job-date"><em>2018 – Jul 2022</em> | <em>Fully Remote</em></span>
 </div>
 
 <div class="experience-card">
@@ -155,17 +155,17 @@ Staff-level AI backend infra engineer with <strong>6 years</strong> of professio
 <h3>Johns Hopkins University</h3>
 <div class="degree">
 
-<strong>Master of Science, Cybersecurity</strong>
+<strong>Master of Science, Machine Learning Security</strong>
 
 </div>
 <div class="details">
 
-<strong>GPA: 3.9/4.0</strong> | <em>2019</em>
+<strong>GPA: 3.9/4.0</strong> | <em>2018</em>
 
 </div>
 <div class="coursework">
 
-<strong>Cybersecurity</strong>: Cloud Security, Software Vulnerability Analysis, Security Analytics, Computer Forensics, Network Security, Privacy Laws, Risk Management, Ethical Hacking, Modern Cryptography
+<strong>Machine Learning Security</strong>: Cloud Security, Software Vulnerability Analysis, Computer Forensics, Network Security, Privacy Laws, Risk Management, Ethical Hacking, Modern Cryptography
 
 </div>
 </div>
