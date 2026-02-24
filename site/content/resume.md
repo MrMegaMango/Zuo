@@ -1,19 +1,19 @@
 ---
 title: "Resume"
 url: "/resume"
-summary: "Zuo Wang's professional resume - Staff AI Infrastructure Engineer"
+summary: "Zuo Wang's professional resume - Staff AI Backend Infra Engineer"
 ShowToc: true
 ShowBreadCrumbs: false
 ---
 
 <div class="download-button-top">
-<a href="/2026FebResumeZuo.pdf" class="custom-button download-btn-top" download>Download PDF Resume</a>
+<a href="/2026MarchResumeZuo.pdf" class="custom-button download-btn-top" download>Download PDF Resume</a>
 </div>
 
 <div class="resume-header">
 
 # <strong>Zuo Wang</strong>
-## Staff AI Infrastructure Engineer
+## Staff AI Engineer
 
 <div class="contact-info">
 Email: amangoworks@gmail.com | Phone: +1-757-633-7384<br>
@@ -22,11 +22,11 @@ Location: San Diego, US (<a href="https://zuo-svelte.vercel.app/world-map" targe
 
 <div class="resume-summary">
 
-Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experience delivering scalable systems and <strong>$10M+ business impact</strong>. Expertise spans Software & Hardware Engineering, Machine Learning, Security, Product Development, and Cloud Infrastructure. Proven track record of leading cross-functional teams and architecting enterprise-grade solutions from concept to production.
+Staff-level AI backend infra engineer with <strong>6 years</strong> of professional experience and <strong>$10M+ business impact</strong>. Cross-disciplinary technical breadth in Software & Hardware Engineering, ML, Security, Product, and Infrastructure.
 
-<strong>Technical Leadership:</strong> Led teams of 7+ engineers across multiple disciplines  
-<strong>Interview Experience:</strong> Conducted 50+ technical interviews for algorithm and system design roles  
-<strong>Core Values:</strong> Collaborative leadership style focused on technical excellence and team growth
+<strong>People Leadership:</strong> Experienced people leader, grew team to 7 people. Fun to work with, appreciate smart engineers with low ego
+<strong>Interview Experience:</strong> Conducted dozens of algorithm and system design interviews
+<strong>Track Record:</strong> Proven record in strategizing and delivering reliable systems at scale through cross-team collaborations
 </div>
 
 </div>
@@ -38,62 +38,44 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 <div class="tech-section">
 
 <div class="tech-category">
-<h3>Programming Languages</h3>
+<h3>Languages & Frameworks</h3>
 <div class="tech-stack">
-  <span class="tech-tag">Go</span>
+  <span class="tech-tag">Golang</span>
   <span class="tech-tag">Python</span>
-  <span class="tech-tag">C++</span>
-  <span class="tech-tag">TypeScript</span>
+  <span class="tech-tag">gRPC</span>
+  <span class="tech-tag">GraphQL</span>
 </div>
 </div>
 
 <div class="tech-category">
-<h3>Cloud Platforms & Infrastructure</h3>
+<h3>Cloud & Infrastructure</h3>
 <div class="tech-stack">
-  <span class="tech-tag">AWS</span>
   <span class="tech-tag">GCP</span>
+  <span class="tech-tag">AWS</span>
   <span class="tech-tag">Kubernetes</span>
-  <span class="tech-tag">Docker</span>
-  <span class="tech-tag">Terraform</span>
+  <span class="tech-tag">VertexAI</span>
 </div>
 </div>
 
 <div class="tech-category">
-<h3>AI/ML & Data Systems</h3>
+<h3>AI/ML</h3>
 <div class="tech-stack">
   <span class="tech-tag">vLLM</span>
-  <span class="tech-tag">TensorRT</span>
-  <span class="tech-tag">RAG</span>
-  <span class="tech-tag">Vector Databases</span>
-  <span class="tech-tag">PyTorch</span>
+  <span class="tech-tag">Claude</span>
+  <span class="tech-tag">Pinecone</span>
+  <span class="tech-tag">Arize</span>
 </div>
 </div>
 
 <div class="tech-category">
-<h3>Databases & Storage</h3>
+<h3>Data & Observability</h3>
 <div class="tech-stack">
-  <span class="tech-tag">PostgreSQL</span>
   <span class="tech-tag">MongoDB</span>
-  <span class="tech-tag">ElasticSearch</span>
-  <span class="tech-tag">Redis</span>
-  <span class="tech-tag">DynamoDB</span>
-</div>
-</div>
-
-<div class="tech-category">
-<h3>Observability & Monitoring</h3>
-<div class="tech-stack">
   <span class="tech-tag">Grafana</span>
-  <span class="tech-tag">Prometheus</span>
-  <span class="tech-tag">OpenTelemetry</span>
-  <span class="tech-tag">Datadog</span>
-  <span class="tech-tag">Splunk</span>
 </div>
 </div>
 
 </div>
-
-<strong>Continuous Learning:</strong> Passionate about adopting emerging technologies to solve complex business challenges
 
 ---
 
@@ -111,19 +93,11 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 
 <div class="experience-card">
 
-<strong>Mission:</strong> Scale AI question-answering platform from prototype to enterprise-ready system serving major financial institutions
-
-<strong>Technical Achievements:</strong>
-- Architected Knowledge Ingestion Pipeline with advanced embedding & chunking strategies
-- Built comprehensive RAG (Retrieval-Augmented Generation) infrastructure for enterprise clients
-- 0-1 development of product features: DeepResearch, WorkflowAgents, QueryDecomposition, StockPicker
-- <strong>90% performance improvement</strong>: Reduced time-to-first-token from 100s to 10s
-- Scaled infrastructure from 10 to <strong>10,000 daily active users</strong>
-
-<strong>Business Impact:</strong>
-- Onboarded enterprise clients: <strong>BlackRock, Citi, Point72, Morgan Stanley</strong>
-- Contributed to pricing strategy and technical demos
-- Supported <strong>$43.5M Series A</strong> fundraising with technical excellence
+- Architect Knowledge Ingestion Pipeline, Embedding Chunking strategy, Eval, RAG, and AI Infrastructure
+- 0-1 turn ML ideas into product features like QueryDecomposition, DeepResearch, and EarningsReport
+- <strong>90% performance improvement</strong>: Decrease time-to-first-token from 100s to 10s, scale infra from 10 to <strong>10,000 daily active users</strong>
+- Onboard customers from <strong>Morgan Stanley, BlackRock, Citi, and Point72</strong>. Strategize pricing
+- Demo for our <strong>$43.5M Series A</strong>
 
 [Company Website](https://samaya.ai/about/)
 
@@ -133,7 +107,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 <div class="job-header">
 <span class="job-title">
 
-<strong>Senior Software Engineer & Team Lead</strong>, High Voltage Manufacturing
+<strong>Staff Software Engineer & Team Lead</strong>, High Voltage Manufacturing
 
 </span>
 <span class="job-date"><em>Jul 2022 – Jan 2024</em></span>
@@ -141,24 +115,12 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 
 <div class="experience-card">
 
-<strong>Mission:</strong> Lead high-voltage battery systems development across Tesla's complete vehicle and energy product portfolio
-
-<strong>Technical Achievements:</strong>
-- Responsible for HV systems: Model 3/Y/S/X, Powerwall, Megapack, SuperCharger
-- Designed and implemented C++ firmware for CyberTruck and Megapack systems
-- Created battery cell simulation framework, decoupling software/hardware development cycles
-- Built comprehensive factory software pipeline connecting lab-to-production globally
-- Architected manufacturing framework deployed from Berlin to Palo Alto
-
-<strong>Leadership & Management:</strong>
-- <strong>Managed team of 7 engineers</strong>: 2 technicians, 2 software, 1 mechanical, 1 electrical
-- <strong>Delivered CyberTruck battery charger 4 weeks ahead of schedule</strong>
-- Made China battery production line <strong>3x faster</strong> than USA equivalent through knowledge transfer
-- Managed <strong>$500k annual budget</strong> and 200+ production stations
-
-<strong>Global Operations:</strong>
-- Worked with vendors: CATL, BYD, TI, COSMX, HYC, Pegatron, Jabil
-- International travel for design reviews, quality assurance, and troubleshooting
+- Responsible for high voltage systems: Model 3/Y/S/X, Powerwall, Megapack, and SuperCharger
+- Iterate chip design for CyberTruck and Megapack under tight deadline (2.5 months) and heavy pressure
+- Close collaboration with worldwide vendors (CATL, BYD, TI, COSMX, HYC, Pegatron, Jabil). Travel to their countries for design reviews, on-site inspections, troubleshooting, and reducing defect rates
+- Teach teams in Manufacture, Process, and Quality to enable them to do their own debugging and fault analysis. Made China battery production line <strong>3x faster</strong> than USA line
+- <strong>Finish CyberTruck battery charger 4 weeks ahead of schedule</strong>
+- Bring up 50 new manufacture stations, maintain over 200 stations, handle <strong>$500k budget</strong> per year
 
 </div>
 
@@ -174,20 +136,12 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 
 <div class="experience-card">
 
-<strong>Mission:</strong> Architect and maintain secure, scalable infrastructure supporting 1,400+ microservices across Atlassian's cloud platform
+- Develop auth sidecar, secure for all communication between Atlassian microservices and staff
+- Rewrite tools like LDAP cache, rate limiter, and deduper from Java, TypeScript, and Python to Golang
+- On call and answer questions for a <strong>99.99% availability</strong> internal PaaS hosting over 1,400 Atlassian services
+- Create instant generator for services with bells and whistles like K8s, SOX compliant, and CI/CD
 
-<strong>Technical Achievements:</strong>
-- Developed critical auth modules for all inter-service communication
-- Led language migration: Java/TypeScript/Python → Golang for performance-critical services
-- Built instant service generator with Kubernetes, SOX compliance, and CI/CD integration
-- Created enterprise-grade rate limiting and deduplication systems
-
-<strong>Operational Excellence:</strong>
-- Maintained <strong>99.99% availability</strong> SLA for internal PaaS
-- On-call support for critical infrastructure serving millions of users
-- Improved service generation time from hours to minutes
-
-<strong>Key Technologies:</strong> Splunk, SignalFX, Jira, Confluence, AWS (S3, DynamoDB, Lambda), PostgreSQL, Spinnaker, Kubernetes
+<strong>Tools:</strong> Splunk, SignalFX, Jira, Confluence, AWS S3, DynamoDB, Lambda, Postgres, Spinnaker
 
 </div>
 
@@ -201,7 +155,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 <h3>Johns Hopkins University</h3>
 <div class="degree">
 
-<strong>Master of Science, Information Security</strong>
+<strong>Master of Science, Cybersecurity</strong>
 
 </div>
 <div class="details">
@@ -211,7 +165,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 </div>
 <div class="coursework">
 
-<strong>Coursework</strong>: Cloud Security, Software Vulnerability Analysis, Security Analytics, Computer Forensics, Network Security, Privacy Laws, Risk Management, Ethical Hacking, Modern Cryptography
+<strong>Cybersecurity</strong>: Cloud Security, Software Vulnerability Analysis, Security Analytics, Computer Forensics, Network Security, Privacy Laws, Risk Management, Ethical Hacking, Modern Cryptography
 
 </div>
 </div>
@@ -235,8 +189,8 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 </div>
 <div class="coursework">
 
-<strong>Focus</strong>: Signal Processing, Robot Control, Semiconductor, C++, Java, Assembly, VHDL, MATLAB  
-<strong>Minor</strong>: Mathematics and Economics
+<strong>ECE</strong>: Signal Processing, Robot Control, Semiconductor, Microprocessor, C++, Java, Assembly, VHDL, MATLAB
+<strong>Minor</strong>: Mathematics and Economy
 
 </div>
 </div>
@@ -278,17 +232,27 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 <div class="project-showcase">
 
 <div class="project-item">
-<h4><strong>Agemo Execution Dashboard</strong></h4>
-- Developed full-stack web application for real-time execution history visualization and analytics
-- Architected modern frontend using Node.js backend with Shadcn UI component library
-- Implemented responsive data visualization for improved operational insights
+<h4><strong>Ontra.ai</strong></h4>
+- Replace thin GPT wrapper Ruby on Rails software to proper ML service that does retrieval, cross-encoding, prompt evaluation
+- Reduce thousands of hours for human-in-the-loop lawyers wasted on poor AI output
+[ontra.ai](https://www.ontra.ai)
+</div>
+
+<div class="project-item">
+<h4><strong>Agemo Codewords</strong></h4>
+- Fullstack webapp for automated website building with NodeJS and Shadcn
+[agemo.ai/codewords](https://www.agemo.ai/codewords)
 </div>
 
 <div class="project-item">
 <h4><strong>Rippling Global Expansion Framework</strong></h4>
-- Architected international payroll expansion system using Python Django, MongoDB, and React
-- Designed scalable backend infrastructure to support multi-country payroll processing
-- Enabled Rippling's expansion into new geographic markets through localized payroll solutions
+- Build out global expansion framework for Rippling's payroll product using Python Django, MongoDB, and React
+</div>
+
+<div class="project-item">
+<h4><strong>LeetCode</strong></h4>
+- Solved 1000+ questions, improved contest rating from 1460 to 2109 in 7 months
+[leetcode.com/mangoman](https://leetcode.com/u/mangoman/)
 </div>
 
 <div class="project-item">
@@ -343,8 +307,8 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 
 <strong>Electronics & Hardware</strong>
 - Headphone amplifier design
+- Windshield wiper controller
 - Custom PC builds
-- Automotive electronics
 
 </div>
 
@@ -357,8 +321,7 @@ Staff-level AI Infrastructure Engineer with <strong>6+ years</strong> of experie
 - <strong>Personal Website</strong>: [zuo.vercel.app](https://zuo.vercel.app/)
 - <strong>LinkedIn</strong>: [linkedin.com/in/mrmightymango](https://www.linkedin.com/in/mrmightymango/)
 - <strong>GitHub</strong>: [github.com/MrMegaMango](https://github.com/MrMegaMango)
-- <strong>Instagram</strong>: [instagram.com/mr_mighty_mango](https://www.instagram.com/mr_mighty_mango/)
-- <strong>LeetCode</strong>: [leetcode.com/u/mangoman](https://leetcode.com/u/mangoman/)
+- <strong>LeetCode</strong>: [leetcode.com/mangoman](https://leetcode.com/u/mangoman/)
 - <strong>Language Exchange</strong>: [echinglish.weebly.com](https://echinglish.weebly.com/)
 - <strong>Research Profile</strong>: [behavior.isi.jhu.edu](http://behavior.isi.jhu.edu/people.html)
 
