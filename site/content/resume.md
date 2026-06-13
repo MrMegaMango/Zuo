@@ -16,22 +16,27 @@ ShowBreadCrumbs: false
 ## Staff AI Engineer
 
 <div class="contact-info">
-Email: amangoworks@gmail.com | Phone: +1-757-633-7384<br>
-Location: San Diego, US (<a href="https://zuo-svelte.vercel.app/world-map" target="_blank">places I've lived in</a>)
+Email: amangoworks@gmail.com &nbsp;·&nbsp; Phone: +1-757-633-7384<br>
+San Diego, US &nbsp;·&nbsp; <a href="https://zuo-svelte.vercel.app/world-map" target="_blank">places I've lived in</a>
 </div>
 
 <div class="resume-summary">
 
 Staff-level AI backend infra engineer with <strong>6 years</strong> of professional experience and <strong>$10M+ business impact</strong>. Cross-disciplinary technical breadth in Software & Hardware Engineering, ML, Security, Product, and Infrastructure.
 
+<div class="summary-points">
+
 <strong>People Leadership:</strong> Experienced people leader, grew team to 7 people. Fun to work with, appreciate smart engineers with low ego
+
 <strong>Interview Experience:</strong> Conducted dozens of algorithm and system design interviews
+
 <strong>Track Record:</strong> Proven record in strategizing and delivering reliable systems at scale through cross-team collaborations
-</div>
 
 </div>
 
----
+</div>
+
+</div>
 
 ## <strong>Technical Expertise</strong>
 
@@ -58,7 +63,7 @@ Staff-level AI backend infra engineer with <strong>6 years</strong> of professio
 </div>
 
 <div class="tech-category">
-<h3>AI/ML</h3>
+<h3>AI / ML</h3>
 <div class="tech-stack">
   <span class="tech-tag">vLLM</span>
   <span class="tech-tag">Claude</span>
@@ -77,21 +82,14 @@ Staff-level AI backend infra engineer with <strong>6 years</strong> of professio
 
 </div>
 
----
-
 ## <strong>Work Experience</strong>
 
-### <strong>Samaya AI, London</strong>
-<div class="job-header">
-<span class="job-title">
-
-<strong>Member of Technical Staff</strong>
-
-</span>
-<span class="job-date"><em>Jan 2024 - Current</em></span>
+<div class="job">
+<div class="job-head">
+<h3>Samaya AI, London</h3>
+<span class="job-date">Jan 2024 – Current</span>
 </div>
-
-<div class="experience-card">
+<div class="job-role">Member of Technical Staff</div>
 
 - Architect Knowledge Ingestion Pipeline, Embedding Chunking strategy, Eval, RAG, and AI Infrastructure
 - 0-1 turn ML ideas into product features like QueryDecomposition, DeepResearch, and EarningsReport
@@ -103,17 +101,12 @@ Staff-level AI backend infra engineer with <strong>6 years</strong> of professio
 
 </div>
 
-### <strong>Tesla, Shanghai GigaFactory + Texas GigaFactory</strong>
-<div class="job-header">
-<span class="job-title">
-
-<strong>Staff Software Engineer & Team Lead</strong>, High Voltage Manufacturing
-
-</span>
-<span class="job-date"><em>Jul 2022 – Jan 2024</em></span>
+<div class="job">
+<div class="job-head">
+<h3>Tesla, Shanghai GigaFactory + Texas GigaFactory</h3>
+<span class="job-date">Jul 2022 – Jan 2024</span>
 </div>
-
-<div class="experience-card">
+<div class="job-role">Staff Software Engineer & Team Lead, High Voltage Manufacturing</div>
 
 - Responsible for high voltage systems: Model 3/Y/S/X, Powerwall, Megapack, and SuperCharger
 - Iterate chip design for CyberTruck and Megapack under tight deadline (2.5 months) and heavy pressure
@@ -124,17 +117,12 @@ Staff-level AI backend infra engineer with <strong>6 years</strong> of professio
 
 </div>
 
-### <strong>Atlassian, Mountain View, CA</strong>
-<div class="job-header">
-<span class="job-title">
-
-<strong>Software Engineer</strong>, Cloud Security + Platform Infrastructure
-
-</span>
-<span class="job-date"><em>2018 – Jul 2022</em> | <em>Fully Remote</em></span>
+<div class="job">
+<div class="job-head">
+<h3>Atlassian, Mountain View, CA</h3>
+<span class="job-date">2018 – Jul 2022 · Fully Remote</span>
 </div>
-
-<div class="experience-card">
+<div class="job-role">Software Engineer, Cloud Security + Platform Infrastructure</div>
 
 - Develop auth sidecar, secure for all communication between Atlassian microservices and staff
 - Rewrite tools like LDAP cache, rate limiter, and deduper from Java, TypeScript, and Python to Golang
@@ -144,8 +132,6 @@ Staff-level AI backend infra engineer with <strong>6 years</strong> of professio
 <strong>Tools:</strong> Splunk, SignalFX, Jira, Confluence, AWS S3, DynamoDB, Lambda, Postgres, Spinnaker
 
 </div>
-
----
 
 ## <strong>Education</strong>
 
@@ -190,14 +176,13 @@ Staff-level AI backend infra engineer with <strong>6 years</strong> of professio
 <div class="coursework">
 
 <strong>ECE</strong>: Signal Processing, Robot Control, Semiconductor, Microprocessor, C++, Java, Assembly, VHDL, MATLAB
+
 <strong>Minor</strong>: Mathematics and Economy
 
 </div>
 </div>
 
 </div>
-
----
 
 ## <strong>Notable Projects & Research</strong>
 
@@ -206,23 +191,29 @@ Staff-level AI backend infra engineer with <strong>6 years</strong> of professio
 <div class="project-showcase">
 
 <div class="project-item">
-<h4><strong>Behavioral Biometrics Security Research</strong> - Unknot.id</h4>
-<div class="project-meta"><em>Security Research Intern | Aug-Dec 2019</em></div>
+<h4><strong>Behavioral Biometrics Security Research</strong> — Unknot.id</h4>
+<div class="project-meta"><em>Security Research Intern | Aug – Dec 2019</em></div>
+
 - Researched and implemented adversarial attacks against Android biometric authentication systems
 - Developed efficient shadow model attacks requiring fewer than 1,000 queries to compromise security
 - Applied defensive hardening techniques to LSTM models using the CleverHans adversarial learning framework
 - Published research findings on behavioral biometric vulnerabilities
+
 [Research Publication](https://www.unknot.id/post/yes-you-can-spoof-behavioral-biometrics-with-adversarial-learning)
+
 </div>
 
 <div class="project-item">
-<h4><strong>Cognitive Security Modeling</strong> - Johns Hopkins University</h4>
-<div class="project-meta"><em>Graduate Research Assistant | Jan-Aug 2019</em></div>
+<h4><strong>Cognitive Security Modeling</strong> — Johns Hopkins University</h4>
+<div class="project-meta"><em>Graduate Research Assistant | Jan – Aug 2019</em></div>
+
 - Developed computational models in Python to simulate human security decision-making processes
 - Implemented advanced cognitive architectures including Instance-Based Learning Theory and ACT-R memory systems
 - Processed and analyzed 40GB+ of behavioral datasets to understand security-related cognitive patterns
 - Contributed to interdisciplinary research bridging computer science and behavioral psychology
+
 [Research Profile](http://behavior.isi.jhu.edu/people.html)
+
 </div>
 
 </div>
@@ -233,46 +224,60 @@ Staff-level AI backend infra engineer with <strong>6 years</strong> of professio
 
 <div class="project-item">
 <h4><strong>Ontra.ai</strong></h4>
+
 - Replace thin GPT wrapper Ruby on Rails software to proper ML service that does retrieval, cross-encoding, prompt evaluation
 - Reduce thousands of hours for human-in-the-loop lawyers wasted on poor AI output
+
 [ontra.ai](https://www.ontra.ai)
+
 </div>
 
 <div class="project-item">
 <h4><strong>Agemo Codewords</strong></h4>
+
 - Fullstack webapp for automated website building with NodeJS and Shadcn
+
 [agemo.ai/codewords](https://www.agemo.ai/codewords)
+
 </div>
 
 <div class="project-item">
 <h4><strong>Rippling Global Expansion Framework</strong></h4>
+
 - Build out global expansion framework for Rippling's payroll product using Python Django, MongoDB, and React
+
 </div>
 
 <div class="project-item">
 <h4><strong>LeetCode</strong></h4>
+
 - Solved 1000+ questions, improved contest rating from 1460 to 2109 in 7 months
+
 [leetcode.com/mangoman](https://leetcode.com/u/mangoman/)
+
 </div>
 
 <div class="project-item">
-<h4><strong>Military Drone System</strong> - U.S. Army Contract</h4>
+<h4><strong>Military Drone System</strong> — U.S. Army Contract</h4>
+
 - Designed and manufactured drone-based supply drop system for military training operations
 - Utilized 3D CAD design, additive manufacturing, and Arduino-based control systems
 - Deployed at National Training Center and Joint Readiness Training Center for operational use
+
 </div>
 
 <div class="project-item">
 <h4><strong>Battle Map Gaming Platform</strong></h4>
+
 - Built real-time multiplayer gaming platform with WebSocket-based interactions
 - Implemented full-stack architecture using modern web technologies for scalable gameplay
 - Deployed cloud-hosted solution with real-time synchronization capabilities
+
 [Live Demo](https://battle-map-344101.wl.r.appspot.com/)
-</div>
 
 </div>
 
----
+</div>
 
 ## <strong>Security Research & Cybersecurity</strong>
 
@@ -286,33 +291,45 @@ Staff-level AI backend infra engineer with <strong>6 years</strong> of professio
 
 </div>
 
----
-
 ## <strong>Additional Interests</strong>
 
 <div class="interests-grid">
 
-<strong>Gaming & Software Development</strong>
+<div class="interest-card">
+<h4>Gaming & Software Development</h4>
+
 - Gaming platform development
 - Top 0.3% League of Legends player
 
-<strong>Music & Performance</strong>
+</div>
+
+<div class="interest-card">
+<h4>Music & Performance</h4>
+
 - Guitar player with live concert experience
 - University carillon society member
 
-<strong>Athletics & Fitness</strong>
+</div>
+
+<div class="interest-card">
+<h4>Athletics & Fitness</h4>
+
 - Standup paddleboard enthusiast
 - Amateur boxing
 - 10+ pull-ups personal record
 
-<strong>Electronics & Hardware</strong>
+</div>
+
+<div class="interest-card">
+<h4>Electronics & Hardware</h4>
+
 - Headphone amplifier design
 - Windshield wiper controller
 - Custom PC builds
 
 </div>
 
----
+</div>
 
 ## <strong>Professional Links</strong>
 
@@ -328,322 +345,307 @@ Staff-level AI backend infra engineer with <strong>6 years</strong> of professio
 </div>
 
 <style>
-.download-button-top {
-  text-align: center;
-  margin: 1rem 0 2rem 0;
+/* ============================================================
+   Resume — professional, theme-aware styles (scoped to page)
+   Cards build on PaperMod's CSS variables (--entry, --border,
+   --primary, --secondary) so light/dark mode work automatically.
+   ============================================================ */
+.post-content {
+  --r-accent: #2456c7;
+  --r-accent-soft: rgba(36, 86, 199, 0.07);
+  --r-radius: 14px;
+  --r-radius-sm: 9px;
+  --r-shadow: 0 1px 2px rgba(0, 0, 0, .05), 0 8px 22px rgba(0, 0, 0, .04);
+}
+.dark .post-content {
+  --r-accent: #84a8ff;
+  --r-accent-soft: rgba(132, 168, 255, .12);
+  --r-shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 22px rgba(0, 0, 0, .3);
 }
 
+/* ---- Download button (outline style) ---- */
+.download-button-top { text-align: center; margin: 0 0 2rem; }
 .download-btn-top {
   display: inline-block;
   color: var(--primary);
-  padding: 10px 20px;
-  border-radius: 4px;
+  padding: 11px 26px;
+  border-radius: var(--r-radius-sm);
   text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9rem;
-  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-size: .9rem;
+  letter-spacing: .03em;
   border: 1.5px solid var(--primary);
-  cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease;
   background: transparent;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
 }
+.download-btn-top:hover { background: var(--primary); color: var(--theme) !important; }
+.download-btn-top:active { transform: translateY(1px); }
 
-.download-btn-top:hover {
-  background: var(--primary);
-  color: var(--theme) !important;
-}
-
-.download-btn-top:active {
-  opacity: 0.85;
-}
-
+/* ---- Header ---- */
 .resume-header {
-  background: var(--entry);
-  color: var(--primary);
-  padding: 3rem 2rem;
-  border-radius: 20px;
   text-align: center;
-  margin: 2rem 0;
-  border: 1px solid var(--border);
+  margin: 1rem 0 2.5rem;
+  padding-bottom: 2.25rem;
+  border-bottom: 1px solid var(--border);
 }
-
 .resume-header h1 {
+  font-size: 2.8rem;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  margin: 0 0 .4rem;
   color: var(--primary);
-  margin-bottom: 0.5rem;
-  font-size: 2.5rem;
 }
-
 .resume-header h2 {
-  color: var(--secondary);
-  font-weight: 400;
-  margin-bottom: 1.5rem;
+  font-size: .92rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .22em;
+  color: var(--r-accent);
+  margin: 0 0 1.25rem;
 }
-
 .contact-info {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  font-size: .96rem;
+  color: var(--secondary);
+  line-height: 1.8;
 }
+.contact-info a { color: var(--r-accent); text-decoration: none; border-bottom: 1px solid transparent; }
+.contact-info a:hover { border-bottom-color: var(--r-accent); }
 
 .resume-summary {
-  background: rgba(0,0,0,0.03);
-  padding: 1.5rem;
-  border-radius: 12px;
-  margin: 1.5rem 0;
+  max-width: 660px;
+  margin: 1.75rem auto 0;
   text-align: left;
-  line-height: 1.6;
-  border: 1px solid var(--border);
+  line-height: 1.65;
+  color: var(--content);
+}
+.summary-points { margin-top: 1.1rem; display: grid; gap: .55rem; }
+.summary-points p {
+  margin: 0;
+  padding: .1rem 0 .1rem 1rem;
+  border-left: 3px solid var(--r-accent);
+  font-size: .95rem;
+}
+.summary-points strong { color: var(--primary); }
+
+/* ---- Section headings (top-level h2 only) ---- */
+.post-content > h2 {
+  position: relative;
+  font-size: 1.5rem;
+  letter-spacing: -.01em;
+  margin: 2.75rem 0 1.4rem;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid var(--border);
+}
+.post-content > h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 48px;
+  height: 2px;
+  background: var(--r-accent);
 }
 
-.download-btn {
-  margin-top: 1rem;
-  background: rgba(255,255,255,0.2);
-  backdrop-filter: blur(10px);
+/* Project sub-section labels (direct-child markdown h3) */
+.post-content > h3 {
+  font-size: .82rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--secondary);
+  margin: 2rem 0 1rem;
 }
 
+/* Generic sub-headings */
+.post-content h3 { font-size: 1.2rem; color: var(--primary); margin: 0 0 .4rem; }
+.post-content h4 { font-size: 1.02rem; color: var(--primary); margin: 0 0 .5rem; }
+
+/* Hide markdown rules — sections are separated by heading rhythm */
+.post-content hr { display: none; }
+
+/* ---- Technical expertise ---- */
 .tech-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.1rem;
+  margin: 1.5rem 0;
 }
-
+.tech-category {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--r-radius);
+  padding: 1.2rem 1.35rem;
+}
 .tech-category h3 {
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  font-size: .76rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--secondary);
+  margin: 0 0 .85rem;
 }
+.tech-stack { display: flex; flex-wrap: wrap; gap: .5rem; }
+.tech-tag {
+  display: inline-block;
+  padding: .34rem .72rem;
+  font-size: .82rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--primary);
+  background: var(--r-accent-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--r-radius-sm);
+  transition: border-color .15s ease, color .15s ease;
+}
+.tech-tag:hover { border-color: var(--r-accent); color: var(--r-accent); }
 
-.job-header {
+/* ---- Work experience ---- */
+.job {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--r-accent);
+  border-radius: var(--r-radius);
+  padding: 1.5rem 1.75rem;
+  margin: 1.25rem 0;
+  box-shadow: var(--r-shadow);
+}
+.job-head {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
+  align-items: baseline;
   flex-wrap: wrap;
+  gap: .15rem 1rem;
 }
+.job-head h3 { margin: 0; font-size: 1.25rem; }
+.job-date { color: var(--secondary); font-size: .87rem; font-weight: 500; white-space: nowrap; }
+.job-role { color: var(--r-accent); font-weight: 600; font-size: .97rem; margin: .2rem 0 .9rem; }
+.job ul { margin: .5rem 0 0; padding-left: 1.15rem; }
+.job li { margin: .32rem 0; line-height: 1.55; }
+.job a { color: var(--r-accent); text-decoration: none; font-weight: 500; font-size: .9rem; }
+.job a:hover { text-decoration: underline; }
+.job p { font-size: .89rem; color: var(--secondary); margin: 1rem 0 0; }
+.job p strong { color: var(--primary); }
 
-.job-title {
-  color: var(--primary);
-  font-size: 1.2rem;
-}
-
-.job-date {
-  color: #666;
-  font-weight: 500;
-}
-
-.experience-card {
-  background: linear-gradient(145deg, #ffffff, #f8fafc);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 1.5rem 0;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
+/* ---- Education ---- */
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
 }
-
 .education-card {
-  background: linear-gradient(145deg, #ffffff, #f8fafc);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-.education-card h3 {
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-}
-
-.degree {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.details {
-  color: #666;
-  margin-bottom: 1rem;
-}
-
-.honors {
-  color: var(--accent);
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.coursework {
-  line-height: 1.6;
-}
-
-.project-showcase {
-  display: grid;
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.project-item {
-  background: linear-gradient(145deg, #ffffff, #f8fafc);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.project-item h4 {
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-}
-
-.project-meta {
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-
-.achievements-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.achievement-card {
   background: var(--entry);
-  color: var(--primary);
-  padding: 2rem;
-  border-radius: 16px;
-  text-align: center;
   border: 1px solid var(--border);
+  border-radius: var(--r-radius);
+  padding: 1.5rem 1.6rem;
+  box-shadow: var(--r-shadow);
 }
+.education-card h3 { margin: 0 0 .4rem; }
+.degree { font-size: 1rem; font-weight: 600; color: var(--primary); }
+.degree p { margin: 0; }
+.details { color: var(--secondary); font-size: .89rem; margin: .35rem 0 .9rem; }
+.details p { margin: 0; }
+.honors { color: var(--r-accent); font-weight: 500; font-size: .89rem; margin-bottom: .9rem; }
+.honors p { margin: 0; }
+.coursework { line-height: 1.6; font-size: .89rem; color: var(--content); }
+.coursework p { margin: .45rem 0; }
+.coursework strong { color: var(--primary); }
 
-.achievement-card h3 {
-  color: var(--primary);
-  margin-bottom: 1rem;
+/* ---- Projects ---- */
+.project-showcase { display: grid; gap: 1rem; margin: 1.25rem 0; }
+.project-item {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--r-radius);
+  padding: 1.35rem 1.5rem;
+  box-shadow: var(--r-shadow);
 }
+.project-item h4 { margin: 0; }
+.project-meta { color: var(--secondary); font-size: .86rem; margin: .25rem 0 0; }
+.project-item ul { margin: .65rem 0 0; padding-left: 1.15rem; }
+.project-item li { margin: .28rem 0; line-height: 1.5; }
+.project-item p { margin: .7rem 0 0; }
+.project-item a { color: var(--r-accent); text-decoration: none; font-weight: 500; font-size: .9rem; }
+.project-item a:hover { text-decoration: underline; }
 
-.stats {
-  text-align: left;
-  line-height: 1.8;
-}
-
+/* ---- Security ---- */
 .security-projects {
-  background: linear-gradient(145deg, #ffffff, #f8fafc);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 2rem 0;
-  line-height: 1.8;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--r-radius);
+  padding: 1.5rem 1.75rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--r-shadow);
 }
+.security-projects ul { margin: 0; padding-left: 1.15rem; }
+.security-projects li { margin: .5rem 0; line-height: 1.55; }
+.security-projects strong { color: var(--primary); }
 
+/* ---- Interests ---- */
 .interests-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin: 2rem 0;
-  line-height: 1.8;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.1rem;
+  margin: 1.5rem 0;
 }
-
-@media (max-width: 768px) {
-  .interests-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
+.interest-card {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--r-radius);
+  padding: 1.25rem 1.4rem;
+  box-shadow: var(--r-shadow);
 }
+.interest-card h4 {
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: var(--secondary);
+  margin: 0 0 .7rem;
+}
+.interest-card ul { margin: 0; padding-left: 1.1rem; }
+.interest-card li { margin: .3rem 0; line-height: 1.45; font-size: .91rem; }
 
+/* ---- Links ---- */
 .links-section {
   background: var(--entry);
-  color: var(--primary);
-  padding: 2rem;
-  border-radius: 16px;
-  margin: 2rem 0;
-  line-height: 1.8;
   border: 1px solid var(--border);
+  border-radius: var(--r-radius);
+  padding: 1.5rem 1.75rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--r-shadow);
 }
-
-.links-section a {
-  color: var(--primary);
-  text-decoration: underline;
+.links-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: .65rem 1.5rem;
 }
+.links-section li { margin: 0; }
+.links-section strong { color: var(--primary); }
+.links-section a { color: var(--r-accent); text-decoration: none; }
+.links-section a:hover { text-decoration: underline; }
 
-/* Dark mode styles - using multiple selectors for PaperMod theme compatibility */
-[data-theme="dark"] .download-btn-top,
-.dark .download-btn-top,
-body.dark .download-btn-top {
-  color: var(--primary) !important;
-  border-color: var(--primary) !important;
-  background: transparent !important;
-}
-
-[data-theme="dark"] .download-btn-top:hover,
-.dark .download-btn-top:hover,
-body.dark .download-btn-top:hover {
-  background: var(--primary) !important;
-  color: var(--theme) !important;
-}
-
-[data-theme="dark"] .experience-card,
-[data-theme="dark"] .education-card,
-[data-theme="dark"] .project-item,
-[data-theme="dark"] .security-projects,
-.dark .experience-card,
-.dark .education-card,
-.dark .project-item,
-.dark .security-projects,
-body.dark .experience-card,
-body.dark .education-card,
-body.dark .project-item,
-body.dark .security-projects {
-  background: linear-gradient(145deg, #1f2937, #111827) !important;
-  border-color: rgba(255,255,255,0.1) !important;
-  color: #e5e7eb !important;
-}
-
-[data-theme="dark"] .job-date,
-.dark .job-date,
-body.dark .job-date {
-  color: #9ca3af !important;
-}
-
-[data-theme="dark"] .details,
-.dark .details,
-body.dark .details {
-  color: #9ca3af !important;
-}
-
-[data-theme="dark"] .project-meta,
-.dark .project-meta,
-body.dark .project-meta {
-  color: #9ca3af !important;
-}
-
-[data-theme="dark"] .resume-summary,
-.dark .resume-summary,
-body.dark .resume-summary {
-  background: rgba(255, 255, 255, 0.05) !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
-}
-
+/* ---- Responsive ---- */
 @media (max-width: 768px) {
-  .resume-header {
-    padding: 2rem 1.5rem;
+  .resume-header h1 { font-size: 2.1rem; }
+  .resume-header h2 { letter-spacing: .15em; }
+  .job-head { flex-direction: column; }
+  .job-date { white-space: normal; }
+  .education-grid, .links-section ul { grid-template-columns: 1fr; }
+  .job, .education-card, .project-item, .security-projects, .links-section { padding: 1.25rem 1.3rem; }
+}
+
+/* ---- Print: clean, single-document resume ---- */
+@media print {
+  .download-button-top, .post-tags, .post-footer, .toc, .nav, .footer, .share-icons { display: none !important; }
+  .post-content { --r-shadow: none; }
+  .job, .education-card, .project-item, .security-projects, .interest-card, .tech-category, .links-section {
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+    background: #fff !important;
+    break-inside: avoid;
   }
-  
-  .resume-header h1 {
-    font-size: 2rem;
-  }
-  
-  .job-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .education-grid {
-    grid-template-columns: 1fr;
-  }
+  .post-content > h2 { break-after: avoid; }
+  a { color: #000 !important; }
 }
 </style>
