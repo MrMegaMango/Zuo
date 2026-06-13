@@ -7,643 +7,252 @@ ShowBreadCrumbs: false
 ---
 
 <div class="download-button-top">
-<a href="/2026MayResumeZuo.pdf" class="custom-button download-btn-top" download>Download PDF Resume</a>
+<a href="/2026MayResumeZuo.pdf" class="custom-button download-btn-top" download>Download PDF</a>
 </div>
 
 <div class="resume-header">
 
-# <strong>Zuo Wang</strong>
-## Staff AI Engineer
+# Zuo Wang
 
-<div class="contact-info">
-Email: amangoworks@gmail.com | Phone: +1-757-633-7384<br>
-Location: San Diego, US (<a href="https://zuo-svelte.vercel.app/world-map" target="_blank">places I've lived in</a>)
+<p class="subtitle">Staff AI Engineer</p>
+
+<p class="contact">
+amangoworks@gmail.com | +1-757-633-7384<br>
+San Diego, US (<a href="https://zuo-svelte.vercel.app/world-map" target="_blank">places I've lived</a>)
+</p>
+
 </div>
 
 <div class="resume-summary">
 
-Staff-level AI backend infra engineer with <strong>6 years</strong> of professional experience and <strong>$10M+ business impact</strong>. Cross-disciplinary technical breadth in Software & Hardware Engineering, ML, Security, Product, and Infrastructure.
+Staff-level AI and backend infrastructure engineer with 6 years of experience and over $10M in business impact, working across software and hardware engineering, ML, security, product, and infrastructure.
 
-<strong>People Leadership:</strong> Experienced people leader, grew team to 7 people. Fun to work with, appreciate smart engineers with low ego
-<strong>Interview Experience:</strong> Conducted dozens of algorithm and system design interviews
-<strong>Track Record:</strong> Proven record in strategizing and delivering reliable systems at scale through cross-team collaborations
-</div>
+**People leadership:** Grew and led a team of 7. Enjoy working with sharp, low-ego engineers.
 
-</div>
+**Interviewing:** Have run dozens of algorithm and system-design interviews.
 
----
-
-## <strong>Technical Expertise</strong>
-
-<div class="tech-section">
-
-<div class="tech-category">
-<h3>Languages & Frameworks</h3>
-<div class="tech-stack">
-  <span class="tech-tag">Golang</span>
-  <span class="tech-tag">Python</span>
-  <span class="tech-tag">gRPC</span>
-  <span class="tech-tag">GraphQL</span>
-</div>
-</div>
-
-<div class="tech-category">
-<h3>Cloud & Infrastructure</h3>
-<div class="tech-stack">
-  <span class="tech-tag">GCP</span>
-  <span class="tech-tag">AWS</span>
-  <span class="tech-tag">Kubernetes</span>
-  <span class="tech-tag">VertexAI</span>
-</div>
-</div>
-
-<div class="tech-category">
-<h3>AI/ML</h3>
-<div class="tech-stack">
-  <span class="tech-tag">vLLM</span>
-  <span class="tech-tag">Claude</span>
-  <span class="tech-tag">Pinecone</span>
-  <span class="tech-tag">Arize</span>
-</div>
-</div>
-
-<div class="tech-category">
-<h3>Data & Observability</h3>
-<div class="tech-stack">
-  <span class="tech-tag">MongoDB</span>
-  <span class="tech-tag">Grafana</span>
-</div>
-</div>
+**Track record:** Consistently ship reliable systems at scale through cross-team work.
 
 </div>
 
----
+## Technical Expertise
 
-## <strong>Work Experience</strong>
+<div class="skills">
 
-### <strong>Samaya AI, London</strong>
-<div class="job-header">
-<span class="job-title">
-
-<strong>Member of Technical Staff</strong>
-
-</span>
-<span class="job-date"><em>Jan 2024 - Current</em></span>
-</div>
-
-<div class="experience-card">
-
-- Architect Knowledge Ingestion Pipeline, Embedding Chunking strategy, Eval, RAG, and AI Infrastructure
-- 0-1 turn ML ideas into product features like QueryDecomposition, DeepResearch, and EarningsReport
-- <strong>90% performance improvement</strong>: Decrease time-to-first-token from 100s to 10s, scale infra from 10 to <strong>10,000 daily active users</strong>
-- Onboard customers from <strong>Morgan Stanley, BlackRock, Citi, and Point72</strong>. Strategize pricing
-- Demo for our <strong>$43.5M Series A</strong>
-
-[Company Website](https://samaya.ai/about/)
+**Languages & Frameworks:** Golang, Python, gRPC, GraphQL<br>
+**Cloud & Infrastructure:** GCP, AWS, Kubernetes, Vertex AI<br>
+**AI / ML:** vLLM, Claude, Pinecone, Arize<br>
+**Data & Observability:** MongoDB, Grafana
 
 </div>
 
-### <strong>Tesla, Shanghai GigaFactory + Texas GigaFactory</strong>
-<div class="job-header">
-<span class="job-title">
+## Work Experience
 
-<strong>Staff Software Engineer & Team Lead</strong>, High Voltage Manufacturing
+### Samaya AI, London
 
-</span>
-<span class="job-date"><em>Jul 2022 – Jan 2024</em></span>
-</div>
+<div class="job-meta"><span class="role">Member of Technical Staff</span><span>Jan 2024 – Present</span></div>
 
-<div class="experience-card">
+- Built the knowledge ingestion pipeline, chunking and embedding strategy, eval harness, RAG, and the AI infrastructure behind them
+- Took ML ideas from 0 to 1 into shipped features: query decomposition, deep research, and earnings reports
+- Cut time-to-first-token from 100s to 10s (90% faster) and scaled the platform from 10 to 10,000 daily active users
+- Onboarded customers including Morgan Stanley, BlackRock, Citi, and Point72, and helped set pricing
+- Built and ran the demo for our $43.5M Series A
 
-- Responsible for high voltage systems: Model 3/Y/S/X, Powerwall, Megapack, and SuperCharger
-- Iterate chip design for CyberTruck and Megapack under tight deadline (2.5 months) and heavy pressure
-- Close collaboration with worldwide vendors (CATL, BYD, TI, COSMX, HYC, Pegatron, Jabil). Travel to their countries for design reviews, on-site inspections, troubleshooting, and reducing defect rates
-- Teach teams in Manufacture, Process, and Quality to enable them to do their own debugging and fault analysis. Made China battery production line <strong>3x faster</strong> than USA line
-- <strong>Finish CyberTruck battery charger 4 weeks ahead of schedule</strong>
-- Bring up 50 new manufacture stations, maintain over 200 stations, handle <strong>$500k budget</strong> per year
+[Company website](https://samaya.ai/about/)
 
-</div>
+### Tesla, Shanghai & Texas Gigafactories
 
-### <strong>Atlassian, Mountain View, CA</strong>
-<div class="job-header">
-<span class="job-title">
+<div class="job-meta"><span class="role">Staff Software Engineer & Team Lead, High Voltage Manufacturing</span><span>Jul 2022 – Jan 2024</span></div>
 
-<strong>Software Engineer</strong>, Cloud Security + Platform Infrastructure
+- Owned high-voltage systems across Model 3/Y/S/X, Powerwall, Megapack, and Supercharger
+- Iterated chip designs for Cybertruck and Megapack on a tight 2.5-month deadline
+- Worked closely with vendors worldwide (CATL, BYD, TI, COSMX, HYC, Pegatron, Jabil), traveling on-site for design reviews, inspections, troubleshooting, and bringing down defect rates
+- Trained manufacturing, process, and quality teams to run their own debugging and fault analysis; got the China battery line running 3x faster than the US line
+- Delivered the Cybertruck battery charger 4 weeks ahead of schedule
+- Brought up 50 new manufacturing stations, maintained 200+, and managed a $500k annual budget
 
-</span>
-<span class="job-date"><em>2018 – Jul 2022</em> | <em>Fully Remote</em></span>
-</div>
+### Atlassian, Mountain View, CA
 
-<div class="experience-card">
+<div class="job-meta"><span class="role">Software Engineer, Cloud Security & Platform Infrastructure</span><span>2018 – Jul 2022 (Remote)</span></div>
 
-- Develop auth sidecar, secure for all communication between Atlassian microservices and staff
-- Rewrite tools like LDAP cache, rate limiter, and deduper from Java, TypeScript, and Python to Golang
-- On call and answer questions for a <strong>99.99% availability</strong> internal PaaS hosting over 1,400 Atlassian services
-- Create instant generator for services with bells and whistles like K8s, SOX compliant, and CI/CD
+- Built the auth sidecar securing all traffic between Atlassian microservices and staff
+- Rewrote internal tools (LDAP cache, rate limiter, deduper) from Java, TypeScript, and Python into Go
+- Ran on-call for a 99.99%-availability internal PaaS hosting 1,400+ Atlassian services
+- Built a service generator that scaffolds new services with Kubernetes, SOX compliance, and CI/CD out of the box
 
-<strong>Tools:</strong> Splunk, SignalFX, Jira, Confluence, AWS S3, DynamoDB, Lambda, Postgres, Spinnaker
+**Tools:** Splunk, SignalFx, Jira, Confluence, AWS S3, DynamoDB, Lambda, Postgres, Spinnaker
 
-</div>
+## Education
 
----
+### Johns Hopkins University
 
-## <strong>Education</strong>
+<div class="edu-meta">Master of Science, Machine Learning Security | GPA 3.9 / 4.0 | 2018</div>
 
-<div class="education-grid">
+**Coursework:** Cloud Security, Software Vulnerability Analysis, Computer Forensics, Network Security, Privacy Laws, Risk Management, Ethical Hacking, Modern Cryptography
 
-<div class="education-card">
-<h3>Johns Hopkins University</h3>
-<div class="degree">
+### University of Rochester
 
-<strong>Master of Science, Machine Learning Security</strong>
+<div class="edu-meta">Bachelor of Science, Electrical & Computer Engineering | GPA 3.6 / 4.0 | 2014</div>
 
-</div>
-<div class="details">
+*Joseph C. Wilson "Change" Scholarship, Dean's List*
 
-<strong>GPA: 3.9/4.0</strong> | <em>2018</em>
+**Coursework:** Signal Processing, Robot Control, Semiconductors, Microprocessors, C++, Java, Assembly, VHDL, MATLAB<br>
+**Minor:** Mathematics and Economics
 
-</div>
-<div class="coursework">
+## Projects & Research
 
-<strong>Machine Learning Security</strong>: Cloud Security, Software Vulnerability Analysis, Computer Forensics, Network Security, Privacy Laws, Risk Management, Ethical Hacking, Modern Cryptography
+### Research
 
-</div>
-</div>
+#### Behavioral Biometrics Security Research, Unknot.id
 
-<div class="education-card">
-<h3>University of Rochester</h3>
-<div class="degree">
+<div class="entry-meta">Security Research Intern, Aug – Dec 2019</div>
 
-<strong>Bachelor of Science, Electrical & Computer Engineering</strong>
+- Built adversarial attacks against Android behavioral-biometric authentication
+- Showed a shadow-model attack that broke the system in under 1,000 queries
+- Hardened the target LSTM models against those attacks with CleverHans
 
-</div>
-<div class="details">
+[Published research](https://www.unknot.id/post/yes-you-can-spoof-behavioral-biometrics-with-adversarial-learning)
 
-<strong>GPA: 3.6/4.0</strong> | <em>2014</em>
+#### Cognitive Security Modeling, Johns Hopkins University
 
-</div>
-<div class="honors">
+<div class="entry-meta">Graduate Research Assistant, Jan – Aug 2019</div>
 
-<em>Joseph C Wilson "Change" Scholarship • Dean's List</em>
+- Modeled human security decision-making in Python using Instance-Based Learning Theory and ACT-R memory architectures
+- Processed and analyzed 40GB+ of behavioral data to surface security-relevant patterns
+- Worked on an interdisciplinary team bridging computer science and behavioral psychology
 
-</div>
-<div class="coursework">
+[Research profile](http://behavior.isi.jhu.edu/people.html)
 
-<strong>ECE</strong>: Signal Processing, Robot Control, Semiconductor, Microprocessor, C++, Java, Assembly, VHDL, MATLAB
-<strong>Minor</strong>: Mathematics and Economy
+### Technical Projects
 
-</div>
-</div>
+#### Ontra.ai
 
-</div>
+- Replaced a thin GPT-wrapper (Ruby on Rails) with a real ML service doing retrieval, cross-encoding, and prompt evaluation
+- Saved lawyers thousands of human-in-the-loop hours previously lost to poor model output
 
----
-
-## <strong>Notable Projects & Research</strong>
-
-### <strong>Research Experience</strong>
-
-<div class="project-showcase">
-
-<div class="project-item">
-<h4><strong>Behavioral Biometrics Security Research</strong> - Unknot.id</h4>
-<div class="project-meta"><em>Security Research Intern | Aug-Dec 2019</em></div>
-- Researched and implemented adversarial attacks against Android biometric authentication systems
-- Developed efficient shadow model attacks requiring fewer than 1,000 queries to compromise security
-- Applied defensive hardening techniques to LSTM models using the CleverHans adversarial learning framework
-- Published research findings on behavioral biometric vulnerabilities
-[Research Publication](https://www.unknot.id/post/yes-you-can-spoof-behavioral-biometrics-with-adversarial-learning)
-</div>
-
-<div class="project-item">
-<h4><strong>Cognitive Security Modeling</strong> - Johns Hopkins University</h4>
-<div class="project-meta"><em>Graduate Research Assistant | Jan-Aug 2019</em></div>
-- Developed computational models in Python to simulate human security decision-making processes
-- Implemented advanced cognitive architectures including Instance-Based Learning Theory and ACT-R memory systems
-- Processed and analyzed 40GB+ of behavioral datasets to understand security-related cognitive patterns
-- Contributed to interdisciplinary research bridging computer science and behavioral psychology
-[Research Profile](http://behavior.isi.jhu.edu/people.html)
-</div>
-
-</div>
-
-### <strong>Technical Projects</strong>
-
-<div class="project-showcase">
-
-<div class="project-item">
-<h4><strong>Ontra.ai</strong></h4>
-- Replace thin GPT wrapper Ruby on Rails software to proper ML service that does retrieval, cross-encoding, prompt evaluation
-- Reduce thousands of hours for human-in-the-loop lawyers wasted on poor AI output
 [ontra.ai](https://www.ontra.ai)
-</div>
 
-<div class="project-item">
-<h4><strong>Agemo Codewords</strong></h4>
-- Fullstack webapp for automated website building with NodeJS and Shadcn
+#### Agemo Codewords
+
+- Full-stack web app for automated website building, built with Node.js and shadcn/ui
+
 [agemo.ai/codewords](https://www.agemo.ai/codewords)
-</div>
 
-<div class="project-item">
-<h4><strong>Rippling Global Expansion Framework</strong></h4>
-- Build out global expansion framework for Rippling's payroll product using Python Django, MongoDB, and React
-</div>
+#### Rippling Global Expansion Framework
 
-<div class="project-item">
-<h4><strong>LeetCode</strong></h4>
-- Solved 1000+ questions, improved contest rating from 1460 to 2109 in 7 months
+- Built the global-expansion framework for Rippling's payroll product with Django, MongoDB, and React
+
+#### LeetCode
+
+- Solved 1,000+ problems and raised my contest rating from 1460 to 2109 in seven months
+
 [leetcode.com/mangoman](https://leetcode.com/u/mangoman/)
-</div>
 
-<div class="project-item">
-<h4><strong>Military Drone System</strong> - U.S. Army Contract</h4>
-- Designed and manufactured drone-based supply drop system for military training operations
-- Utilized 3D CAD design, additive manufacturing, and Arduino-based control systems
-- Deployed at National Training Center and Joint Readiness Training Center for operational use
-</div>
+#### Military Drone System, U.S. Army Contract
 
-<div class="project-item">
-<h4><strong>Battle Map Gaming Platform</strong></h4>
-- Built real-time multiplayer gaming platform with WebSocket-based interactions
-- Implemented full-stack architecture using modern web technologies for scalable gameplay
-- Deployed cloud-hosted solution with real-time synchronization capabilities
-[Live Demo](https://battle-map-344101.wl.r.appspot.com/)
-</div>
+- Designed and built a drone-based supply-drop system for Army training exercises
+- Used 3D CAD, additive manufacturing, and Arduino-based controls
+- Fielded at the National Training Center and Joint Readiness Training Center
 
-</div>
+#### Battle Map Gaming Platform
 
----
+- Real-time multiplayer battle-map platform over WebSockets, with live state sync across players
+- Full-stack and cloud-hosted on Google App Engine
 
-## <strong>Security Research & Cybersecurity</strong>
+[Live demo](https://battle-map-344101.wl.r.appspot.com/)
 
-<div class="security-projects">
+## Security Research
 
-- <strong>Docker Privilege Escalation</strong>: Applied Dirty COW race condition for container-to-host escape
-- <strong>IoT Exploitation</strong>: Network analysis and attacks on DJI drones, Bebop drones, Amazon Echo
-- <strong>Malicious URL Detection</strong>: ML models with PhishTank and DMOZ datasets, ROC curve analysis
-- <strong>Software Vulnerability Analysis</strong>: Threat modeling and reverse engineering with objdump, ldd, nm, strace
-- <strong>CryptoDoneRight</strong>: Contributed to cryptodoneright.org server hardening tools
+- **Docker privilege escalation:** used the Dirty COW race condition for container-to-host escape
+- **IoT exploitation:** network analysis and attacks on DJI and Bebop drones and Amazon Echo
+- **Malicious URL detection:** ML models on the PhishTank and DMOZ datasets, evaluated with ROC curves
+- **Software vulnerability analysis:** threat modeling and reverse engineering with objdump, ldd, nm, and strace
+- **CryptoDoneRight:** contributed server-hardening tools to cryptodoneright.org
 
-</div>
+## Interests
 
----
+<div class="interests">
 
-## <strong>Additional Interests</strong>
-
-<div class="interests-grid">
-
-<strong>Gaming & Software Development</strong>
-- Gaming platform development
-- Top 0.3% League of Legends player
-
-<strong>Music & Performance</strong>
-- Guitar player with live concert experience
-- University carillon society member
-
-<strong>Athletics & Fitness</strong>
-- Standup paddleboard enthusiast
-- Amateur boxing
-- 10+ pull-ups personal record
-
-<strong>Electronics & Hardware</strong>
-- Headphone amplifier design
-- Windshield wiper controller
-- Custom PC builds
+**Gaming:** built a gaming platform; top 0.3% League of Legends player<br>
+**Music:** guitarist with live concert experience; university carillon society<br>
+**Athletics:** stand-up paddleboarding, amateur boxing, 10+ pull-ups<br>
+**Hardware:** headphone amplifier, windshield-wiper controller, custom PC builds
 
 </div>
 
----
+## Links
 
-## <strong>Professional Links</strong>
-
-<div class="links-section">
-
-- <strong>Personal Website</strong>: [zuo.vercel.app](https://zuo.vercel.app/)
-- <strong>LinkedIn</strong>: [linkedin.com/in/mrmightymango](https://www.linkedin.com/in/mrmightymango/)
-- <strong>GitHub</strong>: [github.com/MrMegaMango](https://github.com/MrMegaMango)
-- <strong>LeetCode</strong>: [leetcode.com/mangoman](https://leetcode.com/u/mangoman/)
-- <strong>Language Exchange</strong>: [echinglish.weebly.com](https://echinglish.weebly.com/)
-- <strong>Research Profile</strong>: [behavior.isi.jhu.edu](http://behavior.isi.jhu.edu/people.html)
-
-</div>
+- **Website:** [zuo.vercel.app](https://zuo.vercel.app/)
+- **LinkedIn:** [linkedin.com/in/mrmightymango](https://www.linkedin.com/in/mrmightymango/)
+- **GitHub:** [github.com/MrMegaMango](https://github.com/MrMegaMango)
+- **LeetCode:** [leetcode.com/mangoman](https://leetcode.com/u/mangoman/)
+- **Language Exchange:** [echinglish.weebly.com](https://echinglish.weebly.com/)
+- **Research Profile:** [behavior.isi.jhu.edu](http://behavior.isi.jhu.edu/people.html)
 
 <style>
-.download-button-top {
-  text-align: center;
-  margin: 1rem 0 2rem 0;
-}
+/* Resume: plain, document-style. Inherits PaperMod theme variables so
+   light/dark both work with no per-element overrides. No cards, gradients,
+   shadows, badges, or accent colors. */
 
+.download-button-top { text-align: center; margin: 0 0 1.5rem; }
 .download-btn-top {
   display: inline-block;
   color: var(--primary);
-  padding: 10px 20px;
+  border: 1px solid var(--primary);
   border-radius: 4px;
+  padding: 8px 18px;
+  font-size: 0.9rem;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9rem;
-  letter-spacing: 0.02em;
-  border: 1.5px solid var(--primary);
-  cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease;
-  background: transparent;
 }
+.download-btn-top:hover { background: var(--primary); color: var(--theme) !important; }
 
-.download-btn-top:hover {
-  background: var(--primary);
-  color: var(--theme) !important;
-}
+.resume-header { text-align: center; margin: 1rem 0 2rem; }
+.resume-header h1 { margin: 0 0 0.25rem; font-size: 2.4rem; }
+.resume-header .subtitle { margin: 0 0 1rem; color: var(--secondary); font-size: 1.1rem; font-weight: 400; }
+.resume-header .contact { margin: 0; color: var(--secondary); font-size: 0.95rem; line-height: 1.7; }
+.resume-header .contact a { color: var(--secondary); text-decoration: underline; }
 
-.download-btn-top:active {
-  opacity: 0.85;
-}
+.resume-summary { line-height: 1.65; margin: 0 0 1rem; }
+.resume-summary p { margin: 0.5rem 0; }
 
-.resume-header {
-  background: var(--entry);
-  color: var(--primary);
-  padding: 3rem 2rem;
-  border-radius: 20px;
-  text-align: center;
-  margin: 2rem 0;
-  border: 1px solid var(--border);
+.post-content h2 {
+  margin: 2.25rem 0 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 1.45rem;
 }
+.post-content h3 { margin: 1.5rem 0 0.25rem; font-size: 1.15rem; }
+.post-content h4 { margin: 1.25rem 0 0.25rem; font-size: 1rem; }
 
-.resume-header h1 {
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-  font-size: 2.5rem;
-}
+.job-meta,
+.entry-meta,
+.edu-meta { color: var(--secondary); font-size: 0.92rem; }
+.job-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.2rem 1rem; margin: 0 0 0.5rem; }
+.job-meta .role { font-style: italic; }
+.entry-meta { font-style: italic; margin: 0 0 0.5rem; }
+.edu-meta { margin: 0 0 0.5rem; }
 
-.resume-header h2 {
-  color: var(--secondary);
-  font-weight: 400;
-  margin-bottom: 1.5rem;
-}
+.skills,
+.interests { line-height: 1.95; }
 
-.contact-info {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-}
-
-.resume-summary {
-  background: rgba(0,0,0,0.03);
-  padding: 1.5rem;
-  border-radius: 12px;
-  margin: 1.5rem 0;
-  text-align: left;
-  line-height: 1.6;
-  border: 1px solid var(--border);
-}
-
-.download-btn {
-  margin-top: 1rem;
-  background: rgba(255,255,255,0.2);
-  backdrop-filter: blur(10px);
-}
-
-.tech-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.tech-category h3 {
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-}
-
-.job-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-}
-
-.job-title {
-  color: var(--primary);
-  font-size: 1.2rem;
-}
-
-.job-date {
-  color: #666;
-  font-weight: 500;
-}
-
-.experience-card {
-  background: linear-gradient(145deg, #ffffff, #f8fafc);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 1.5rem 0;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-.education-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.education-card {
-  background: linear-gradient(145deg, #ffffff, #f8fafc);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-.education-card h3 {
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-}
-
-.degree {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.details {
-  color: #666;
-  margin-bottom: 1rem;
-}
-
-.honors {
-  color: var(--accent);
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.coursework {
-  line-height: 1.6;
-}
-
-.project-showcase {
-  display: grid;
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.project-item {
-  background: linear-gradient(145deg, #ffffff, #f8fafc);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.project-item h4 {
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-}
-
-.project-meta {
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-
-.achievements-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.achievement-card {
-  background: var(--entry);
-  color: var(--primary);
-  padding: 2rem;
-  border-radius: 16px;
-  text-align: center;
-  border: 1px solid var(--border);
-}
-
-.achievement-card h3 {
-  color: var(--primary);
-  margin-bottom: 1rem;
-}
-
-.stats {
-  text-align: left;
-  line-height: 1.8;
-}
-
-.security-projects {
-  background: linear-gradient(145deg, #ffffff, #f8fafc);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 2rem 0;
-  line-height: 1.8;
-}
-
-.interests-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin: 2rem 0;
-  line-height: 1.8;
-}
+.post-content ul { margin: 0.4rem 0; }
+.post-content li { margin: 0.25rem 0; line-height: 1.55; }
 
 @media (max-width: 768px) {
-  .interests-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
+  .resume-header h1 { font-size: 2rem; }
+  .job-meta { flex-direction: column; }
 }
 
-.links-section {
-  background: var(--entry);
-  color: var(--primary);
-  padding: 2rem;
-  border-radius: 16px;
-  margin: 2rem 0;
-  line-height: 1.8;
-  border: 1px solid var(--border);
-}
-
-.links-section a {
-  color: var(--primary);
-  text-decoration: underline;
-}
-
-/* Dark mode styles - using multiple selectors for PaperMod theme compatibility */
-[data-theme="dark"] .download-btn-top,
-.dark .download-btn-top,
-body.dark .download-btn-top {
-  color: var(--primary) !important;
-  border-color: var(--primary) !important;
-  background: transparent !important;
-}
-
-[data-theme="dark"] .download-btn-top:hover,
-.dark .download-btn-top:hover,
-body.dark .download-btn-top:hover {
-  background: var(--primary) !important;
-  color: var(--theme) !important;
-}
-
-[data-theme="dark"] .experience-card,
-[data-theme="dark"] .education-card,
-[data-theme="dark"] .project-item,
-[data-theme="dark"] .security-projects,
-.dark .experience-card,
-.dark .education-card,
-.dark .project-item,
-.dark .security-projects,
-body.dark .experience-card,
-body.dark .education-card,
-body.dark .project-item,
-body.dark .security-projects {
-  background: linear-gradient(145deg, #1f2937, #111827) !important;
-  border-color: rgba(255,255,255,0.1) !important;
-  color: #e5e7eb !important;
-}
-
-[data-theme="dark"] .job-date,
-.dark .job-date,
-body.dark .job-date {
-  color: #9ca3af !important;
-}
-
-[data-theme="dark"] .details,
-.dark .details,
-body.dark .details {
-  color: #9ca3af !important;
-}
-
-[data-theme="dark"] .project-meta,
-.dark .project-meta,
-body.dark .project-meta {
-  color: #9ca3af !important;
-}
-
-[data-theme="dark"] .resume-summary,
-.dark .resume-summary,
-body.dark .resume-summary {
-  background: rgba(255, 255, 255, 0.05) !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
-}
-
-@media (max-width: 768px) {
-  .resume-header {
-    padding: 2rem 1.5rem;
-  }
-  
-  .resume-header h1 {
-    font-size: 2rem;
-  }
-  
-  .job-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .education-grid {
-    grid-template-columns: 1fr;
-  }
+@media print {
+  .download-button-top,
+  .toc,
+  .breadcrumbs,
+  .post-meta,
+  .footer,
+  header.header,
+  .share-icons { display: none !important; }
+  .post-content h2 { break-after: avoid; }
+  a { color: #000 !important; text-decoration: none; }
 }
 </style>
