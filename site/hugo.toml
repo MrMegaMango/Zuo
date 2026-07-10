@@ -22,6 +22,13 @@ name = "Resume"
 url = "/resume"
 weight = 10
 
+# Adding consulting menu entry
+[[menu.main]]
+identifier = "consulting"
+name = "Consulting"
+url = "/consulting"
+weight = 15
+
 # Adding archive menu entry
 [[menu.main]]
 identifier = "posts"
@@ -41,7 +48,7 @@ weight = 30
 env = "production"
 title = "Zuo Wang"
 description = "Staff AI Backend Engineer specializing in scalable systems, performance optimization, and zero-to-production solutions. 6+ years experience at Tesla, Atlassian, and Samaya AI."
-keywords = ["AI Infrastructure", "Software Engineering", "Performance Optimization", "Golang", "Python", "Tesla", "Samaya AI", "Machine Learning", "Backend", "Zuo Wang"]
+keywords = ["AI Infrastructure", "AI Consulting", "Software Engineering", "Performance Optimization", "Golang", "Python", "Tesla", "Samaya AI", "Machine Learning", "Backend", "Zuo Wang"]
 author = "Zuo Wang"
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
@@ -78,6 +85,8 @@ Content = """
 
 
 I am currently innovating at the edge of AI that drives the research deparments at MorganStanley, BlackRock, Citi, and Point72. Previously scaled Tesla's battery manufacturing systems and built security infrastructure at Atlassian.
+
+**Consulting:** I take on select engagements around production AI systems — [services & rates](/consulting).
 
 **80% performance improvements** 
 
