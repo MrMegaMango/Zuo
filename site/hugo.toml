@@ -29,6 +29,12 @@ name = "Consulting"
 url = "/consulting"
 weight = 15
 
+[[menu.main]]
+identifier = "offers"
+name = "Offers"
+url = "/offers"
+weight = 17
+
 # Adding archive menu entry
 [[menu.main]]
 identifier = "posts"
