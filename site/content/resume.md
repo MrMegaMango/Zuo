@@ -39,10 +39,12 @@ Staff-level AI and backend infrastructure engineer with 6 years of experience an
 
 <div class="skills">
 
-**Languages & Frameworks:** Golang, Python, gRPC, GraphQL<br>
-**Cloud & Infrastructure:** GCP, AWS, Kubernetes, Vertex AI<br>
-**AI / ML:** vLLM, Claude, Pinecone, Arize<br>
-**Data & Observability:** MongoDB, Grafana
+**Languages & Frameworks:** Go, Python, TypeScript, JavaScript, Node.js, React, SvelteKit<br>
+**AI Engineering:** RAG, LLM workflow orchestration, document classification and extraction, structured outputs, model fallback and recovery, evaluation harnesses<br>
+**AI Platforms:** Claude, Gemini, vLLM, Vertex AI, Pinecone, Arize, LLM gateways<br>
+**APIs & Automation:** REST, gRPC, GraphQL, OAuth, webhooks, browser automation, regression testing<br>
+**Cloud & Infrastructure:** AWS, GCP, Kubernetes, Vercel<br>
+**Data & Observability:** PostgreSQL, Supabase, SQLite, MongoDB, Grafana
 
 </div>
 
