@@ -25,7 +25,7 @@ San Diego, US (<a href="https://zuo-svelte.vercel.app/world-map" target="_blank"
 
 <div class="resume-summary">
 
-Staff-level AI and backend infrastructure engineer with 6 years of experience and over $10M in business impact, working across software and hardware engineering, ML, security, product, and infrastructure.
+Staff-level AI and backend infrastructure engineer with 6 years of experience and over $10M in business revenue generated, working across software and hardware engineering, ML, security, product, and infrastructure.
 
 **People leadership:** Grew and led a team of 7. Enjoy working with sharp, low-ego engineers.
 
