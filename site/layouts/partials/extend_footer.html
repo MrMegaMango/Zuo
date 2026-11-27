@@ -1,0 +1,11 @@
+{{- if .IsHome }}
+<script>
+  function redirectResearchAnchor() {
+    if (window.location.hash === "#research") {
+      window.location.replace({{ relref . "/research" }} + window.location.search);
+    }
+  }
+  window.addEventListener("hashchange", redirectResearchAnchor);
+  redirectResearchAnchor();
+</script>
+{{- end }}
