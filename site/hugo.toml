@@ -48,11 +48,10 @@ name = "Posts"
 url = "/posts"
 weight = 20
 
-# Adding interactive app menu entry
 [[menu.main]]
-identifier = "app"
-name = "my App"
-url = "https://zuo-svelte.vercel.app/"
+identifier = "projects"
+name = "Projects"
+pageRef = "/projects"
 weight = 30
 
 

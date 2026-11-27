@@ -1,4 +1,18 @@
 {
     "buildCommand": "curl -L https://github.com/gohugoio/hugo/releases/download/v0.144.2/hugo_extended_0.144.2_Linux-64bit.tar.gz | tar -xz && mv hugo /usr/local/bin/ && chmod +x build.sh && ./build.sh prod",
-    "outputDirectory": "site/public"
+    "outputDirectory": "site/public",
+    "redirects": [
+        {"source": "/cardeals/:path*", "destination": "https://car-price-reports.vercel.app/:path*", "permanent": false},
+        {"source": "/chipdue/:path*", "destination": "https://chipdue.vercel.app/:path*", "permanent": false},
+        {"source": "/desk-captions/:path*", "destination": "https://desk-captions.vercel.app/:path*", "permanent": false},
+        {"source": "/dialora/:path*", "destination": "https://dialora.vercel.app/:path*", "permanent": false},
+        {"source": "/haven/:path*", "destination": "https://findhaven.vercel.app/:path*", "permanent": false},
+        {"source": "/high-match/:path*", "destination": "https://high-match-job-assistant.vercel.app/:path*", "permanent": false},
+        {"source": "/keyfall/:path*", "destination": "https://keyfall-zuo.vercel.app/:path*", "permanent": false},
+        {"source": "/mayhem/:path*", "destination": "https://arammayhem.pages.dev/:path*", "permanent": false},
+        {"source": "/memeo/:path*", "destination": "https://memeo-ashy.vercel.app/:path*", "permanent": false},
+        {"source": "/portfolio/:path*", "destination": "https://zuo-svelte.vercel.app/:path*", "permanent": false},
+        {"source": "/property-tax/:path*", "destination": "https://property-tax-lookup-zuo.vercel.app/:path*", "permanent": false},
+        {"source": "/yumoo/:path*", "destination": "https://yumoo.vercel.app/:path*", "permanent": false}
+    ]
 }
