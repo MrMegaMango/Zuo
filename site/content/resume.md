@@ -184,7 +184,7 @@ Staff-level AI and backend infrastructure engineer with 6 years of experience an
 
 ## Links
 
-- **Website:** [zuo.vercel.app](https://zuo.vercel.app/)
+- **Website:** [zuohq.com](https://zuohq.com/)
 - **LinkedIn:** [linkedin.com/in/mrmightymango](https://www.linkedin.com/in/mrmightymango/)
 - **GitHub:** [github.com/MrMegaMango](https://github.com/MrMegaMango)
 - **LeetCode:** [leetcode.com/mangoman](https://leetcode.com/u/mangoman/)
